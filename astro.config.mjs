@@ -4,11 +4,16 @@ import sitemap from "@astrojs/sitemap";
 
 import icon from "astro-icon";
 
+import cloudflare from "@astrojs/cloudflare";
+
 // https://astro.build/config
 export default defineConfig({
   redirects: {
     "/blog": "/",
   },
+
   site: "https://example.treelink.com",
   integrations: [tailwind(), sitemap(), icon()],
+  output: "server",
+  adapter: cloudflare(),
 });
