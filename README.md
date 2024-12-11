@@ -1,3 +1,2 @@
-###closesttopurple.org
-#Hiya Karis here.
-
+##
+closesttopurple.org
