@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light dark;
+
+    /* replace colors from here... */
+    --light-mode-background: 240 240 240;
+    --light-mode-foreground: 0 0 0;
+    --light-mode-foreground-muted: 50 50 50;
+    --light-mode-icon-link-outline: 50 50 50;
+    --light-mode-icon-link-background: 255 255 255;
+    --light-mode-icon-link-text: 0 0 0;
+    --light-mode-icon-link-outline-hover: 0 0 0;
+    --light-mode-icon-link-background-hover: 240 240 240;
+    --light-mode-icon-link-text-hover: 0 0 0;
+    --light-mode-custom-link-outline: 50 50 50;
+    --light-mode-custom-link-background: 255 255 255;
+    --light-mode-custom-link-text: 0 0 0;
+    --light-mode-custom-link-outline-hover: 0 0 0;
+    --light-mode-custom-link-background-hover: 240 240 240;
+    --light-mode-custom-link-text-hover: 0 0 0;
+
+    --dark-mode-background: 10 10 10;
+    --dark-mode-foreground: 255 255 255;
+    --dark-mode-foreground-muted: 205 205 205;
+    --dark-mode-icon-link-outline: 205 205 205;
+    --dark-mode-icon-link-background: 0 0 0;
+    --dark-mode-icon-link-text: 255 255 255;
+    --dark-mode-icon-link-outline-hover: 255 255 255;
+    --dark-mode-icon-link-background-hover: 50 50 50;
+    --dark-mode-icon-link-text-hover: 255 255 255;
+    --dark-mode-custom-link-outline: 205 205 205;
+    --dark-mode-custom-link-background: 0 0 0;
+    --dark-mode-custom-link-text: 255 255 255;
+    --dark-mode-custom-link-outline-hover: 255 255 255;
+    --dark-mode-custom-link-background-hover: 50 50 50;
+    --dark-mode-custom-link-text-hover: 255 255 255;
+    /* ...to here */
+  }
+
+  body {
+    background-color: light-dark(
+      rgb(var(--light-mode-background)),
+      rgb(var(--dark-mode-background))
+    );
+  }
+}

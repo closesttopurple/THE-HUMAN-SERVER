@@ -1,0 +1,12 @@
+---
+const { text, icon, url } = Astro.props;
+---
+
+<li>
+  <a
+    href={url}
+    class="hover:bg-lightModeCustomLinkBackgroundHover dark:hover:bg-darkModeCustomLinkBackgroundHover hover:ring-lightModeCustomLinkOutlineHover dark:hover:ring-darkModeCustomLinkOutlineHover hover:text-lightModeCustomLinkTextHover dark:hover:text-darkModeCustomLinkTextHover flex items-center justify-center gap-2 rounded-full bg-lightModeCustomLinkBackground px-6 py-3 text-lg text-lightModeCustomLinkText ring-2 ring-lightModeCustomLinkOutline transition-colors dark:bg-darkModeCustomLinkBackground dark:text-darkModeCustomLinkText dark:ring-darkModeCustomLinkOutline"
+  >
+    <slot />
+  </a>
+</li>

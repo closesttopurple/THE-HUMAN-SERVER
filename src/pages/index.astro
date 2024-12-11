@@ -1,0 +1,32 @@
+---
+import { getCollection, type CollectionEntry } from "astro:content";
+
+import { SITE } from "@/siteConfig";
+
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+import Content from "@/components/Content.astro";
+import Post from "@/components/Post.astro";
+import SeoPage from "@/components/SeoPage.astro";
+
+const posts = (await getCollection("blog")).sort(
+  (a: CollectionEntry<"blog">, b: CollectionEntry<"blog">) =>
+    b.data.publicationDate.valueOf() - a.data.publicationDate.valueOf(),
+);
+---
+
+<BaseLayout>
+  <SeoPage slot="head" />
+  <main>
+    <Content />
+    {
+      SITE.blog ? (
+        <ul class="grid list-none gap-y-8 px-0 py-12">
+          {posts.map((post: CollectionEntry<"blog">) => (
+            <Post post={post} />
+          ))}
+        </ul>
+      ) : null
+    }
+  </main>
+</BaseLayout>

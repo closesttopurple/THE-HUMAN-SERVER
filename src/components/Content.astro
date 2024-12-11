@@ -1,0 +1,23 @@
+---
+import { SITE } from "@/siteConfig";
+
+import Introduction from "@/components/Introduction.astro";
+import IconLink from "@/components/IconLink.astro";
+import CustomLink from "@/components/CustomLink.astro";
+---
+
+<Introduction />
+<ul class="flex justify-center gap-4 py-12">
+  {
+    SITE.iconLinks.map((link) => {
+      return <IconLink url={link.url} icon={link.icon} />;
+    })
+  }
+</ul>
+<ul class="grid gap-y-6 pb-12 pt-4">
+  {
+    SITE.customLinks.map((link) => {
+      return <CustomLink url={link.url}>{link.title}</CustomLink>;
+    })
+  }
+</ul>

@@ -1,0 +1,66 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import { Image } from "astro:assets";
+
+import { SITE } from "@/siteConfig.ts";
+
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+import SeoPost from "@/components/SeoPost.astro";
+
+import { formatDate } from "@/lib/util";
+
+interface Props {
+  entry: CollectionEntry<"blog">;
+}
+
+export async function getStaticPaths() {
+  const blog = await getCollection("blog");
+  return blog.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<BaseLayout>
+  <SeoPost slot="head" entry={entry} />
+  <main>
+    <a
+      href="/"
+      class="block py-3 text-lg font-medium uppercase text-lightModeForegroundMuted underline underline-offset-4 hover:text-lightModeForeground dark:text-darkModeForegroundMuted dark:hover:text-darkModeForeground"
+      >{`← ${SITE.name}`}</a
+    >
+    {
+      entry.data.image && (
+        <Image
+          src={entry.data.image}
+          alt={entry.data.imageAlt || ""}
+          class="mt-10 h-auto w-full"
+        />
+      )
+    }
+    <h1
+      class="mt-6 flex flex-wrap justify-center text-balance text-2xl font-medium text-lightModeForeground dark:text-darkModeForeground"
+    >
+      {entry.data.title}
+    </h1>
+    <p
+      class="text-center text-sm text-lightModeForegroundMuted dark:text-darkModeForegroundMuted"
+    >
+      {formatDate(entry.data.publicationDate)}
+    </p>
+    <hr class="my-6 opacity-50" />
+    <div class="prose mx-auto mb-16 dark:prose-invert">
+      <Content />
+    </div>
+    <a
+      href="/"
+      class="block py-3 text-lg font-medium uppercase text-lightModeForegroundMuted underline underline-offset-4 hover:text-lightModeForeground dark:text-darkModeForegroundMuted dark:hover:text-darkModeForeground"
+      >{`← ${SITE.name}`}</a
+    >
+  </main>
+</BaseLayout>
