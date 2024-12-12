@@ -1,4 +1,4 @@
-# __**closesttopurple.org**__
+# ~~**closesttopurple.org**~~
 Karis's personal website !
 <div align="center">
   <img src="https://i.imgur.com/Y3aWg5k.jpeg">
