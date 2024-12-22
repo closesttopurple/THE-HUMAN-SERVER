@@ -6,36 +6,41 @@
   "blog": false,
   "iconLinks": [
     {
-      "id": "1728534577185",
+      "id": "1",
       "icon": "email",
       "url": "mailto:karis@closesttopurple.org"
     },
     {
-      "id": "1728534577186",
+      "id": "2",
       "icon": "github",
       "url": "https://github.com/closesttopurple"
     },
     {
-      "id": "1728534577187",
+      "id": "3",
       "icon": "bluesky",
       "url": "https://bsky.app/profile/closesttopurple.org"
     },
     {
-      "id": "1733958151130",
+      "id": "4",
       "icon": "steam",
       "url": "https://steamcommunity.com/profiles/76561198857284642/"
     }
   ],
   "customLinks": [
     {
-      "id": "1728534585738",
+      "id": "5",
       "title": "Karisbooru",
       "url": "https://k.closesttopurple.org"
     },
     {
-      "id": "1733958304721",
+      "id": "6",
       "title": "Media Server",
       "url": "https://sr.closesttopurple.org"
+    },
+    {
+      "id": "7",
+      "title": "THE HUMAN SERVER",
+      "url": "/ths"
     }
   ]
 }
