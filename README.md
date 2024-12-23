@@ -5,5 +5,7 @@ My main project right now is The Human Server. I want it to be akin to a ‘libr
 I will slowly add resources to learn more about his works over time.\
 I want to add a section that catalogues all of the releases in the yokoverse, a section that gives you access to the hard to come by stories, a section that talks about recent news in regards to the yokoverse, and a list of events, past and present, fan or official, that are related.
 <div align="center">
+### How to contact me?
+You can find email and social media at <a href="https://closesttopurple.org" closesttopurple.org</a>
   <img src="https://i.imgur.com/Y3aWg5k.jpeg">
 </div>
