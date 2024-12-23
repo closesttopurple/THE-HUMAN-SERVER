@@ -7,7 +7,7 @@ I will slowly add resources to learn more about his works over time.\
 I want to add a section that catalogues all of the releases in the yokoverse, a section that gives you access to the hard to come by stories, a section that talks about recent news in regards to the yokoverse, and a list of events, past and present, fan or official, that are related.
 
 ### How to contact me?
-<div>You can find my email and social media at <p><a href="https://closesttopurple.org" closesttopurple.org</a></p>. Social media would probably be easier.</div>
+You can find my email and social media at https://closesttopurple.org. Social media would probably be easier.
 
 <div align="center">
   <img src="https://i.imgur.com/Y3aWg5k.jpeg">
