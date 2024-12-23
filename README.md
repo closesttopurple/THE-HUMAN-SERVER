@@ -2,8 +2,8 @@
 Hiya! Karis here. This is a small scale website that will serve as the hub for all of my personal projects.
 
 ## Direction
-My main project right now is The Human Server. I want it to be akin to a ‘library’ for content from the esteemed video game director, Yoko Taro.\\
-I will slowly add resources to learn more about his works over time.\\
+My main project right now is The Human Server. I want it to be akin to a ‘library’ for content from the esteemed video game director, Yoko Taro.\
+I will slowly add resources to learn more about his works over time.\
 I also have *karisbooru*, a tag-based image hosting service that I use for personal uses, and Yoko Taro related image archival.
 
 ### How to contact me?
