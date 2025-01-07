@@ -9,6 +9,12 @@
     margin-right: auto;
     margin-bottom:0.3cm;
   }
+  img.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:1.5cm;
+  }
   img.art:hover{
       display: block;
       margin-left: auto;
@@ -18,28 +24,31 @@
       transform: scale(0.98);
   }
   p {
-    font-size: 42px;
+    font-size: 260%;
     text-align: center;
     margin-bottom: 0.6cm;
     letter-spacing: 3px;
+
   }
   p.menu:hover{
-    font-size: 42px;
+
+    font-size: 260%;
     text-align: center;
     margin-bottom: 0.6cm;
     letter-spacing: 3px;
     -webkit-filter: brightness(70%);
     transform: scale(0.98);
   }
-  p.bnh:hover{
-    font-size: 42px;
-    margin-bottom: 0.6cm;
+  p.line{
+    width: 55%;
+    margin: auto;
+    margin-bottom: 0.4cm;
+    margin-top: 0.4cm;
     letter-spacing: 3px;
-    -webkit-filter: brightness(70%);
-    transform: scale(0.98);
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+    border-bottom: double solid;
+    border-bottom-width: medium;
+    border-bottom-length: 2px;
+    border-radius: 7px;
   }
   h1{
     text-align: center;
@@ -51,7 +60,7 @@
   h2{
     text-align: center;
     font-size: 200%;
-    letter-spacing: 3px;
+    letter-spacing: 6px;
     margin-bottom:1cm;
     font-weight: 800;
   }
