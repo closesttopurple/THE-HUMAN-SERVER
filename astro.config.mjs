@@ -12,7 +12,7 @@ export default defineConfig({
     "/blog": "/",
   },
 
-  site: "https://example.treelink.com",
+  site: "https://closesttopurple.org/ths",
   integrations: [tailwind(), sitemap(), icon()],
   output: "server",
   adapter: cloudflare(),
