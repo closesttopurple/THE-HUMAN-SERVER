@@ -22,20 +22,20 @@
     },
     {
       "id": "4",
+      "icon": "twitter",
+      "url": "https://x.com/closesttopurple"
+    },
+    {
+      "id": "5",
       "icon": "steam",
       "url": "https://steamcommunity.com/profiles/76561198857284642/"
     }
   ],
   "customLinks": [
     {
-      "id": "5",
+      "id": "6",
       "title": "Karisbooru",
       "url": "https://k.closesttopurple.org"
-    },
-    {
-      "id": "6",
-      "title": "Media Server",
-      "url": "https://sr.closesttopurple.org"
     },
     {
       "id": "7",
