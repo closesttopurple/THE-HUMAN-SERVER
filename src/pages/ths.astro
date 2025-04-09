@@ -7,12 +7,30 @@ import '@/styles/text.css'
 </BaseLayout>
 <title>THE HUMAN SERVER</title>
 <style>
-body {
-    background-image: url("https://i.imgur.com/rM6KGsW.png");
+    body{
+@media screen and (orientation: portrait) and (prefers-color-scheme: dark)
+{
+    background-image: url("https://i.imgur.com/Ubkzhth.png");
+    background-size: contain;
+}
+@media screen and (orientation: landscape) and (prefers-color-scheme: dark)
+{
+    background-image: url("https://i.imgur.com/yHwR58w.png");
     background-size: cover;
 }
+@media screen and (orientation: portrait) and (prefers-color-scheme: light)
+{
+    background-image: url("https://i.imgur.com/91YfA3V.png");
+    background-size: contain;
+}
+@media screen and (orientation: landscape) and (prefers-color-scheme: light)
+{
+    background-image: url("https://i.imgur.com/ubv6Iv9.png");
+    background-size: cover;
+}
+    }
 </style>
-<img class="logo" src="https://i.imgur.com/AJWylNV.png" width="250" height="250">
+<img class="logo" src="https://i.imgur.com/AJWylNV.png" width="250" height="250" alt="The logo for The Human Server, a moon.">
 <p class="menu"><a href="/meb">Media</a></p>
 <p class="line"></p>
 <p class="menu"><a href="/stb">Stories</a></p>
