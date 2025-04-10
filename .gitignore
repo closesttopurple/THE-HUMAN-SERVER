@@ -24,3 +24,6 @@ pnpm-debug.log*
 .idea/
 
 TODO.txt
+
+node_modules
+.env

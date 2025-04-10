@@ -78,6 +78,30 @@
     letter-spacing: 1px;
     margin-bottom: 0.4cm;
   }
+  p.para{
+    @media screen and (orientation: landscape)
+{
+    margin-right: 25%;
+    margin-left: 25%;
+    text-align:left;
+    font-size: 130%;
+    text-indent:1in;
+    margin-top: 0.4cm;
+}
+
+}
+p.para{
+    @media screen and (orientation: portrait)
+{
+    margin-right: 5%;
+    margin-left: 5%;
+    text-align:left;
+    font-size: 130%;
+    text-indent:1in;
+    margin-top: 0.4cm;
+}
+}
+
   body {
     background-color: light-dark(
       rgb(var(--light-mode-background)),
