@@ -1,5 +1,5 @@
 # **closesttopurple.org**
-Hiya! Karis here. This is a small scale website for my personal projects.
+Hiya! Karis here. This is a small scale website for my personal projects. Please don't look at my code. It's not built to be good it's built to be simple.
 
 ## Direction
 My main project right now is The Human Server. I want it to be akin to a ‘library’ for written works from <a href="https://en.wikipedia.org/wiki/Yoko_Taro">Yoko Taro.<a>\
