@@ -22,7 +22,7 @@ Adding different language options. It's just me working on this, so it would be 
 ### Currently working on?
 I'm currently working on converting everything into it's own page ! I mean <i>everything...</i> THIS IS SO MUCH WORK. Seriously, I have to meticulously copy and paste ! Okay, okay...\
 I'm joking. It's more tedious than anything, but still rather annoying. Can you imagine how long it's going to take me to convert DOD3 Story Side into a page ? Yowza, if you will.\
-I currently Have DOD1's Character Novella's and "The Song of Fourteen Years" finished.
+I currently Have DOD1's Character Novellas and "The Song of Fourteen Years" finished.
 
 ### Last Updated:
 April 10th.
