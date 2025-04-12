@@ -81,11 +81,12 @@
   p.para{
     @media screen and (orientation: landscape)
 {
+    font-weight: 400;
+    letter-spacing: 1.5px;
     margin-right: 25%;
     margin-left: 25%;
     text-align:left;
-    font-size: 130%;
-    text-indent:1in;
+    font-size: 110%;
     margin-top: 0.4cm;
 }
 
@@ -93,15 +94,40 @@
 p.para{
     @media screen and (orientation: portrait)
 {
-    margin-right: 5%;
-    margin-left: 5%;
+    margin-right: 8%;
+    margin-left: 8%;
     text-align:left;
     font-size: 130%;
-    text-indent:1in;
-    margin-top: 0.4cm;
-}
-}
+    margin-top: 0.2cm;
 
+}
+}
+p.title{
+  @media screen and (orientation: landscape)
+{
+  margin-top: 0.4cm;
+  font-size: 130%;
+  font-family: 'Open Sans Variable','Montserrat Variable','Noto Sans Variable', sans-serif;"
+  margin-bottom: 0.2cm;
+  margin-left: 8%;
+  margin-right: 8%;
+  font-weight: 550;
+  leter-spacing: 1.5px;
+}
+}
+p.title{
+  @media screen and (orientation: portrait)
+{
+  margin-top: 0.4cm;
+  font-size: 130%;
+  font-family: 'Open Sans Variable','Montserrat Variable','Noto Sans Variable', sans-serif;"
+  margin-bottom: 0.2cm;
+  margin-left: 8%;
+  margin-right: 8%;
+  font-weight: 550;
+
+}
+}
   body {
     background-color: light-dark(
       rgb(var(--light-mode-background)),
