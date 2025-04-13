@@ -106,7 +106,7 @@ p.title{
   @media screen and (orientation: landscape)
 {
   margin-top: 0.4cm;
-  font-size: 130%;
+  font-size: 140%;
   font-family: 'Open Sans Variable','Montserrat Variable','Noto Sans Variable', sans-serif;"
   margin-bottom: 0.2cm;
   margin-left: 8%;
@@ -122,8 +122,8 @@ p.title{
   font-size: 130%;
   font-family: 'Open Sans Variable','Montserrat Variable','Noto Sans Variable', sans-serif;"
   margin-bottom: 0.2cm;
-  margin-left: 8%;
-  margin-right: 8%;
+  margin-left: 7%;
+  margin-right: 7%;
   font-weight: 550;
 
 }
