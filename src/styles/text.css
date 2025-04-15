@@ -22,6 +22,7 @@
       margin-bottom:0.3cm;
       -webkit-filter: brightness(70%);
       transform: scale(0.98);
+      
   }
   p {
     font-size: 260%;
@@ -107,12 +108,12 @@ p.title{
 {
   margin-top: 0.4cm;
   font-size: 140%;
-  font-family: 'Open Sans Variable','Montserrat Variable','Noto Sans Variable', sans-serif;"
+  font-family: "'Open Sans Variable','Montserrat Variable','Noto Sans Variable', sans-serif";
   margin-bottom: 0.2cm;
   margin-left: 8%;
   margin-right: 8%;
-  font-weight: 550;
-  leter-spacing: 1.5px;
+  font-weight: 525;
+  leter-spacing: 0.2rem;
 }
 }
 p.title{
@@ -120,13 +121,25 @@ p.title{
 {
   margin-top: 0.4cm;
   font-size: 130%;
-  font-family: 'Open Sans Variable','Montserrat Variable','Noto Sans Variable', sans-serif;"
+  font-family: "'Open Sans Variable','Montserrat Variable','Noto Sans Variable', sans-serif";
   margin-bottom: 0.2cm;
   margin-left: 7%;
   margin-right: 7%;
-  font-weight: 550;
+  font-weight: 525;
 
 }
+}
+p.disc{
+  margin-top: 0.4cm;
+  font-size: 100%;
+  margin-bottom: 0.2cm;
+  margin-left: 7%;
+  margin-right: 7%;
+  font-weight: 480;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+
 }
   body {
     background-color: light-dark(
