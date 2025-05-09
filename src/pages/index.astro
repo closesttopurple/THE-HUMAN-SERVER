@@ -13,6 +13,7 @@ const posts = (await getCollection("blog")).sort(
   (a: CollectionEntry<"blog">, b: CollectionEntry<"blog">) =>
     b.data.publicationDate.valueOf() - a.data.publicationDate.valueOf(),
 );
+
 ---
 
 <BaseLayout>
@@ -30,4 +31,35 @@ const posts = (await getCollection("blog")).sort(
     }
   </main>
 </BaseLayout>
-
+<style>
+  body{
+@media screen and (orientation: portrait) and (prefers-color-scheme: dark)
+{
+  background-image: url("https://i.imgur.com/WisfnW7.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media screen and (orientation: landscape) and (prefers-color-scheme: dark)
+{
+  background-image: url("https://i.imgur.com/Rp5PXMA.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media screen and (orientation: portrait) and (prefers-color-scheme: light)
+{
+  background-image: url("https://i.imgur.com/y6cKozM.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media screen and (orientation: landscape) and (prefers-color-scheme: light)
+{
+  background-image: url("https://i.imgur.com/GZXGA9L.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+  }
+</style>

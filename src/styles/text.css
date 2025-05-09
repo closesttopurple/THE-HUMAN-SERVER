@@ -202,9 +202,13 @@ p.disc{
   padding: 25px;
   border-right: 4px solid #cccccc;
   border-bottom: 4px solid #cccccc;
-  background-color: rgba(48,48,48,255);
-  background-image: url("https://i.imgur.com/zPTEUYP.png");
-  background-attachment: fixed;
+  background-color: #383838;
+  background-size: 0.6rem 0.6rem;
+  background-image: -webkit-linear-gradient(left, rgba(48,48,48,255) 1px, rgba(51, 51, 51, 0) 1px), -webkit-linear-gradient(top, rgba(48,48,48,255) 1px, rgba(51, 51, 51, 0) 1px);
+  background-image: -moz-linear-gradient(left, rgba(48,48,48,255), rgba(51, 51, 51, 0) 1px), -moz-linear-gradient(top, rgba(48,48,48,255) 1px, rgba(51, 51, 51, 0) 1px);
+  background-image: -o-linear-gradient(left, rgba(48,48,48,255), rgba(51, 51, 51, 0) 1px), -o-linear-gradient(top, rgba(48,48,48,255) 1px, rgba(51, 51, 51, 0) 1px);
+  background-image: -ms-linear-gradient(left, rgba(48,48,48,255), rgba(51, 51, 51, 0) 1px), -ms-linear-gradient(top, rgba(48,48,48,255) 1px, rgba(51, 51, 51, 0) 1px);
+  background-image: linear-gradient(to right, rgba(48,48,48,255), rgba(51, 51, 51, 0) 1px), linear-gradient(to bottom, rgba(48,48,48,255) 1px, rgba(51, 51, 51, 0) 1px);
   }
 }
 @media  (prefers-color-scheme: light){
@@ -218,17 +222,14 @@ p.disc{
     padding: 25px;
     border-right: 4px solid hsl(0, 6%, 10%);
     border-bottom: 4px solid hsl(0, 6%, 10%);
-    background-color: rgba(240,240,240,255);
-    background-image: url("https://i.imgur.com/YSbZ9yW.png");
-    background-attachment: fixed;
+    background-color: rgb(216, 216, 216);
+    background-size: 0.6rem 0.6rem;
+    background-image: -webkit-linear-gradient(left, rgba(202, 202, 202,255) 1px, rgba(104, 104, 104,0) 1px), -webkit-linear-gradient(top, rgba(202, 202, 202,255) 1px, rgba(104, 104, 104,0) 1px);
+    background-image: -moz-linear-gradient(left, rgba(202, 202, 202,255), rgba(104, 104, 104,0) 1px), -moz-linear-gradient(top, rgba(202, 202, 202,255) 1px, rgba(104, 104, 104,0) 1px);
+    background-image: -o-linear-gradient(left, rgba(202, 202, 202,255), rgba(104, 104, 104,0) 1px), -o-linear-gradient(top, rgba(202, 202, 202,255) 1px, rgba(104, 104, 104,0) 1px);
+    background-image: -ms-linear-gradient(left, rgba(202, 202, 202,255), rgba(104, 104, 104,0) 1px), -ms-linear-gradient(top, rgba(202, 202, 202,255) 1px, rgba(104, 104, 104,0) 1px);
+    background-image: linear-gradient(to right, rgba(202, 202, 202,255), rgba(104, 104, 104,0) 1px), linear-gradient(to bottom, rgba(202, 202, 202,255) 1px, rgba(104, 104, 104,0) 1px);
     }
   }
-  @media (prefers-color-scheme: light){
-    #cooltech {
-      position: fixed;
-      left: 50%;
-      right: 50%;
-      background-color: rgba(240,240,240,255);
-    }
-  }
+
 }
