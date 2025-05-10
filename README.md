@@ -25,7 +25,7 @@ I'm currently working on converting everything into it's own page ! I mean <i>ev
 I'm joking. It's more tedious than anything, but still rather annoying. Can you imagine how long it's going to take me to convert DOD3 Story Side into a page ? Yowza, if you will.
 
 ### Last Updated:
-May 9th.
+May 10th.
 
 ### Why do you space out your punctuation ? !
 Come on, what's the point of this section ? You're only making yourself laugh !\
