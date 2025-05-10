@@ -77,6 +77,15 @@
     -webkit-filter: brightness(70%);
     transform: scale(0.98);
   }
+    #menumaybe{
+
+    font-size: 260%;
+    text-align: center;
+    margin-bottom: 0.6cm;
+    letter-spacing: 3px;
+    -webkit-filter: brightness(70%);
+    transform: scale(0.98);
+  }
   p.line{
     width: 55%;
     margin: auto;
