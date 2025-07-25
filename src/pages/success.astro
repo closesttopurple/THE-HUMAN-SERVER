@@ -1,0 +1,50 @@
+---
+import TextLayout from "@/layouts/TextLayout.astro"
+import '@/styles/text.css'
+---
+
+
+<TextLayout>
+</TextLayout>
+<title>Success!</title>
+<style>
+    body{
+@media screen and (orientation: portrait) and (prefers-color-scheme: dark)
+{
+    background-image: url("https://i.imgur.com/lxlhzOw.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+@media screen and (orientation: landscape) and (prefers-color-scheme: dark)
+{
+    background-image: url("https://i.imgur.com/afpjm6v.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+@media screen and (orientation: portrait) and (prefers-color-scheme: light)
+{
+    background-image: url("https://i.imgur.com/bOnuR0S.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+@media screen and (orientation: landscape) and (prefers-color-scheme: light)
+{
+    background-image: url("https://i.imgur.com/Q8yVoEl.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+    }
+</style>
+<p class="title" style="font-size: 300%;">Success!</p>
+<p class="line"></p>
+<p class="para" style="font-size: 200%;">Your report has been successfully submitted. Feel free to contact me on other <u><a href="https://bsky.app/profile/closesttopurple.org">services</a></u> as well.</p>
+<p class="line"></p>
+<p class="menu"><a href="/ths">Back</a></p>

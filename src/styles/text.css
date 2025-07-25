@@ -142,7 +142,6 @@
     font-size: 110%;
     margin-top: 0.4cm;
 }
-
 }
 p.para{
     @media screen and (orientation: portrait)
@@ -242,3 +241,82 @@ p.disc{
   }
 
 }
+    form{
+    @media screen and (orientation: portrait){
+        margin-top: 2.5%;
+        margin-bottom: 3%;
+    }
+        text-align: center;
+    @media screen and (orientation: landscape) {
+        margin-top: 1.5%;
+        margin-bottom: 3.5%;
+    }
+    }
+    textarea{
+    @media screen and (orientation: portrait){
+        width: 300px;
+        height: 125px;
+        margin-top: 2.5%;
+        margin-bottom: 3%;
+    }
+    @media screen and (orientation: landscape) {
+        width: 300px;
+        height: 125px;
+    }
+    }
+    input{
+    @media screen and (orientation: portrait){
+        width:70%;
+        margin-top:2%;
+        margin-bottom:2%;
+    }
+    @media screen and (orientation: landscape) {
+
+    }
+    }
+    button:hover{
+    @media screen and (orientation: portrait){
+        font-family: "'Open Sans Variable','Montserrat Variable','Noto Sans Variable', sans-serif";
+        font-size: 200%;
+        text-align: center;
+        margin-bottom: 0.6cm;
+        letter-spacing: 3px;
+        -webkit-filter: brightness(70%);
+        transform: scale(0.98);
+    }
+    @media screen and (orientation: landscape) {
+        font-family: "'Open Sans Variable','Montserrat Variable','Noto Sans Variable', sans-serif";
+        font-size: 200%;
+        text-align: center;
+        margin-bottom: 0.6cm;
+        letter-spacing: 3px;
+        -webkit-filter: brightness(70%);
+        transform: scale(0.98);
+    }
+    }
+    button{
+    @media screen and (orientation: portrait){
+        font-family: "'Open Sans Variable','Montserrat Variable','Noto Sans Variable', sans-serif";
+        font-size: 200%;
+        text-align: center;
+        margin-bottom: 0.6cm;
+        letter-spacing: 3px;
+        }
+    @media screen and (orientation: landscape) {
+        font-family: "'Open Sans Variable','Montserrat Variable','Noto Sans Variable', sans-serif";
+        font-size: 200%;
+        text-align: center;
+        margin-bottom: 0.6cm;
+        letter-spacing: 3px;
+    }
+    }
+    label{
+        margin-top: 0.4cm;
+        font-size: 140%;
+        font-family: "'Open Sans Variable','Montserrat Variable','Noto Sans Variable', sans-serif";
+        margin-bottom: 0.2cm;
+        margin-left: 8%;
+        margin-right: 8%;
+        font-weight: 525;
+        leter-spacing: 0.2rem;
+    }
