@@ -1,0 +1,66 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro"
+import '@/styles/text.css'
+---
+<BaseLayout>
+</BaseLayout>
+<title>ERROR.html</title>
+<style>
+    body{
+@media screen and (orientation: portrait) and (prefers-color-scheme: dark)
+{
+    background-image: url("https://i.imgur.com/zGCxJVH.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+@media screen and (orientation: landscape) and (prefers-color-scheme: dark)
+{
+    background-image: url("https://i.imgur.com/YIFuYh0.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+@media screen and (orientation: portrait) and (prefers-color-scheme: light)
+{
+    background-image: url("https://i.imgur.com/8OheKy8.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+@media screen and (orientation: landscape) and (prefers-color-scheme: light)
+{
+    background-image: url("https://i.imgur.com/dXGxQk7.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+#Words2{
+    @media (prefers-color-scheme: dark)
+{
+    content:url("https://i.imgur.com/W09X7w8.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+    @media (prefers-color-scheme: light)
+{
+    content:url("https://i.imgur.com/EtKt206.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+    }
+}
+</style>
+<img id="Words2" style="margin-top:20%;">
+<p class="title" #idstyle="margin-top: 20%; font-size: 165;">--ERROR: DETECTED DESTINATION NOT FOUND--</p>
+<p class="title">ERROR_LOG.txt SENT TO ■■■■■ ON ■■/■■/■■■■■</p>
+<p class="menu" style="margin-top: 35%; margin-bottom: 50%; font-size: 250%; text-align: center;"><a href="/ths">RETURN.</a></p>
