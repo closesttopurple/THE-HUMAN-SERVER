@@ -1,55 +1,77 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro"
 import '@/styles/text.css'
+import TextLayout from "@/layouts/TextLayout.astro"
 ---
 
-<BaseLayout>
-</BaseLayout>
-<title>D3 Drakengard 1.3</title>
-<style>
-    @media screen and (orientation: portrait){
-        #sidenav {
-            display: none;
-        }
-    }
+<TextLayout>
+</TextLayout>
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
 
+  <!-- logo -->
+  <a href="/ths" class="menu-logo">
+    <img src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+  </a>
 
-    </style>
-<div id="sidenav">
-    <a href="/ths"><img class="slogo" src="https://i.imgur.com/AJWylNV.png"></a>
-    <p class="line"></p>
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
         <a href="/stories">
-        <p class="menu">Stories</p>
-    </a>
+          Stories
+        </a>
+      </li>
+      <li>
+        <a href="/series-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a href="/credits">
+          Credits
+        </a>
+      </li>
+      <li>
+        <a href="https://k.closesttopurple.org/post/list/-karis/1" target="_blank" rel="noopener noreferrer">
+          Gallery
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/bug-report">
+          Bug Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<title>D3 Drakengard 1.3</title>
+<p class="title"><a href="https://drive.google.com/file/d/1wkOiEr3TOMmKPVAmK2QeHTapncGFk2xx/view">
+    A_010<img class="art" src="https://i.imgur.com/uA8cdIQ.png"></a></p>
     <p class="line"></p>
-    <a href="/credits">
-        <p class="menu">Credits</p>
-    </a>
+<p class="title"><a href="https://drive.google.com/file/d/1I5b68kSbPu-xIIJMK2RsIiiZQteZssb7/view?usp=sharing">
+    A_2040<img class="art" src="https://i.imgur.com/QRYOwYU.png"></a></p>
     <p class="line"></p>
-    <a href="https://k.closesttopurple.org/post/list/-karis/1">
-        <p class="menu">Gallery</p>
-    </a>
-    </div>
-<h1><a href="https://drive.google.com/file/d/1wkOiEr3TOMmKPVAmK2QeHTapncGFk2xx/view">
-    A_010<img class="art" src="https://i.imgur.com/uA8cdIQ.png"></a></h1>
+<p class="title"><a href="https://drive.google.com/file/d/1cNmfoYiohHargqe1EqGGg48f6PABeNBr/view?usp=sharing">
+    A_3010<img class="art" src="https://i.imgur.com/9tQmlQI.png"></a></p>
     <p class="line"></p>
-<h1><a href="https://drive.google.com/file/d/1I5b68kSbPu-xIIJMK2RsIiiZQteZssb7/view?usp=sharing">
-    A_2040<img class="art" src="https://i.imgur.com/QRYOwYU.png"></a></h1>
+<p class="title"><a href="https://drive.google.com/file/d/1yIBbaJRsIhdYzBXG1Q_Df1z1n5ONAsi-/view?usp=sharing">
+    A_4010<img class="art" src="https://i.imgur.com/ifHIpy2.png"></a></p>
     <p class="line"></p>
-<h1><a href="https://drive.google.com/file/d/1cNmfoYiohHargqe1EqGGg48f6PABeNBr/view?usp=sharing">
-    A_3010<img class="art" src="https://i.imgur.com/9tQmlQI.png"></a></h1>
+<p class="title"><a href="https://drive.google.com/file/d/186wFRb9O8mGCuEedWjUxuZXhgxKEIJdU/view?usp=sharing">
+    A_4030<img class="art" src="https://i.imgur.com/8Kcqy1H.png"></a></p>
     <p class="line"></p>
-<h1><a href="https://drive.google.com/file/d/1yIBbaJRsIhdYzBXG1Q_Df1z1n5ONAsi-/view?usp=sharing">
-    A_4010<img class="art" src="https://i.imgur.com/ifHIpy2.png"></a></h1>
+<p class="title"><a href="https://drive.google.com/file/d/1amwE1DcqbyoG3Bqnc6Vf_8RVQxO_PQ7T/view?usp=sharing">
+    A_5040<img class="art" src="https://i.imgur.com/WyMYOHl.png"></a></p>
     <p class="line"></p>
-<h1><a href="https://drive.google.com/file/d/186wFRb9O8mGCuEedWjUxuZXhgxKEIJdU/view?usp=sharing">
-    A_4030<img class="art" src="https://i.imgur.com/8Kcqy1H.png"></a></h1>
-    <p class="line"></p>
-<h1><a href="https://drive.google.com/file/d/1amwE1DcqbyoG3Bqnc6Vf_8RVQxO_PQ7T/view?usp=sharing">
-    A_5040<img class="art" src="https://i.imgur.com/WyMYOHl.png"></a></h1>
-    <p class="line"></p>
-<h1><a href="https://drive.google.com/file/d/1DZ9ohhfNhdJLbQfoJuHVZhWl2h5Cnsm7/view?usp=sharing">
-    Ending A<img class="art" src="https://i.imgur.com/ntiT5sb.png"></a></h1>
+<p class="title"><a href="https://drive.google.com/file/d/1DZ9ohhfNhdJLbQfoJuHVZhWl2h5Cnsm7/view?usp=sharing">
+    Ending A<img class="art" src="https://i.imgur.com/ntiT5sb.png"></a></p>
     <p class="line"></p>
     <p class="menu"><a href="/stories/drakengard-3">Back</a></p>
 

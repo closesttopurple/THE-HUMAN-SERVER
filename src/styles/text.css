@@ -68,11 +68,18 @@
     -webkit-filter: brightness(70%);
     transform: scale(0.98);
   }
+    p.menu{
+
+    font-size: 260%;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 1%;
+    margin-top: 1%;
+  }
   p.menu:hover{
 
     font-size: 260%;
     text-align: center;
-    margin-bottom: 0.6cm;
     letter-spacing: 3px;
     -webkit-filter: brightness(70%);
     transform: scale(0.98);
@@ -80,12 +87,25 @@
     #menumaybe{
 
     font-size: 260%;
+
     text-align: center;
     margin-bottom: 0.6cm;
     letter-spacing: 3px;
     -webkit-filter: brightness(70%);
     transform: scale(0.98);
   }
+  p.line{
+    width: 15%;
+    margin: auto;
+    margin-bottom: 0.4cm;
+    margin-top: 0.4cm;
+    letter-spacing: 3px;
+    border-bottom: double solid;
+    border-bottom-width: medium;
+    border-bottom-length: 2px;
+    border-radius: 7px;
+  }
+  @media screen and (orientation: portrait) {
   p.line{
     width: 55%;
     margin: auto;
@@ -97,7 +117,22 @@
     border-bottom-length: 2px;
     border-radius: 7px;
   }
-  @media  (prefers-color-scheme: light){
+  }
+  @media screen and (prefers-color-scheme: light){
+    p.line{
+      width: 15%;
+      margin: auto;
+      margin-bottom: 0.4cm;
+      margin-top: 0.4cm;
+      letter-spacing: 3px;
+      border-bottom: double solid;
+      border-bottom-width: medium;
+      border-bottom-length: 2px;
+      border-radius: 7px;
+      border-bottom-color: hsl(0, 6%, 10%);
+    }
+  }
+    @media screen and (prefers-color-scheme: light) and (orientation: portrait){
     p.line{
       width: 55%;
       margin: auto;
@@ -113,7 +148,7 @@
   }
   h1{
     text-align: center;
-    font-size: 150%;
+    font-size: 250%;
     letter-spacing: 2px;
     margin-bottom:1cm;
     font-weight: 750;
@@ -197,48 +232,7 @@ p.disc{
       rgb(var(--light-mode-background)),
       rgb(var(--dark-mode-background))
     );
- 
 }
-@media  (prefers-color-scheme: dark){
-#sidenav {
-  width: 12%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  padding: 25px;
-  border-right: 4px solid #cccccc;
-  border-bottom: 4px solid #cccccc;
-  background-color: #383838;
-  background-size: 0.6rem 0.6rem;
-  background-image: -webkit-linear-gradient(left, rgba(48,48,48,255) 1px, rgba(51, 51, 51, 0) 1px), -webkit-linear-gradient(top, rgba(48,48,48,255) 1px, rgba(51, 51, 51, 0) 1px);
-  background-image: -moz-linear-gradient(left, rgba(48,48,48,255), rgba(51, 51, 51, 0) 1px), -moz-linear-gradient(top, rgba(48,48,48,255) 1px, rgba(51, 51, 51, 0) 1px);
-  background-image: -o-linear-gradient(left, rgba(48,48,48,255), rgba(51, 51, 51, 0) 1px), -o-linear-gradient(top, rgba(48,48,48,255) 1px, rgba(51, 51, 51, 0) 1px);
-  background-image: -ms-linear-gradient(left, rgba(48,48,48,255), rgba(51, 51, 51, 0) 1px), -ms-linear-gradient(top, rgba(48,48,48,255) 1px, rgba(51, 51, 51, 0) 1px);
-  background-image: linear-gradient(to right, rgba(48,48,48,255), rgba(51, 51, 51, 0) 1px), linear-gradient(to bottom, rgba(48,48,48,255) 1px, rgba(51, 51, 51, 0) 1px);
-  }
-}
-@media  (prefers-color-scheme: light){
-  #sidenav {
-    width: 12%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    padding: 25px;
-    border-right: 4px solid hsl(0, 6%, 10%);
-    border-bottom: 4px solid hsl(0, 6%, 10%);
-    background-color: rgb(216, 216, 216);
-    background-size: 0.6rem 0.6rem;
-    background-image: -webkit-linear-gradient(left, rgba(202, 202, 202,255) 1px, rgba(104, 104, 104,0) 1px), -webkit-linear-gradient(top, rgba(202, 202, 202,255) 1px, rgba(104, 104, 104,0) 1px);
-    background-image: -moz-linear-gradient(left, rgba(202, 202, 202,255), rgba(104, 104, 104,0) 1px), -moz-linear-gradient(top, rgba(202, 202, 202,255) 1px, rgba(104, 104, 104,0) 1px);
-    background-image: -o-linear-gradient(left, rgba(202, 202, 202,255), rgba(104, 104, 104,0) 1px), -o-linear-gradient(top, rgba(202, 202, 202,255) 1px, rgba(104, 104, 104,0) 1px);
-    background-image: -ms-linear-gradient(left, rgba(202, 202, 202,255), rgba(104, 104, 104,0) 1px), -ms-linear-gradient(top, rgba(202, 202, 202,255) 1px, rgba(104, 104, 104,0) 1px);
-    background-image: linear-gradient(to right, rgba(202, 202, 202,255), rgba(104, 104, 104,0) 1px), linear-gradient(to bottom, rgba(202, 202, 202,255) 1px, rgba(104, 104, 104,0) 1px);
-    }
-  }
 
 }
     form{
@@ -318,5 +312,227 @@ p.disc{
         margin-left: 8%;
         margin-right: 8%;
         font-weight: 525;
-        leter-spacing: 0.2rem;
+        letter-spacing: 0.2rem;
     }
+
+@media screen and (prefers-color-scheme: dark) {
+  .menu-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background: rgba(31, 31, 31, 0.5);
+  color: #efe7e7;
+  padding: 20px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  box-sizing: border-box;
+}
+}
+@media screen and (prefers-color-scheme: light) {
+  .menu-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background: rgba(177, 177, 177, 0.5);
+  color: #efe7e7;
+  padding: 20px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  box-sizing: border-box;
+}
+}
+
+.menu-logo {
+  line-height: 0;
+  margin: 0 20px;
+}
+
+.menu-logo img {
+  max-height: 50px;
+  max-width: 50px;
+}
+@media screen and (prefers-color-scheme: dark){
+  .menu-container a {
+  text-decoration: none;
+  color: #3d3a3a;
+  transition: color 0.3s ease;
+}
+}
+@media screen and (prefers-color-scheme: light){
+  .menu-container a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: color 0.3s ease;
+}
+}
+@media screen and (prefers-color-scheme: dark){
+.menu-container a:hover {
+  color: #a3a8a7;
+}
+}
+
+@media screen and (prefers-color-scheme: light){
+  .menu-container a:hover {
+  color: #292929;
+}
+}
+
+.menu-container input {
+  display: block;
+  width: 35px;
+  height: 25px;
+  margin: 0;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+
+/* Burger menu */
+.menu-container span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #efe7e7;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+@media screen and (prefers-color-scheme: light) {
+  .menu-container span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #000000;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+}
+.menu-container span:first-child {
+  transform-origin: 0% 0%;
+}
+
+.menu-container span:nth-child(3) {
+  transform-origin: 0% 100%;
+}
+
+.menu-container input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(3px,-1px);
+  background: #3d3a3a;
+}
+
+.menu-container input:checked ~ span:nth-child(4) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.menu-container input:checked ~ span:nth-child(3) {
+  transform: rotate(-45deg) translate(-5px,11px);
+}
+
+.menubar ul {
+  list-style: none;
+}
+
+.menubar li {
+  padding: 10px 0;
+  font-size: 28px;
+}
+
+/* mobile styles */
+@media only screen and (max-width: 767px) {
+  .menu-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-logo {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-40%);
+  }
+
+  .menu-logo img {
+    max-height: 30px;
+  }
+
+  .menubar {
+    position: absolute;
+    box-sizing: border-box;
+    width: 300px;
+    left: -300px;
+    top: 0;
+    margin: -20px;
+    padding: 75px 50px 50px;
+    background: #949494;
+    border-radius: 10px;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translateX(0%);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+
+  .menu-container input:checked ~ .menubar {
+    transform: translateX(100%);
+  }
+}
+
+/* desktop styles */
+@media only screen and (min-width: 768px) {
+  .menu-container {
+    width: 100%;
+  }
+
+  .menu-container a {
+    color: #efe7e7;
+  }
+  @media screen and (prefers-color-scheme: light) {
+  .menu-container a {
+    color: #000000;
+  }
+  }
+
+  .menu-container input {
+    display: none;
+  }
+
+  /* Burger menu */
+  .menu-container span {
+    display: none;
+  }
+
+  .menubar {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menubar ul {
+    display: flex;
+    padding: 0;
+  }
+
+  .menubar li {
+    padding: 0 20px;
+  }
+}

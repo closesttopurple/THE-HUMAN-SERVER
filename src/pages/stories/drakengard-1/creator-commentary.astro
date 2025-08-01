@@ -1,39 +1,63 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro"
 import '@/styles/text.css'
+import TextLayout from "@/layouts/TextLayout.astro"
 ---
-<BaseLayout>
-</BaseLayout>
-<title>Creator Commentary</title>
-<style>
-    @media screen and (orientation: portrait){
-        #sidenav {
-            display: none;
-        }
-    }
 
+<TextLayout>
+</TextLayout>
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
 
-    </style>
-<div id="sidenav">
-    <a href="/ths"><img class="slogo" src="https://i.imgur.com/AJWylNV.png"></a>
-    <p class="line"></p>
+  <!-- logo -->
+  <a href="/ths" class="menu-logo">
+    <img src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
         <a href="/stories">
-        <p class="menu">Stories</p>
-    </a>
-    <p class="line"></p>
-    <a href="/credits">
-        <p class="menu">Credits</p>
-    </a>
-    <p class="line"></p>
-    <a href="https://k.closesttopurple.org/post/list/-karis/1">
-        <p class="menu">Gallery</p>
-    </a>
-    </div>
+          Stories
+        </a>
+      </li>
+      <li>
+        <a href="/series-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a href="/credits">
+          Credits
+        </a>
+      </li>
+      <li>
+        <a href="https://k.closesttopurple.org/post/list/-karis/1" target="_blank" rel="noopener noreferrer">
+          Gallery
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/bug-report">
+          Bug Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<title>Creator Commentary</title>
 
-<h1><strong><a href="/stories/drakengard-1/reading/creator-commentary/looking-back-1">
+
+<p class="title"><strong><a href="/stories/drakengard-1/reading/creator-commentary/looking-back-1">
     Looking Back<img class="art" src="https://i.imgur.com/OSxdGkN.png"></a></strong></h1>
     <p class="line"></p>
-<h1><strong><a href="/stories/drakengard-1/reading/creator-commentary/questions-and-answers-1">
+<p class="title"><strong><a href="/stories/drakengard-1/reading/creator-commentary/questions-and-answers-1">
     Questions & Answers<img class="art" src="https://i.imgur.com/i6O3Iub.png"></a></strong></h1>
    <p class="line"></p>
    <p class="menu"><a href="/stories/drakengard-1">Back</a></p>

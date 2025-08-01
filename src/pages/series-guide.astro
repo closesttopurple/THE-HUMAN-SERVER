@@ -1,34 +1,56 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro"
 import '@/styles/text.css'
+import TextLayout from "@/layouts/TextLayout.astro"
 ---
-<BaseLayout>
-</BaseLayout>
-<title>Series Guide</title>
-<style>
-    @media screen and (orientation: portrait){
-        #sidenav {
-            display: none;
-        }
-    }
+<TextLayout>
+</TextLayout>
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
 
+  <!-- logo -->
+  <a href="/ths" class="menu-logo">
+    <img src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+  </a>
 
-    </style>
-    <div id="sidenav">
-        <a href="/ths"><img class="slogo" src="https://i.imgur.com/AJWylNV.png"></a>
-        <p class="line"></p>
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
         <a href="/stories">
-            <p class="menu">Stories</p>
+          Stories
         </a>
-        <p class="line"></p>
+      </li>
+      <li>
+        <a href="/series-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
         <a href="/credits">
-            <p class="menu">Credits</p>
+          Credits
         </a>
-        <p class="line"></p>
-        <a href="https://k.closesttopurple.org/post/list/-karis/1">
-            <p class="menu">Gallery</p>
+      </li>
+      <li>
+        <a href="https://k.closesttopurple.org/post/list/-karis/1" target="_blank" rel="noopener noreferrer">
+          Gallery
         </a>
-        </div>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/bug-report">
+          Bug Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<title>Series Guide</title>
 <p class="menu"><a href="https://raw.githubusercontent.com/closesttopurple/ctp.org/refs/heads/main/compendium.jpg">I AM CAIM's Guide</a></p>
 <p class="line"></p>
 <p class="menu"><a href="/series-guide/closesttopurple">Karis's Guide</a></p>

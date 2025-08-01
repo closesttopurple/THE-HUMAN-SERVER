@@ -1,54 +1,77 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro"
 import '@/styles/text.css'
+import TextLayout from "@/layouts/TextLayout.astro"
 ---
 
-<BaseLayout>
-</BaseLayout>
+<TextLayout>
+</TextLayout>
 <title>D1 Character Novella's</title>
-<style>
-    @media screen and (orientation: portrait){
-        #sidenav {
-            display: none;
-        }
-    }
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
 
+  <!-- logo -->
+  <a href="/ths" class="menu-logo">
+    <img src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+  </a>
 
-    </style>
-<div id="sidenav">
-    <a href="/ths"><img class="slogo" src="https://i.imgur.com/AJWylNV.png"></a>
-    <p class="line"></p>
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
         <a href="/stories">
-        <p class="menu">Stories</p>
-    </a>
+          Stories
+        </a>
+      </li>
+      <li>
+        <a href="/series-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a href="/credits">
+          Credits
+        </a>
+      </li>
+      <li>
+        <a href="https://k.closesttopurple.org/post/list/-karis/1" target="_blank" rel="noopener noreferrer">
+          Gallery
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/bug-report">
+          Bug Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<p class="title"><a href="/stories/drakengard-1/reading/character-profiles/caim">
+    Caim's Character Profile<img class="art" src="https://i.imgur.com/rUrlGRO.png"></a></p>
     <p class="line"></p>
-    <a href="/credits">
-        <p class="menu">Credits</p>
-    </a>
+<p class="title"><a href="/stories/drakengard-1/reading/character-profiles/furiae">
+    Furiae's Character Profile<img class="art" src="https://i.imgur.com/6XveCPZ.png"></a></p>
     <p class="line"></p>
-    <a href="https://k.closesttopurple.org/post/list/-karis/1">
-        <p class="menu">Gallery</p>
-    </a>
-    </div>
-<h1><a href="/stories/drakengard-1/reading/character-profiles/caim">
-    Caim's Character Profile<img class="art" src="https://i.imgur.com/rUrlGRO.png"></a></h1>
+<p class="title"><a href="/stories/drakengard-1/reading/character-profiles/inuart">
+    Inuart's Character Profile<img class="art" src="https://i.imgur.com/zVfKzux.png"></a></p>
     <p class="line"></p>
-<h1><a href="/stories/drakengard-1/reading/character-profiles/furiae">
-    Furiae's Character Profile<img class="art" src="https://i.imgur.com/6XveCPZ.png"></a></h1>
-    <p class="line"></p>
-<h1><a href="/stories/drakengard-1/reading/character-profiles/inuart">
-    Inuart's Character Profile<img class="art" src="https://i.imgur.com/zVfKzux.png"></a></h1>
-    <p class="line"></p>
-<h1><a href="/stories/drakengard-1/reading/character-profiles/verdelet">
-   Verdelet's Character Profile<img class="art" src="https://i.imgur.com/XdoUcV9.png"></a></h1>
+<p class="title"><a href="/stories/drakengard-1/reading/character-profiles/verdelet">
+   Verdelet's Character Profile<img class="art" src="https://i.imgur.com/XdoUcV9.png"></a></p>
    <p class="line"></p>
-<h1><a href="/stories/drakengard-1/reading/character-profiles/leonard">
-    Leonard's Character Profile<img class="art" src="https://i.imgur.com/61zSN9I.png"></a></h1>
+<p class="title"><a href="/stories/drakengard-1/reading/character-profiles/leonard">
+    Leonard's Character Profile<img class="art" src="https://i.imgur.com/61zSN9I.png"></a></p>
     <p class="line"></p>
-<h1><a href="/stories/drakengard-1/reading/character-profiles/arioch">
-    Arioch's Character Profile<img class="art" src="https://i.imgur.com/KeEXut3.png"></a></h1>
+<p class="title"><a href="/stories/drakengard-1/reading/character-profiles/arioch">
+    Arioch's Character Profile<img class="art" src="https://i.imgur.com/KeEXut3.png"></a></p>
     <p class="line"></p>
-<h1><a href="/stories/drakengard-1/reading/character-profiles/seere">
-    Seere's Character Profile<img class="art" src="https://i.imgur.com/c559vlZ.png"></a></h1>
+<p class="title"><a href="/stories/drakengard-1/reading/character-profiles/seere">
+    Seere's Character Profile<img class="art" src="https://i.imgur.com/c559vlZ.png"></a></p>
     <p class="line"></p>
     <p class="menu"><a href="/stories/drakengard-1">Back</a></p>

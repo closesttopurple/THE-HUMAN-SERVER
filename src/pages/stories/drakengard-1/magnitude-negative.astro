@@ -1,56 +1,80 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro"
 import '@/styles/text.css'
+import TextLayout from "@/layouts/TextLayout.astro"
 ---
-<BaseLayout>
-</BaseLayout>
-<title>D1 Magnitude Negative</title>
-<style>
-    @media screen and (orientation: portrait){
-        #sidenav {
-            display: none;
-        }
-    }
 
+<TextLayout>
+</TextLayout>
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
 
-    </style>
-<div id="sidenav">
-    <a href="/ths"><img class="slogo" src="https://i.imgur.com/AJWylNV.png"></a>
-    <p class="line"></p>
+  <!-- logo -->
+  <a href="/ths" class="menu-logo">
+    <img src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
         <a href="/stories">
-        <p class="menu">Stories</p>
-    </a>
+          Stories
+        </a>
+      </li>
+      <li>
+        <a href="/series-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a href="/credits">
+          Credits
+        </a>
+      </li>
+      <li>
+        <a href="https://k.closesttopurple.org/post/list/-karis/1" target="_blank" rel="noopener noreferrer">
+          Gallery
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/bug-report">
+          Bug Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<title>D1 Magnitude Negative</title>
+
+<p class="title"><a href="/stories/drakengard-1/reading/magnitude-negative/prologue">
+    Magnitude Negative - Prologue<img class="art" src="https://i.imgur.com/PzVIKfv.png"></a></p>
     <p class="line"></p>
-    <a href="/credits">
-        <p class="menu">Credits</p>
-    </a>
+<p class="title"><a href="/stories/drakengard-1/reading/magnitude-negative/woman">
+    Magnitude Negative - Woman<img class="art" src="https://i.imgur.com/8pd4YuJ.png"></a></p>
     <p class="line"></p>
-    <a href="https://k.closesttopurple.org/post/list/-karis/1">
-        <p class="menu">Gallery</p>
-    </a>
-    </div>
-<h1><strong><a href="/stories/drakengard-1/reading/magnitude-negative/prologue">
-    Magnitude Negative - Prologue<img class="art" src="https://i.imgur.com/PzVIKfv.png"></a></strong></h1>
+<p class="title"><a href="/stories/drakengard-1/reading/magnitude-negative/earth">
+    Magnitude Negative - Earth<img class="art" src="https://i.imgur.com/l7DEGh4.png"></a></p>
     <p class="line"></p>
-<h1><strong><a href="/stories/drakengard-1/reading/magnitude-negative/woman">
-    Magnitude Negative - Woman<img class="art" src="https://i.imgur.com/8pd4YuJ.png"></a></strong></h1>
+<p class="title"><a href="/stories/drakengard-1/reading/magnitude-negative/heaven">
+    Magnitude Negative - Heaven<img class="art" src="https://i.imgur.com/6jkQZyl.png"></a></p>
     <p class="line"></p>
-<h1><strong><a href="/stories/drakengard-1/reading/magnitude-negative/earth">
-    Magnitude Negative - Earth<img class="art" src="https://i.imgur.com/l7DEGh4.png"></a></strong></h1>
+<p class="title"><a href="/stories/drakengard-1/reading/magnitude-negative/time">
+    Magnitude Negative - Time<img class="art" src="https://i.imgur.com/qdjT7Qi.png" ></a></p>
     <p class="line"></p>
-<h1><strong><a href="/stories/drakengard-1/reading/magnitude-negative/heaven">
-    Magnitude Negative - Heaven<img class="art" src="https://i.imgur.com/6jkQZyl.png"></a></strong></h1>
+<p class="title"><a href="/stories/drakengard-1/reading/magnitude-negative/epilogue">
+    Magnitude Negative - Epilogue<img class="art" src="https://i.imgur.com/eOYzH94.png"></a></p>
     <p class="line"></p>
-<h1><strong><a href="/stories/drakengard-1/reading/magnitude-negative/time">
-    Magnitude Negative - Time<img class="art" src="https://i.imgur.com/qdjT7Qi.png" ></a></strong></h1>
+<p class="title"><a href="/stories/drakengard-1/reading/magnitude-negative/afterword">
+    Magnitude Negative - Afterword<img class="art" src="https://i.imgur.com/VAfuXRi.png"></a></p>
     <p class="line"></p>
-<h1><strong><a href="/stories/drakengard-1/reading/magnitude-negative/epilogue">
-    Magnitude Negative - Epilogue<img class="art" src="https://i.imgur.com/eOYzH94.png"></a></strong></h1>
-    <p class="line"></p>
-<h1><strong><a href="/stories/drakengard-1/reading/magnitude-negative/afterword">
-    Magnitude Negative - Afterword<img class="art" src="https://i.imgur.com/VAfuXRi.png"></a></strong></h1>
-    <p class="line"></p>
-<h1><strong><a href="/stories/drakengard-1/reading/magnitude-negative/about">
-    Magnitude Negative - About the Author/Illustrator<img class="art" src="https://i.imgur.com/FeB8ZzI.png"></a></strong></h1>
+<p class="title"><a href="/stories/drakengard-1/reading/magnitude-negative/about">
+    Magnitude Negative - About the Author/Illustrator<img class="art" src="https://i.imgur.com/FeB8ZzI.png"></a></p>
     <p class="line"></p>
     <p class="menu"><a href="/stories/drakengard-1">Back</a></p>

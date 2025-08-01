@@ -1,33 +1,56 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro"
 import '@/styles/text.css'
+import TextLayout from "@/layouts/TextLayout.astro"
 ---
 
-<BaseLayout>
-</BaseLayout>
+<TextLayout>
+</TextLayout>
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a href="/ths" class="menu-logo">
+    <img src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a href="/series-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a href="/credits">
+          Credits
+        </a>
+      </li>
+      <li>
+        <a href="https://k.closesttopurple.org/post/list/-karis/1" target="_blank" rel="noopener noreferrer">
+          Gallery
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/bug-report">
+          Bug Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
 <title>Sarafa</title>
-<style>
-    @media screen and (orientation: portrait){
-        #sidenav {
-            display: none;
-        }
-    }
 
-
-    </style>
-<div id="sidenav">
-    <a href="/ths"><img class="slogo" src="https://i.imgur.com/AJWylNV.png"></a>
-    <p class="line"></p>
-    <a href="/stb">
-        <p class="menu">Stories</p>
-    </a>
-    <p class="line"></p>
-    <a href="/credits">
-        <p class="menu">Credits</p>
-    </a>
-    <p class="line"></p>
-    <a href="https://k.closesttopurple.org/post/list/-karis/1">
-        <p class="menu">Gallery</p>
-    </a>
-    </div>
 <p class="menu"><a href="/stories/reincarnation/characters">Back</a></p>

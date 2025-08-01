@@ -1,39 +1,62 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro"
 import '@/styles/text.css'
+import TextLayout from "@/layouts/TextLayout.astro"
 ---
 
-<BaseLayout>
-</BaseLayout>
-<title>D1 Manga</title>
-<style>
-    @media screen and (orientation: portrait){
-        #sidenav {
-            display: none;
-        }
-    }
+<TextLayout>
+</TextLayout>
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
 
+  <!-- logo -->
+  <a href="/ths" class="menu-logo">
+    <img src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+  </a>
 
-    </style>
-<div id="sidenav">
-    <a href="/ths"><img class="slogo" src="https://i.imgur.com/AJWylNV.png"></a>
-    <p class="line"></p>
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
         <a href="/stories">
-        <p class="menu">Stories</p>
-    </a>
-    <p class="line"></p>
-    <a href="/credits">
-        <p class="menu">Credits</p>
-    </a>
-    <p class="line"></p>
-    <a href="https://k.closesttopurple.org/post/list/-karis/1">
-        <p class="menu">Gallery</p>
-    </a>
-    </div>
-<h1><strong><a href="https://reader.closesttopurple.org/read.html?title=drakengard-judgement&volume=1&page=1">
-    Judgement Ch. 1<img class="art" src="https://i.imgur.com/q97Hp3v.png"></a></strong></h1>
+          Stories
+        </a>
+      </li>
+      <li>
+        <a href="/series-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a href="/credits">
+          Credits
+        </a>
+      </li>
+      <li>
+        <a href="https://k.closesttopurple.org/post/list/-karis/1" target="_blank" rel="noopener noreferrer">
+          Gallery
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/bug-report">
+          Bug Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<title>D1 Manga</title>
+
+<p class="title"><a href="https://reader.closesttopurple.org/read.html?title=drakengard-judgement&volume=1&page=1">
+    Judgement Ch. 1<img class="art" src="https://i.imgur.com/q97Hp3v.png"></a></p>
 <p class="line"></p>
- <h1><strong><a href="https://reader.closesttopurple.org/read.html?title=drakengard-judgement&volume=1&page=41">
-    Judgement Ch. 2<img class="art" src="https://i.imgur.com/0Ac7o2t.png"></a></strong></h1>
+<p class="title"><a href="https://reader.closesttopurple.org/read.html?title=drakengard-judgement&volume=1&page=41">
+    Judgement Ch. 2<img class="art" src="https://i.imgur.com/0Ac7o2t.png"></a></p>
 <p class="line"></p>        
 <p class="menu"><a href="/stories/drakengard-1">Back</a></p>
