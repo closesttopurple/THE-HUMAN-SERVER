@@ -68,6 +68,12 @@
     -webkit-filter: brightness(70%);
     transform: scale(0.98);
   }
+    div.menutest{
+  position: relative;
+  align-items: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
+    }
     p.menu{
 
     font-size: 260%;
@@ -75,6 +81,9 @@
     letter-spacing: 3px;
     margin-bottom: 1%;
     margin-top: 1%;
+    position: relative;
+    align-items: center;
+    display: block;
   }
   p.menu:hover{
 
@@ -83,7 +92,7 @@
     letter-spacing: 3px;
     -webkit-filter: brightness(70%);
     transform: scale(0.98);
-  }
+}
     #menumaybe{
 
     font-size: 260%;
@@ -205,14 +214,13 @@ p.title{
 p.title{
   @media screen and (orientation: portrait)
 {
-  margin-top: 0.4cm;
+  margin-top: 1cm;
   font-size: 130%;
   font-family: "'Open Sans Variable','Montserrat Variable','Noto Sans Variable', sans-serif";
-  margin-bottom: 0.2cm;
   margin-left: 7%;
   margin-right: 7%;
   font-weight: 525;
-
+  margin-bottom: 1cm;
 }
 }
 p.disc{
@@ -314,7 +322,18 @@ p.disc{
         font-weight: 525;
         letter-spacing: 0.2rem;
     }
+p a
+{
+  display: inline-block;
+}
+p a:hover
+{
+  color: white;
+  width:auto;
+  display: inline-block;
 
+
+}
 @media screen and (prefers-color-scheme: dark) {
   .menu-container {
   position: relative;

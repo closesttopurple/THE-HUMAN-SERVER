@@ -8,6 +8,8 @@ import cloudflare from "@astrojs/cloudflare";
 
 import mdx from "@astrojs/mdx";
 
+import react from "@astrojs/react";
+
 // https://astro.build/config
 export default defineConfig({
   redirects: {
@@ -15,7 +17,7 @@ export default defineConfig({
   },
 
   site: "https://closesttopurple.org/ths",
-  integrations: [tailwind(), sitemap(), icon(), mdx()],
+  integrations: [tailwind(), sitemap(), icon(), mdx(),react()],
   output: "server",
   adapter: cloudflare(),
 });
