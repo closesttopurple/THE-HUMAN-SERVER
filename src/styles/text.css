@@ -276,6 +276,9 @@ p.disc{
 
     }
     }
+    u{
+    color:rgb(190, 247, 255);
+    }
     button:hover{
     @media screen and (orientation: portrait){
         font-family: "'Open Sans Variable','Montserrat Variable','Noto Sans Variable', sans-serif";
