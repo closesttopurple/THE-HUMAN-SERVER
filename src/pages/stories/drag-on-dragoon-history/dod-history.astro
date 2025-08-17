@@ -1,37 +1,82 @@
 ---
-import BaseLayout from "@/layouts/BaseLayout.astro"
+import TextLayout from "@/layouts/TextLayout.astro"
 import '@/styles/text.css'
 ---
 
-<BaseLayout>
-</BaseLayout>
+<TextLayout>
+</TextLayout>
 <title>Drag-on Dragoon History</title>
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a href="/ths" class="menu-logo">
+    <img src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a href="/series-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a href="/credits">
+          Credits
+        </a>
+      </li>
+      <li>
+        <a href="https://k.closesttopurple.org/post/list/-karis/1" target="_blank" rel="noopener noreferrer">
+          Gallery
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/bug-report">
+          Bug Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
 <style>
     body{
 @media screen and (orientation: portrait) and (prefers-color-scheme: dark)
 {
-    background-image: url("https://i.imgur.com/G0NMHxn.png");
+    background-image: url("https://ik.imagekit.io/closesttopurple/bg-dark/dod-history-portrait.avif?updatedAt=1755425286101");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 @media screen and (orientation: landscape) and (prefers-color-scheme: dark)
 {
-    background-image: url("https://i.imgur.com/Spdt4zG.png");
+    background-image: url("https://ik.imagekit.io/closesttopurple/bg-dark/dod-history-landscape.avif?updatedAt=1755425286091");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 @media screen and (orientation: portrait) and (prefers-color-scheme: light)
 {
-    background-image: url("https://i.imgur.com/DzVqi1X.png");
+    background-image: url("https://ik.imagekit.io/closesttopurple/bg-light/drag-on-dragoon-history-portrait.avif?updatedAt=1755054118027");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 @media screen and (orientation: landscape) and (prefers-color-scheme: light)
 {
-    background-image: url("https://i.imgur.com/kMm7XwL.png");
+    background-image: url("https://ik.imagekit.io/closesttopurple/bg-light/drag-on-dragoon-history-landscape.avif?updatedAt=1755054117829");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
