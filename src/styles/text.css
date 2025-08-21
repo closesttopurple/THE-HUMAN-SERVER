@@ -43,6 +43,22 @@
       -webkit-filter: brightness(70%);
       transform: scale(0.98);
   }
+  img.art{
+      width: 650 px;
+      height: 150px;
+      object-fit: cover;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom:0.3cm;
+      animation-name: art;
+      animation-duration: 1.2s;
+  }
+       @keyframes art {
+    from {opacity: 0};
+    to {opacity: 1};
+
+  }
    div.bg{
     animation-name: bg;
     animation-duration: 1.5s;
@@ -75,7 +91,7 @@
     letter-spacing: 3px;
 
   }
-  p.credits:hover{ 
+  p.credits:hover{
     font-size: 180%;
     text-align: center;
     margin-bottom: 0.6cm;
