@@ -272,11 +272,11 @@ p.disc{
       rgb(var(--dark-mode-background))
     );
     animation-name: bg;
-    animation-duration: 0.5s;
+    animation-duration: 0.3s;
 }
 
   @keyframes bg {
-    from {opacity: 0};
+    from {opacity: 0.3};
     to {opacity: 1};
   }
 }
