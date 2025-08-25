@@ -15,7 +15,7 @@ export default defineConfig({
   redirects: {
     "/blog": "/",
   },
-
+  prefetch: true,
   site: "https://closesttopurple.org/ths",
   integrations: [tailwind(), sitemap(), icon(), mdx(),react()],
   vite: {

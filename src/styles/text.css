@@ -9,13 +9,13 @@
     margin-right: auto;
     margin-bottom:0.3cm;
     animation-name: img;
-    animation-duration: 1s;
+    animation-duration: 0.8s;
   }
-
   @keyframes img {
     from {opacity: 0};
     to {opacity: 1};
   }
+
   img.logo{
     display: block;
     margin-left: auto;
@@ -44,8 +44,6 @@
       transform: scale(0.98);
   }
   img.art{
-      width: 650 px;
-      height: 150px;
       object-fit: cover;
       display: block;
       margin-left: auto;
@@ -121,8 +119,7 @@
     font-size: 260%;
     text-align: center;
     letter-spacing: 3px;
-    -webkit-filter: brightness(70%);
-    transform: scale(0.98);
+
 }
     #menumaybe{
 
@@ -272,11 +269,11 @@ p.disc{
       rgb(var(--dark-mode-background))
     );
     animation-name: bg;
-    animation-duration: 0.3s;
+    animation-duration: 0.8s;
 }
 
   @keyframes bg {
-    from {opacity: 0.3};
+    from {opacity: 0};
     to {opacity: 1};
   }
 }
@@ -365,6 +362,7 @@ p.disc{
 p a
 {
   display: inline-block;
+  padding: 0%;
 }
 
 p a:hover
@@ -372,9 +370,11 @@ p a:hover
   color: white;
   width:auto;
   display: inline-block;
-
-
+  padding: 0%;
+  -webkit-filter: brightness(70%);
+  transform: scale(0.98);
 }
+
 @media screen and (prefers-color-scheme: dark) {
   .menu-container {
   position: relative;
