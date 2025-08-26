@@ -16,6 +16,10 @@ export default defineConfig({
     "/blog": "/",
   },
   prefetch: true,
+    prefetch: {
+    prefetchAll: true,
+    defaultStrategy: 'load'
+  },
   site: "https://closesttopurple.org/ths",
   integrations: [tailwind(), sitemap(), icon(), mdx(),react()],
   vite: {

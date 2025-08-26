@@ -66,20 +66,28 @@
     to {opacity: 1};
 
   }
-  @media  (prefers-color-scheme: dark){ img.words {
+  @media  (prefers-color-scheme: dark){
+    img.words {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom:0.3cm;
     content:url("https://i.imgur.com/lNOnTWA.png");
   }
+    .dark-link{
+
+    }
 }
-  @media  (prefers-color-scheme: light){ img.words {
+  @media  (prefers-color-scheme: light){
+    img.words {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom:0.3cm;
     content:url("https://i.imgur.com/XbkAKW6.png");
+  }
+    .light-link{
+
   }
 }
   p {
@@ -203,7 +211,7 @@
     letter-spacing: 1px;
     margin-bottom: 0.4cm;
   }
-  p.para{
+  .para{
     @media screen and (orientation: landscape)
 {
     font-weight: 400;
@@ -215,7 +223,7 @@
     margin-top: 0.4cm;
 }
 }
-p.para{
+  .para{
     @media screen and (orientation: portrait)
 {
     margin-right: 8%;
