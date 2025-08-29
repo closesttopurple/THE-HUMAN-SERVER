@@ -6,46 +6,58 @@ import '@/styles/text.css'
 <TextLayout>
 </TextLayout>
 <style>
-#Guide{
-    @media screen and (orientation: landscape) and (min-aspect-ratio: 16/10) {
-        display: flex;
-        clear: none;
-        margin-left: 1.5%;
-        margin-right: 1.5%;
-        position:relative;
-    }
+.over{
+  margin-left: auto;
+  margin: 0px auto;
+  max-width: fit-content;
 }
-#Guide_Left{
-    @media screen and (orientation: landscape)  {
-        display: flex;
-        clear: none;
-        margin-left: 5%;
-        position:relative;
-        display: block;
-    }
+.Guide > div {
+  padding: 20px;
+  text-align: center;
 }
-#Guide_Right{
-    @media screen and (orientation: landscape) {
-        display: flex;
-        clear: none;
-        margin-right: 5%;
-        position:relative;
-        display: block;
-    }
+.Guide {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto;
+  aspect-ratio: 16/9;
 }
-.para{
-    @media screen and (orientation: landscape) and (min-aspect-ratio: 16/10) {
-        position: relative;
-        margin-right: -10%;
-        display: inline-block;
-        overflow: auto;
-    }
+@media screen and (orientation: portrait) {
+  .Guide{
+    display: inline-grid;
+    grid-template-columns: auto;
+  }
+  div{
+    margin-bottom: -5%;
+  }
+  #title2{
+    display:none;
+  }
 }
-
-.img{
-        width: 375px;
-        height: 250px;
-        position: absolute;
+@media screen and (orientation: landscape){
+  #title3{
+    display:none;
+  }
+}
+.title{
+  display: inline-block;
+  height:auto;
+  text-size-adjust: auto;
+  margin-top: -1%;
+  font-size: 110%;
+}
+#title1{
+  height:auto;
+  text-size-adjust: auto;
+  font-size: 130%;
+}
+#title2{
+  height:auto;
+  text-size-adjust: auto;
+  font-size: 130%;
+}
+#title3{
+  height:auto;
+  text-size-adjust: auto;
+  font-size: 130%;
 }
 </style>
 <nav class="menu-container">
@@ -95,45 +107,39 @@ import '@/styles/text.css'
 </nav>
 <title>THS's Guide</title>
 <p style="margin-top: 1cm; font-size: 300%;">Karis's Guide to DrakeNieR (W.I.P.)</p>
-<p class="title">Updated on August 7th, 2025.</p>
-<p class="title">Desktop: Read from left to right, and resume as so on the next line when you get to the far right.</p>
-<p class="title">Mobile: Read from top to bottom.</p>
-<p class="title">Start here:</p>
+<p id="title1">Updated on August 7th, 2025.</p>
+<p id="title2">Read from left to right, and resume as so on the next line when you get to the far right.</p>
+<p id="title3">Read from top to bottom.</p>
+<p id="title1">Start here:</p>
 <p class="line"></p>
-<div id="Guide">
-<div id="Guide_Left"><p class="para" style="text-align: center; font-size: 100%;">Drakengard<img src="https://i.imgur.com/WXDVAhd.png" loading="lazy">Play it on the PS2, or with an emulator.</p></div>
-<div id="Guide"><p class="para" style="text-align: center; font-size: 100%;">Character Profiles<img src="https://i.imgur.com/ATesuKc.png" loading="lazy">Read them <u><a href="/stories/drakengard-1/character-profiles">here</a></u>, in any order.</p></div>
-<div id="Guide"><p class="para" style="text-align: center; font-size: 100%;">The Song of Fourteen Years<img src="https://i.imgur.com/dBFTXhP.png" loading="lazy">Read it <u><a href="/stories/drakengard-1/reading/novellas/the-song-of-fourteen-years">here</a></u>.</p></div>
-<div id="Guide"><p class="para" style="text-align: center; font-size: 100%;">Magnitude Negative<img src="https://i.imgur.com/O6Smlsm.png" loading="lazy">Read it <u><a href="/stories/drakengard-1/magnitude-negative">here</a></u>.</p></div>
-<div id="Guide_Right"><p class="para" style="text-align: center; font-size: 100%;">Drakengard Story Side<img src="https://i.imgur.com/8MlY0rG.png" loading="lazy">Not currently on the site,<br>but a translation is in the works.</p></div>
+<div class="over">
+<div class="Guide">
+<div><img src="https://i.imgur.com/WXDVAhd.png" loading="lazy"><p class="title">Drakengard</p><p class="title"><u><a href="/series-guide/ths-guide/drakengard">More information.</a></u></p></div>
+<div><img src="https://i.imgur.com/ATesuKc.png" loading="lazy"><p class="title">Character Profiles</p><p class="title"><u><a href="/series-guide/ths-guide/character-profiles">More information.</a></u></p></div>
+<div><img src="https://i.imgur.com/dBFTXhP.png" loading="lazy"><p class="title">The Song of Fourteen Years</p><p class="title"><u><a href="/series-guide/ths-guide/the-song-of-fourteen-years">More information.</a></u></p></div>
+<div><img src="https://i.imgur.com/O6Smlsm.png" loading="lazy"><p class="title">Magnitude Negative</p><p class="title"><u><a href="/series-guide/ths-guide/magnitude-negative">More information.</a></u></p></div>
+<div><img src="https://i.imgur.com/8MlY0rG.png" loading="lazy"><p class="title">Drakengard Story Side</p><p class="title"><u><a href="/series-guide/ths-guide/drakengard-story-side">More information.</a></u></p></div>
+<div><img src="https://i.imgur.com/s2l7QI9.png" loading="lazy"><p class="title">Drakengard 2</p><p class="title"><u><a href="/series-guide/ths-guide/drakengard-2">More information.</a></u></p></div>
+<div><img src="https://i.imgur.com/W5lvAKv.png" loading="lazy"><p class="title">The Garden of Light</p><p class="title"><u><a href="/series-guide/ths-guide/the-garden-of-light">More information.</a></u></p></div>
+<div><img src="https://i.imgur.com/Spb7R5A.png" loading="lazy"><p class="title">Drakengard 2 Story Side</p><p class="title"><u><a href="/series-guide/ths-guide/drakengard-2-story-side">More information.</a></u></p></div>
+<div><img src="https://i.imgur.com/4HbrMUO.png" loading="lazy"><p class="title">NieR Replicant/Gestalt</p><p class="title"><u><a href="/series-guide/ths-guide/nier">More information.</a></u></p></div>
+<div><img src="https://i.imgur.com/24T6mbN.png" loading="lazy"><p class="title">NieR Replicant ver.1.22...</p><p class="title"><u><a href="/series-guide/ths-guide/nier-122">More information.</a></u></p></div>
+<div><img src="https://i.imgur.com/IE2smkw.png" loading="lazy"><p class="title">Grimoire NieR</p><p class="title"><u><a href="/series-guide/ths-guide/grimoire-nier">More information.</a></u></p></div>
+<div><img src="https://i.imgur.com/ASrClWX.png" loading="lazy"><p class="title">NieR Replicant Drama CD</p><p class="title"><u><a href="/series-guide/ths-guide/nier-drama-cd">More information.</a></u></p></div>
+<div><img src="https://i.imgur.com/WmMxqtd.png" loading="lazy"><p class="title">The Fire of Prometheus</p><p class="title"><u><a href="/series-guide/ths-guide/the-fire-of-prometheus">More information.</a></u></p></div>
+<div><img src="https://i.imgur.com/kPL2QV3.png" loading="lazy"><p class="title">Drakengard 3</p><p class="title"><u><a href="/series-guide/ths-guide/drakengard-3">More information.</a></u></p></div>
+<div><img src="https://i.imgur.com/DNbsL1y.png" loading="lazy"><p class="title">Drakengard 3 Short Stories</p><p class="title"><u><a href="/series-guide/ths-guide/drakengard-3-short-stories">More information.</a></u></p></div>
+<div><img src="https://i.imgur.com/0Lvf1Pm.png" loading="lazy"><p class="title">Drakengard 3 Prelude Novellas</p><p class="title"><u><a href="/series-guide/ths-guide/drakengard-3-prelude-novellas">More information.</a></u></p></div>
+<div><img src="https://i.imgur.com/wrpScmg.png" loading="lazy"><p class="title">Drakengard 3 Story Side</p><p class="title"><u><a href="/series-guide/ths-guide/drakengard-3-story-side">More information.</a></u></p></div>
+<div><img src="https://i.imgur.com/7svrG1S.png" loading="lazy"><p class="title">Utahime Five</p><p class="title"><u><a href="/series-guide/ths-guide/utahime-five">More information.</a></u></p></div>
+<div><img src="https://i.imgur.com/5f4hRIF.png" loading="lazy"><p class="title">Shi Ni Itaru Aka</p><p class="title"><u><a href="/series-guide/ths-guide/shi-ni-itaru-aka">More information.</a></u></p></div>
+<div><img src="https://i.imgur.com/GnZpvsm.png" loading="lazy"><p class="title">Drakengard 1.3</p><p class="title"><u><a href="/series-guide/ths-guide/drakengard-1.3">More information.</a></u></p></div>
+<div><img src="https://i.imgur.com/kian8Hc.png" loading="lazy"><p class="title">YoRHa Stage Play</p><p class="title"><u><a href="/series-guide/ths-guide/yorha-stage-play">More information.</a></u></p></div>
+<div><img src="https://i.imgur.com/JxaaNWY.png" loading="lazy"><p class="title">NieR:Automata</p><p class="title"><u><a href="/series-guide/ths-guide/nier-automata">More information.</a></u></p></div>
+<div><img src="https://i.imgur.com/dy51iN4.png" loading="lazy"><p class="title">NieR:Automata Novellas</p><p class="title"><u><a href="/series-guide/ths-guide/nier-automata-novellas">More information.</a></u></p></div>
+<div><img src="https://i.imgur.com/7OeBC0Y.png" loading="lazy"><p class="title">The Memories of Puppets</p><p class="title"><u><a href="/series-guide/ths-guide/the-memories-of-puppets">More information.</a></u></p></div>
+<div><img src="https://i.imgur.com/WLwDdcW.png" loading="lazy"><p class="title">YoRHa Boys</p><p class="title"><u><a href="/series-guide/ths-guide/yorha-boys">More information.</a></u></p></div>
 </div>
-<div id="Guide">
-<div id="Guide_Left"><p class="para" style="text-align: center; font-size: 100%;">Drakengard 2<img src="https://i.imgur.com/s2l7QI9.png" loading="lazy">Play it on the PS2, or with an emulator.</p></div>
-<div id="Guide"><p class="para" style="text-align: center; font-size: 100%;">The Garden of Light<img src="https://i.imgur.com/W5lvAKv.png" loading="lazy">Read it <a href="/stories/drakengard-2/novellas"><u>here.</u></a></p></div>
-<div id="Guide"><p class="para" style="text-align: center; font-size: 100%;">Drakengard 2 Story Side<img src="https://i.imgur.com/Spb7R5A.png" loading="lazy">Not currently on the site,<br>but a translation is in the works.</p></div>
-<div id="Guide"><p class="para" style="text-align: center; font-size: 100%;">NieR Gestalt/Replicant<img src="https://i.imgur.com/4HbrMUO.png" loading="lazy">Available in platforms listed <a href="https://en.wikipedia.org/wiki/Nier"><u>here</u></a>,<br>or on an emulator.</p></div>
-<div id="Guide_Right"><p class="para" style="text-align: center; font-size: 100%;">NieR Replicant Ver.1.22...<img src="https://i.imgur.com/24T6mbN.png" loading="lazy">Play it on PS4, Xbox One, and PC.<br>A remaster of Gestalt/Replicant.<br>You <i>can</i> play this instead of the prior entry.</p></div>
-</div>
-<div id="Guide">
-  <div id="Guide_Left"><p class="para" style="text-align: center; font-size: 100%;">Grimoire NieR/Revised Edition.<img src="https://i.imgur.com/IE2smkw.png" loading="lazy">Includes significant amounts of <br>lore, but you can read the novellas <a href="/stories/nier/2010-novellas"><u>here</u></a>.</p></div>
-  <div id="Guide"><p class="para" style="text-align: center; font-size: 100%;">NieR Replicant Drama CD<img src="https://i.imgur.com/ASrClWX.png" loading="lazy">A written version can be read <a href="/stories/nier"><u>here</u></a>.</p></div>
-<div id="Guide"><p class="para" style="text-align: center; font-size: 100%;">The Fire of Prometheus<img src="https://i.imgur.com/WmMxqtd.png" loading="lazy">Read it <a href="/stories/nier/reading/novellas/the-fire-of-prometheus"><u>here.</u></a></p></div>
-<div id="Guide"><p class="para" style="text-align: center; font-size: 100%;">Drakengard 3<img src="https://i.imgur.com/kPL2QV3.png" loading="lazy">Play it on the PS3, or with an emulator.</p></div>
-<div id="Guide_Right"><p class="para" style="text-align: center; font-size: 100%;">Drakengard 3's Short Stories<img src="https://i.imgur.com/DNbsL1y.png" loading="lazy">Originally DLC, there are <br>written transcriptions <a href="/stories/drakengard-3/short-stories"><u>here.</u></a></p></div>
-</div>
-<div id="Guide">
-  <div id="Guide_Left"><p class="para" style="text-align: center; font-size: 100%;">Drakengard 3's Prelude Novellas<img src="https://i.imgur.com/0Lvf1Pm.png" loading="lazy">Read them <a href="/stories/drakengard-3/prelude-novellas"><u>here</u></a>,<br>from top to bottom.</p></div>
-<div id="Guide"><p class="para" style="text-align: center; font-size: 100%;">Drakengard 3 Story Side<img src="https://i.imgur.com/wrpScmg.png" loading="lazy">Read it <a href="/stories/drakengard-3/story-side"><u>here.</u></a></p></div>
-<div id="Guide"><p class="para" style="text-align: center; font-size: 100%;">Utahime Five<img src="https://i.imgur.com/7svrG1S.png" loading="lazy">Read it <a href="/stories/drakengard-3/manga "><u>here.</u></a></p></div>
-<div id="Guide"><p class="para" style="text-align: center; font-size: 100%;">Shi Ni Itaru Aka<img src="https://i.imgur.com/5f4hRIF.png" loading="lazy">Read it <a href="/stories/drakengard-3/manga "><u>here.</u></a></p></div>
-<div id="Guide_Right"><p class="para" style="text-align: center; font-size: 100%;">Drakengard 1.3<img src="https://i.imgur.com/GnZpvsm.png" loading="lazy">Read it <a href="/stories/drakengard-3/drakengard-1.3"><u>here.</u></a><br>An alternate Drakengard 1.</p></div>
-</div>
-<div id="Guide">
-  <div id="Guide_Left"><p class="para" style="text-align: center; font-size: 100%;">YoRHa Stage Play<img src="https://i.imgur.com/kian8Hc.png" loading="lazy">Watch Ver1.0 <a href="/stories/nier-automata/stage-plays"><u>here.</u></a><br>More information present on the page.</p></div>
-<div id="Guide"><p class="para" style="text-align: center; font-size: 100%;">NieR:Automata<img src="https://i.imgur.com/JxaaNWY.png" loading="lazy">Play it on the platforms listed <a href="https://en.wikipedia.org/wiki/Nier:_Automata"><u>here.</u></a></p></div>
-<div id="Guide"><p class="para" style="text-align: center; font-size: 100%;">NieR:Automata Novellas<img src="https://i.imgur.com/dy51iN4.png" loading="lazy">Read them <a href="/stories/nier-automata/novellas"><u>here,</u></a> from top to bottom.</p></div>
-<div id="Guide"><p class="para" style="text-align: center; font-size: 100%;">The Memories of Puppets<img src="https://i.imgur.com/7OeBC0Y.png" loading="lazy">Not currently on the site,<br>but it's coming soon.</p></div>
-<div id="Guide_Right"><p class="para" style="text-align: center; font-size: 100%;">YoRha Boys / Ver1.05<img src="https://i.imgur.com/WLwDdcW.png" loading="lazy">Read the novel <a href="/stories/nier-automata"><u>here.</u></a><br>More information on the page.</p></div>
 </div>
 <p class="line"></p>
 <p class="menu"><a href="/series-guide">Back</a></p>

@@ -4,7 +4,6 @@
 
 @layer base {
   img {
-    display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom:0.3cm;
@@ -16,26 +15,26 @@
     to {opacity: 1};
   }
 
-  img.logo{
+  .logo{
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom:1cm;
   }
-  img.slogo{
+  .slogo{
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom:1cm;
   }
-  img.slogo:hover{
+  .slogo:hover{
     display: block;
     margin-left: auto;
     margin-right: auto;
     -webkit-filter: brightness(70%);
     transform: scale(0.98);
   }
-  img.art:hover{
+  .art:hover{
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -43,7 +42,7 @@
       -webkit-filter: brightness(70%);
       transform: scale(0.98);
   }
-  img.art{
+  .art{
       object-fit: cover;
       display: block;
       margin-left: auto;
@@ -57,7 +56,7 @@
     to {opacity: 1};
 
   }
-   div.bg{
+   .bg{
     animation-name: bg;
     animation-duration: 1.5s;
    }
@@ -67,7 +66,7 @@
 
   }
   @media  (prefers-color-scheme: dark){
-    img.words {
+    .words {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -79,7 +78,7 @@
     }
 }
   @media  (prefers-color-scheme: light){
-    img.words {
+    .words {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -91,13 +90,11 @@
   }
 }
   p {
-    font-size: 260%;
     text-align: center;
-    margin-bottom: 0.6cm;
     letter-spacing: 3px;
 
   }
-  p.credits:hover{
+  .credits:hover{
     font-size: 180%;
     text-align: center;
     margin-bottom: 0.6cm;
@@ -105,13 +102,13 @@
     -webkit-filter: brightness(70%);
     transform: scale(0.98);
   }
-    div.menutest{
+    .menutest{
   position: relative;
   align-items: center;
   margin-bottom: 5%;
   margin-top: 5%;
     }
-    p.menu{
+    .menu{
 
     font-size: 260%;
     text-align: center;
@@ -122,7 +119,7 @@
     align-items: center;
     display: block;
   }
-  p.menu:hover{
+  .menu:hover{
 
     font-size: 260%;
     text-align: center;
@@ -139,7 +136,7 @@
     -webkit-filter: brightness(70%);
     transform: scale(0.98);
   }
-  p.line{
+  .line{
     width: 15%;
     margin: auto;
     margin-bottom: 0.4cm;
@@ -151,7 +148,7 @@
     border-radius: 7px;
   }
   @media screen and (orientation: portrait) {
-  p.line{
+  .line{
     width: 55%;
     margin: auto;
     margin-bottom: 0.4cm;
@@ -164,7 +161,7 @@
   }
   }
   @media screen and (prefers-color-scheme: light){
-    p.line{
+    .line{
       width: 15%;
       margin: auto;
       margin-bottom: 0.4cm;

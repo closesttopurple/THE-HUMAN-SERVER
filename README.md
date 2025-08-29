@@ -7,7 +7,8 @@ I will slowly add resources to learn more about his works over time. Feel free t
 I also have *karisbooru*, a tag-based image hosting service.
 
 ### How to contact me?
-You can find my email and social media at https://closesttopurple.org. Social media would probably be easier. Just don't message me on steam... Why would you ?
+You can find my email and social media at https://closesttopurple.org. Social media would probably be easier. Just don't message me on steam... Why would you ?\
+You can also join the discord <a href="https://discord.gg/UPgmp8mJu3"><u>here.</u></a>
 
 ### Plans For the Future
 * Transcribing NieR's novellas from my English copy of <i>Grimoire NieR Revised Edition</i> and making outlines for Yonah's Diary, Interviews, weapon stories, and the text adventures.
