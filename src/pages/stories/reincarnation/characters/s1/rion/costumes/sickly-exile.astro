@@ -17,8 +17,8 @@ grid-template-areas:
 
 grid-template-columns: 1fr 2fr;
 margin: 0px auto;
-margin-bottom: 3%;
-gap: 2.5%;;
+margin-bottom: 2.5%;
+float:center;
 }
     }
 
@@ -28,14 +28,12 @@ display: grid;
 grid-template-areas:
     "header header"
     "content content"
-    "menu menu"
-    "footer footer";
-
+    "menu menu";
 grid-template-columns: 1fr 1fr;
 margin: 0px auto;
 margin-top: 3%;
-margin-bottom: 3%;
-gap: 2.5%;;
+margin-bottom: 45%;
+gap: 2.5%;
 }
     }
     #icon{
@@ -43,16 +41,17 @@ display:inline-block;
     }
 .title{
     margin-bottom: 0.1cm;
-    font-size: 150%;
+    font-size: 85%;
 
 }
 
 #top-right{
-    font-size: 110%;
+    font-size: 65%;
     margin-top: 0%;
 }
 .container > div {
-
+width: 100%;
+  padding: 10px;
 }
 .container > div.header {
   grid-area: header;
@@ -63,9 +62,16 @@ grid-area: menu;
 }
 .container > div.content {
   grid-area: content;
+  background-color: rgba(102, 102, 102, 0.8);
 }
-.container > div.footer {
-  grid-area: footer;
+.menu{
+  margin-top: 2.5%;
+}
+.para{
+    font-size: 65%;
+    margin-left: 0%;
+    margin-right: 0%;
+    display: inline-block;
 }
 </style>
 <nav class="menu-container">
@@ -120,11 +126,11 @@ grid-area: menu;
 <p class="h1">Abilities</p><p class="title">Toughness</p><p class="title" id="top-right">Level 4/4</p><p class="para">HP up by 12%.</p>
 <p class="title">Aegis</p><p class="title" id="top-right">Level 4/4</p><p class="para">Defense up by 12%.</p><p class="line"></p>
 <p class="h1">Awakening</p><p class="title">Vigor</p><p class="title" id="top-right">Level 3</p><p class="para">Attack up by 9%.</p>
-<p class="title">Debris: Toughness Fragment</p><p class="title" id="top-right">Level 5</p><p class="para">HP up by 3%.</p><p class="line"></p>
+<p class="title">Debris: Toughness Fragment</p><p class="title" id="top-right">Level 5</p><p class="para">HP up by 3%.</p>
 </div>
 <div class="content"><h1>Design</h1><img src="https://i.imgur.com/kRUZLuX.png"></div>
 </div>
 <p class="line"></p>
-<div class="footer"><p class="menu"><a href="/stories/reincarnation/characters/s1/rion/costumes">Back</a></p></div>
-</div>
+<p class="menu"><a href="/stories/reincarnation/characters/s1/rion/costumes">Back</a></p>
+
 
