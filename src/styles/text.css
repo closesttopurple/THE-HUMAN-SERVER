@@ -9,6 +9,7 @@
     margin-bottom:0.3cm;
     animation-name: img;
     animation-duration: 0.8s;
+    margin-top: 1%;
   }
   @keyframes img {
     from {opacity: 0};
