@@ -7,120 +7,32 @@ import '@/styles/text.css'
 </TextLayout>
 <title>More Information</title>
 <style>
-    @media screen and (orientation: landscape) {
-        .container {
-display: grid;
-grid-template-areas:
-    "content content"
-    "menu menu"
-    "footer footer";
-
-grid-template-columns: 1fr 2fr;
-margin: 0px auto;
-margin-bottom: 3%;
-gap: 2.5%;;
-}
+        @media screen and (orientation: portrait)
+{
+img{
+    width: 80%;
+    height: 80%;
     }
-
-    @media screen and (orientation: portrait) {
-.container {
-display: grid;
-grid-template-areas:
-    "content content"
-    "menu menu"
-    "footer footer";
-
-grid-template-columns: 1fr 1fr;
-margin: 0px auto;
-margin-top: 3%;
-margin-bottom: 3%;
-gap: 2.5%;;
-}
+    .title{
+        text-align:left;
     }
-    #icon{
-display:inline-block;
-    }
-.title{
-    margin-bottom: 0.1cm;
-    font-size: 150%;
-
 }
 
-#top-right{
-    font-size: 110%;
-    margin-top: 0%;
+@media screen and (orientation: landscape)
+{
+img{
+    width: 375px;
+    height: 250px;
 }
-.container > div {
-
 }
-.container > div.menu {
-grid-area: menu;
-}
-.container > div.content {
-  grid-area: content;
-}
-.container > div.footer {
-  grid-area: footer;
-}
-.para{
-    font-size: 65%;
+#cen{
+    text-align: center;
 }
 </style>
-<nav class="menu-container">
-  <!-- burger menu -->
-  <input type="checkbox" aria-label="Toggle menu" />
-  <span></span>
-  <span></span>
-  <span></span>
-
-  <!-- logo -->
-  <a href="/ths" class="menu-logo">
-    <img src="https://i.imgur.com/2WGRL3v.png" alt=""/>
-  </a>
-
-  <!-- menu items -->
-  <div class="menubar">
-    <ul>
-      <li>
-        <a href="/stories">
-          Stories
-        </a>
-      </li>
-      <li>
-        <a href="/series-guide">
-          Series Guide
-        </a>
-      </li>
-      <li>
-        <a href="/credits">
-          Credits
-        </a>
-      </li>
-      <li>
-        <a href="https://k.closesttopurple.org/post/list/-karis/1" target="_blank" rel="noopener noreferrer">
-          Gallery
-        </a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <a href="/bug-report">
-          Bug Report
-        </a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<div class="container" id="character">
-<div class="menu">
-<p class="h1">Where to find them?</p>
+<img src="https://i.imgur.com/0Lvf1Pm.png">
+<p class="title" id="cen">Where to find it?</p>
 <p class="line"></p>
-<p class="para">You can read them <a href="/stories/drakengard-3/prelude-novellas"><u>here.</u></a></p>
-</div>
-<div class="content"><img src="https://i.imgur.com/0Lvf1Pm.png"></div>
-</div>
-<div class="footer">
-    <p class="line">
-    </p><p class="menu"><a href="/series-guide/ths-guide">Back</a></p></div>
-</div>
+<p class="title">You can read them <a href="/stories/drakengard-3/prelude-novellas"><u>here.</u></a></p>
+  <p class="line"></p>
+<p class="menu"><a href="/series-guide/ths-guide">Back</a></p>
 

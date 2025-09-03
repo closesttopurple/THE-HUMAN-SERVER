@@ -8,8 +8,8 @@
     margin-right: auto;
     margin-bottom:0.3cm;
     animation-name: img;
-    animation-duration: 0.8s;
-    margin-top: 1%;
+    animation-duration: 0.3s;
+    margin-top: 1.5%;
   }
   @keyframes img {
     from {opacity: 0};
@@ -275,14 +275,26 @@ p.disc{
       rgb(var(--dark-mode-background))
     );
     animation-name: bg;
-    animation-duration: 0.8s;
+    animation-duration: 0.4s;
+
 }
 
   @keyframes bg {
     from {opacity: 0};
     to {opacity: 1};
   }
-}
+    .ths{
+    animation-name: bgths;
+    animation-duration: 0.4s;
+    }
+      @keyframes bgths {
+ from {
+        transform: translateY(-100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+  }
     form{
     @media screen and (orientation: portrait){
         margin-top: 2.5%;
@@ -601,4 +613,5 @@ p a:hover
   .menubar li {
     padding: 0 20px;
   }
+}
 }
