@@ -1,0 +1,39 @@
+---
+import TextLayout from "@/layouts/TextLayout.astro"
+import '@/styles/text.css'
+---
+
+<TextLayout>
+</TextLayout>
+<title>More Information</title>
+<style>
+        @media screen and (orientation: portrait)
+{
+img{
+    width: 80%;
+    height: 80%;
+    }
+    .title{
+        text-align:left;
+    }
+}
+
+@media screen and (orientation: landscape)
+{
+img{
+    width: 375px;
+    height: 250px;
+}
+}
+#cen{
+    text-align: center;
+}
+</style>
+<img src="https://i.imgur.com/hsB33Et.png">
+<p class="title" id="cen">Where to find it?</p>
+<p class="line"></p>
+<p class="title">The game has shut down. However, you can still watch the entirety of the main story <a href="/stories/reincarnation/mainstory"><u>here.</u></a></p>
+<p class="title">It's worth checking out <i>Project B[i]rdcage,</i>an interactive experience made posthumously.</p>
+<p class="title">I'm also in the process of adding every character related story <a href="/stories/reincarnation/characters"><u>here.</u></a></p>
+<p class="line"></p>
+<p class="menu"><a href="/series-guide/ths-guide">Back</a></p>

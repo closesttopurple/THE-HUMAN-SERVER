@@ -7,14 +7,9 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom:0.3cm;
-    animation-name: img;
-    animation-duration: 0.3s;
     margin-top: 1.5%;
   }
-  @keyframes img {
-    from {opacity: 0};
-    to {opacity: 1};
-  }
+
 
   .logo{
     display: block;
@@ -74,9 +69,6 @@
     margin-bottom:0.3cm;
     content:url("https://i.imgur.com/lNOnTWA.png");
   }
-    .dark-link{
-
-    }
 }
   @media  (prefers-color-scheme: light){
     .words {
@@ -90,9 +82,31 @@
 
   }
 }
+@media screen and (orientation: landscape){
+   #title3{
+    display:none;
+  }
+}
+
+#title1{
+  height:auto;
+  text-size-adjust: auto;
+  font-size: 130%;
+}
+#title2{
+  height:auto;
+  text-size-adjust: auto;
+  font-size: 130%;
+}
+#title3{
+  height:auto;
+  text-size-adjust: auto;
+  font-size: 130%;
+}
+}
   p {
     text-align: center;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
 
   }
   .credits:hover{
@@ -160,6 +174,13 @@
     border-bottom-length: 2px;
     border-radius: 7px;
   }
+
+  div{
+    margin-bottom: -5%;
+  }
+  #title2{
+    display:none;
+  }
   }
   @media screen and (prefers-color-scheme: light){
     .line{
@@ -209,26 +230,30 @@
     letter-spacing: 1px;
     margin-bottom: 0.4cm;
   }
-  .para{
+
     @media screen and (orientation: landscape)
 {
+  .para{
     font-weight: 400;
     letter-spacing: 1.5px;
     margin-right: 25%;
     margin-left: 25%;
     text-align:left;
     font-size: 110%;
-    margin-top: 0.4cm;
+    margin-top: 0.6cm;
 }
 }
-  .para{
+
+
     @media screen and (orientation: portrait)
 {
+  .para{
     margin-right: 8%;
     margin-left: 8%;
     text-align:left;
     font-size: 130%;
     margin-top: 0.2cm;
+    letter-spacing: 1.5px;
 
 }
 }
@@ -242,7 +267,7 @@ p.title{
   margin-left: 8%;
   margin-right: 8%;
   font-weight: 525;
-  leter-spacing: 0.2rem;
+  letter-spacing: 0.17rem;
 }
 }
 p.title{
@@ -274,27 +299,11 @@ p.disc{
       rgb(var(--light-mode-background)),
       rgb(var(--dark-mode-background))
     );
-    animation-name: bg;
-    animation-duration: 0.4s;
+
 
 }
 
-  @keyframes bg {
-    from {opacity: 0};
-    to {opacity: 1};
-  }
-    .ths{
-    animation-name: bgths;
-    animation-duration: 0.4s;
-    }
-      @keyframes bgths {
- from {
-        transform: translateY(-100%);
-      }
-      to {
-        transform: translateY(0);
-      }
-  }
+
     form{
     @media screen and (orientation: portrait){
         margin-top: 2.5%;
@@ -613,5 +622,65 @@ p a:hover
   .menubar li {
     padding: 0 20px;
   }
+  .over{
+  margin: 0px auto;
+  max-width: fit-content;
+
+
+}
+.Guide > div {
+  padding: 10px;
+  text-align: center;
+  margin-left: 5%;
+
+}
+
+
+@media screen and (min-width: 320px ) {
+  .Guide {
+  display: inline-grid;
+    grid-template-columns: auto;
+}
+
+}
+@media screen and (min-width: 481px) {
+  .Guide {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+}
+}
+@media screen and (min-width: 769px) {
+  .Guide {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+}
+}
+@media screen and (min-width: 1025px) {
+  .Guide {
+  display: inline-grid;
+  grid-template-columns: auto auto ;
+}
+}
+@media screen and (min-width: 1201px) {
+  .Guide {
+  display: inline-grid;
+  grid-template-columns: auto auto auto  ;
+}
+}
+@media screen and (min-width: 1919px) {
+  .Guide {
+  display: inline-grid;
+  grid-template-columns: auto auto auto  auto;
+}
+}
+@media screen and (min-width: 1921px) {
+  .Guide {
+  display: inline-grid;
+  grid-template-columns: auto auto auto  auto auto;
+}
+}
+summary{
+  margin: 0 auto;
+     display:inline;
 }
 }
