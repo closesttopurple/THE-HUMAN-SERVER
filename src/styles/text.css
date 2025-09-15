@@ -625,6 +625,7 @@ p a:hover
   .over{
   margin: 0px auto;
   max-width: fit-content;
+  position: relative;
 }
 .Guide > div {
   padding: 10px;
