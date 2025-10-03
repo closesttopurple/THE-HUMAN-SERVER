@@ -1,4 +1,4 @@
-# **closesttopurple.org**
+# **thehumanserver.org**
 Hiya! Karis here. This is a small website for my personal projects.
 
 ## Direction
