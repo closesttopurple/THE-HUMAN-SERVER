@@ -20,7 +20,7 @@ export default defineConfig({
     prefetchAll: true,
     defaultStrategy: 'load'
   },
-  site: "https://closesttopurple.org/ths",
+  site: "https://thehumanserver.org",
   integrations: [tailwind(), sitemap(), icon(), mdx(),react()],
   vite: {
     resolve: {
