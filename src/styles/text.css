@@ -282,6 +282,31 @@ p.title{
   margin-bottom: 0.1cm;
 }
 }
+p.titlesmall{
+  @media screen and (orientation: landscape)
+{
+  margin-top: 1.cm;
+  font-size: 115%;
+  font-family: "'Open Sans Variable','Montserrat Variable','Noto Sans Variable', sans-serif";
+  margin-bottom: 0.1cm;
+  margin-left: 8%;
+  margin-right: 8%;
+  font-weight: 525;
+  letter-spacing: 0.17rem;
+}
+}
+p.titlesmall{
+  @media screen and (orientation: portrait)
+{
+  margin-top: 1cm;
+  font-size: 115%;
+  font-family: "'Open Sans Variable','Montserrat Variable','Noto Sans Variable', sans-serif";
+  margin-left: 7%;
+  margin-right: 7%;
+  font-weight: 525;
+  margin-bottom: 0.1cm;
+}
+}
 p.disc{
   margin-top: 0.4cm;
   font-size: 100%;
