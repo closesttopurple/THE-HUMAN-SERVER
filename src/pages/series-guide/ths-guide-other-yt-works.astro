@@ -1,0 +1,97 @@
+---
+import TextLayout from "@/layouts/TextLayout.astro"
+import '@/styles/text.css'
+---
+
+<TextLayout>
+</TextLayout>
+<style>
+
+.para{
+  display: inline-block;
+  height:auto;
+  text-size-adjust: auto;
+  margin-bottom: 1%;
+    margin-top: 0.6cm;
+  margin-left: 8%;
+  margin-right: 8%;
+  letter-spacing: 0.17rem;
+  font-size: 115%;
+
+}
+div{
+  text-align: center;
+}
+@media screen and (orientation: portrait) {
+  .line{
+  margin-top: 6.5%;
+}
+.para u a{
+  margin-top: 5%;
+  margin-bottom: 30px;
+}
+.para{
+    font-size: 135%;
+}
+}
+</style>
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a href="/" class="menu-logo">
+    <img src="https://i.imgur.com/AJWylNV.png" alt=""/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a href="/series-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a href="/credits" target="_blank" rel="noopener noreferrer">
+          Credits
+        </a>
+      </li>
+      <li>
+        <a href="https://archive.thehumanserver.org" target="_blank" rel="noopener noreferrer">
+          Gallery
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/bug-report">
+          Bug Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<title>THS's Guide</title>
+<p style="margin-top: 1cm; font-size: 250%;">Other Yoko Taro Works</p>
+<p id="title1">Possibly related to Drakengard and NieR.</p>
+<div class="over">
+<div class="Guide">
+<div><img src="https://i.imgur.com/zhi7JtM.png" loading="lazy"><p class="para">Thou Shalt Not Die</p><br><p class="para"><u><a href="/series-guide/ths-guide/thou-shalt-not-die">More information.</a></u></p></div>
+<div><img src="https://i.imgur.com/fZWoGSJ.png" loading="lazy"><p class="para">Thou Shalt Not Die Zero_KAI</p><br><p class="para"><u><a href="/series-guide/ths-guide/thou-shalt-not-die-zero-kai">More information.</a></u></p></div>
+<div><img src="https://i.imgur.com/GdPFyqd.png" loading="lazy"><p class="para">Bakuken</p><br><p class="para"><u><a href="/series-guide/ths-guide/bakuken">More information.</a></u></p></div>
+<div><img src="https://i.imgur.com/5nqFaYr.png" loading="lazy"><p class="para">Voice of Cards</p><br><p class="para"><u><a href="/series-guide/ths-guide/voice-of-cards">More information.</a></u></p></div>
+<div><img src="https://i.imgur.com/97og8IF.png" loading="lazy"><p class="para">404 GAME RE:SET</p><br><p class="para"><u><a href="/series-guide/ths-guide/404-game-reset">More information.</a></u></p></div>
+<div><img src="https://i.imgur.com/eYET1sA.png" loading="lazy"><p class="para">KamiErabi GOD.app</p><br><p class="para"><u><a href="/series-guide/ths-guide/kamierabi-godapp">More information.</a></u></p></div>
+</div>
+</div>
+<p class="line"></p>
+<p class="menu"><a href="/series-guide/ths-guide">Back</a></p>
