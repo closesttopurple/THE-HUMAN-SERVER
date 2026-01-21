@@ -53,10 +53,43 @@ import TextLayout from "@/layouts/TextLayout.astro"
 </nav>
 
 <title>D3 Manga</title>
+<style>
+  .para{
+  display: inline-block;
+  height:auto;
+  text-size-adjust: auto;
+  margin-bottom: 1%;
+    margin-top: 0.6cm;
+  margin-left: 8%;
+  margin-right: 8%;
+  letter-spacing: 0.17rem;
+  font-size: 115%;
 
+}
+div{
+  text-align: center;
+}
+@media screen and (orientation: portrait) {
+  .line{
+  margin-top: 6.5%;
+}
+.para u a{
+  margin-top: 5%;
+  margin-bottom: 30px;
+}
+.para{
+    font-size: 135%;
+}
+}
+</style>
+
+<div class="over">
+<div class="Guide">
 <p class="title"><a href="https://mangadex.org/title/6a3181bb-27e0-464a-932b-5c32d59c91e5/drag-on-dragoon-utahime-five">
     Utahime Five<img class="art" src="https://i.imgur.com/8RDqpsX.png"></a></p>
 <p class="title"><a href="https://mangadex.org/title/5e6f5c76-e13f-47a7-826c-2a3d7b087dcf/drag-on-dragoon-shi-ni-itaru-aka">
     Shi Ni Itaru Aka<img class="art" src="https://i.imgur.com/2hYTb5c.png"></a></p>
+</div>
+</div>
 <p class="line"></p>        
     <p class="menu"><a href="/stories/drakengard-3">Back</a></p>

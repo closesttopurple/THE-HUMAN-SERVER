@@ -1,10 +1,26 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro"
 import '@/styles/text.css'
-import { HoverPrefetch } from 'astro-hover-prefetch';
+import { SEO } from "astro-seo";
 ---
 <BaseLayout>
 </BaseLayout>
+
+<html lang="en">
+  <head>
+    <SEO
+      title="THE HUMAN SERVER - Drakengard and NieR archival"
+      description="A website self-ran by closesttopurple, a dedicated fan of the series used"
+      extend={{
+        // extending the default link tags
+        link: [{ rel: "icon", href: "/favicon.ico" }],
+        // extending the default meta tags
+      }}
+    />
+    <meta name="keywords" content="drakengard, nier, archival, drakenier, ths, the human server,drag-on dragoon, yoko taro, sinoalice, nier:automata, nier rein, nier reincarnation, reincarnation, dod, dod1, dod2, dod3, drakengard 2, drakengard 3"/>
+<link rel="canonical" href="https://thehumanserver.org/" />
+  </head>
+</html>
 <title>THE HUMAN SERVER</title>
 <style>
     body{
@@ -46,7 +62,6 @@ import { HoverPrefetch } from 'astro-hover-prefetch';
     }
 
 </style>
-<head>
 <img class="logo" src="https://i.imgur.com/AJWylNV.png" width="250" height="250" alt="The logo for The Human Server, a moon.">
 <p class="menu"><a href="/stories" >Stories</a></p>
 <p class="line"id="MenuB"></p>

@@ -53,7 +53,37 @@ import TextLayout from "@/layouts/TextLayout.astro"
 </nav>
 
 <title>NieR Novellas (2010)</title>
+<style>
+  .para{
+  display: inline-block;
+  height:auto;
+  text-size-adjust: auto;
+  margin-bottom: 1%;
+    margin-top: 0.6cm;
+  margin-left: 8%;
+  margin-right: 8%;
+  letter-spacing: 0.17rem;
+  font-size: 115%;
 
+}
+div{
+  text-align: center;
+}
+@media screen and (orientation: portrait) {
+  .line{
+  margin-top: 6.5%;
+}
+.para u a{
+  margin-top: 5%;
+  margin-bottom: 30px;
+}
+.para{
+    font-size: 135%;
+}
+}
+</style>
+<div class="over">
+<div class="Guide">
 <p class="title"><a href="https://drive.google.com/file/d/19qErGOhiwZvD6JJsB8dcro3Ccp64B5mc/view?usp=sharing">
     And Then There Were None<img class="art" src="https://i.imgur.com/ECKT2RO.png"></a></p>
 <p class="title"><a href="https://drive.google.com/file/d/1Qr40Gv5qyWhYh4z_eICFHemG0DdP1lDu/view?usp=sharing">
@@ -78,5 +108,8 @@ import TextLayout from "@/layouts/TextLayout.astro"
     The Lost World Appendix ver.<img class="art" src="https://i.imgur.com/m5Zuo5T.png"></a></p>
 <p class="title"><a href="/stories/nier/novellas/the-fire-of-prometheus">
   The Fire of Prometheus<img class="art" src="https://i.imgur.com/NI1Yl5w.png"></a></p>
+</div>
+</div>
+
 <p class="line"></p>
 <p class="menu"><a href="/stories/nier">Back</a></p>

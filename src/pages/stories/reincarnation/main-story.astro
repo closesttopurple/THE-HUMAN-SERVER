@@ -1,0 +1,105 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro"
+import '@/styles/text.css'
+import TextLayout from "@/layouts/TextLayout.astro"
+---
+
+<TextLayout>
+</TextLayout>
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a href="/" class="menu-logo">
+    <img src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a href="/series-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a href="/credits">
+          Credits
+        </a>
+      </li>
+      <li>
+        <a href="https://archive.thehumanserver.org" target="_blank" rel="noopener noreferrer">
+          Gallery
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/bug-report">
+          Bug Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<title>NieR Re[in]carnation</title>
+<style>
+  .para{
+  display: inline-block;
+  height:auto;
+  text-size-adjust: auto;
+  margin-bottom: 1%;
+    margin-top: 0.6cm;
+  margin-left: 8%;
+  margin-right: 8%;
+  letter-spacing: 0.17rem;
+  font-size: 115%;
+
+}
+div{
+  text-align: center;
+}
+@media screen and (orientation: portrait) {
+  .line{
+  margin-top: 6.5%;
+}
+.para u a{
+  margin-top: 5%;
+  margin-bottom: 30px;
+}
+.para{
+    font-size: 135%;
+}
+}
+</style>
+
+
+<div class="over">
+<div class="Guide">
+
+<p class="title"><a href="https://www.youtube.com/playlist?list=PL-LuSjfJbNGT0nRqSD7LHRLFlE8qXBbv_">
+    Season 1<img class="art" src="https://i.imgur.com/SJjae5N.png"></a></p>
+<p class="title"><a href="https://www.youtube.com/watch?v=oVpKAbnRUBY&list=PL-LuSjfJbNGTFjGxxHWJW1MjbkROx_De7">
+    Season 2 Route A<img class="art" src="https://i.imgur.com/ht22PE0.png"></a></p>
+<p class="title"><a href="https://www.youtube.com/watch?v=7JWXeO6gll8&list=PL-LuSjfJbNGR9sDQ5kSZRj6KejPIOg9C3">
+    Season 2 Route B<img class="art" src="https://i.imgur.com/cKZxSbf.png"></a></p>
+<p class="title"><a href="https://www.youtube.com/watch?v=hhH2OSaRLAY&list=PL-LuSjfJbNGRndPHWb-VEb8xfV8J7Xig2">
+    Season 3<img class="art" src="https://i.imgur.com/cMGmp9q.png"></a></p>
+<p class="title"><a href="https://nierrein.com/">
+    Interactive Experience<img class="art" src="https://i.imgur.com/y8B0Of3.png"></a></p>
+<p class=title><a href="/stories/reincarnation/main-story/read-through">
+    Read Through<img class="art" src="https://i.imgur.com/oOTbYPt.png"></a></p>
+</div>
+</div>
+
+<p class="line"></p>
+<p class="menu"><a href="/stories/reincarnation/stories">Back</a></p>
