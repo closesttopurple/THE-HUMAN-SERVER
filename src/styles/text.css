@@ -69,6 +69,13 @@
     margin-bottom:0.3cm;
     content:url("https://i.imgur.com/lNOnTWA.png");
   }
+  .title-box{
+        margin-left: auto;
+    margin-right: auto;
+  border: thick solid rgb(58, 58, 58);
+  background-color:rgb(70, 70, 70);
+  padding: 10px;
+}
 }
   @media  (prefers-color-scheme: light){
     .words {
@@ -81,6 +88,13 @@
     .light-link{
 
   }
+  .title-box{
+        margin-left: auto;
+    margin-right: auto;
+  border: thick solid rgb(201, 201, 201);
+  background-color:rgb(253, 253, 253);
+  padding: 10px;
+}
 }
 @media screen and (orientation: landscape){
    #title3{
@@ -717,5 +731,16 @@ p a:hover
 summary{
   margin: 0 auto;
      display:inline;
+}
+#box{
+  background-color: #585858;
+  padding: -10%;
+}
+@media screen and (orientation: portrait) {
+
+.title-box{
+    background-color: transparent;
+    border-color: transparent;
+}
 }
 }
