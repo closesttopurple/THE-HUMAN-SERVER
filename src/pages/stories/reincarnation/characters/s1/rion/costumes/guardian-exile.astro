@@ -6,134 +6,7 @@ import '@/styles/text.css'
 <TextLayout>
 </TextLayout>
 <title>Rion's Character Stories</title>
-<style>
-    @media screen and (orientation: landscape) {
-.container {  display: grid;
-  grid-template-columns: 0.9fr 1fr 1.1fr;
-  grid-template-rows: 1.5fr 2fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  margin: 0 auto;
-}
-
-.menu { grid-area: 1 / 1 / 3 / 3; }
-
-.content {  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.4fr 1.6fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "hp atk def agi"
-    "photo photo photo photo"
-    "photo photo photo photo";
-  grid-area: 1 / 3 / 3 / 4;
-}
-
-.hp { grid-area: hp; }
-
-.atk { grid-area: atk; }
-
-.def { grid-area: def; }
-
-.agi { grid-area: agi; }
-
-.photo { grid-area: photo; }
-
-.ability {  display: grid;
-  grid-template-columns: 2.2fr;
-  grid-template-rows: 0.5fr 1.5fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "title-ab"
-    "text-ab";
-  grid-area: 1 / 2 / 2 / 3;
-}
-
-.text-ab { grid-area: text-ab; }
-
-.title-ab { grid-area: title-ab; }
-
-.skill {  display: grid;
-  grid-template-columns: 1.3fr;
-  grid-template-rows: 0.5fr 1.5fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "title-s"
-    "text-s";
-  grid-area: 1 / 1 / 2 / 2;
-}
-
-.title-s { grid-area: title-s; }
-
-.text-s { grid-area: text-s; }
-
-.debris {  display: grid;
-  grid-template-columns: 1.7fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "title-d"
-    "text-d"
-    "text-d"
-    "text-d";
-  grid-area: 2 / 2 / 3 / 3;
-}
-
-.title-d { grid-area: title-d; }
-
-.text-d { grid-area: text-d; }
-
-.awakening {  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 1.5fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "title-aw title-aw title-aw"
-    "text-aw text-aw text-aw";
-  grid-area: 2 / 1 / 3 / 2;
-}
-
-.title-aw { grid-area: title-aw; }
-
-.text-aw { grid-area: text-aw; }
-
-
-    }
-
-    @media screen and (orientation: portrait) {
-.container {
-display: grid;
-grid-template-areas:
-    "photo"
-    "content"
-    "title-s"
-    "skill"
-    "title-ab"
-    "abilities"
-    "title-aw"
-    "awakening"
-    "title-d"
-    "debris";
-grid-template-columns: 1fr 1fr;
-margin: 0px auto;
-margin-top: 3%;
-gap: 2.5%;
-padding: 5%;
-text-align: left;
-height: auto;
- min-height: 130vh;
-width: auto;
-}
-h2{
-    font-size: 100%;
-}
-    }
-    
+<style>  
     #icon{
 display:inline-block;
     }
@@ -156,26 +29,6 @@ display:inline-block;
     margin-top: 0%;
 }
 
-.container > div.content {
-background-color: rgba(65, 65, 65, 0.8);
-}
-.container > div.ability {
-background-color: rgba(65, 65, 65, 0.8);
-}
-.container > div.debris {
-background-color: rgba(65, 65, 65, 0.8);
-}
-.container > div.awakening {
-background-color: rgba(65, 65, 65, 0.8);
-}
-.container > div.skill {
-background-color: rgba(65, 65, 65, 0.8);
-}
-
-.container{
-    background-color: rgba(113, 113, 113, 0.8);
-    padding: 1.5%;
-}
 .para{
     font-size: 65%;
     margin-left: auto;
@@ -275,8 +128,9 @@ background-color: rgba(65, 65, 65, 0.8);
     .container > div.source {
   background-color: rgba(207, 207, 207, 0.8);
 }
-.container{
+div{
     text-align: center;
+    margin: 0 auto;
 }
   }
   h2{
@@ -338,33 +192,9 @@ background-color: rgba(65, 65, 65, 0.8);
     </ul>
   </div>
 </nav>
-<div class="below"><div class="container">
-  <div class="content">
-    <div id="hp"><h2>36479 HP</h2></div>
-    <div id="atk"><h2>2724 ATK</h2></div>
-    <div id="def"><h2>2777 DEF</h2></div>
-    <div id="agi"><h2>1160 AGI</h2></div>
-    <div class="photo"><img src="https://i.imgur.com/Ax28uA7.png"></div>
-  </div>
-  <div class="ability">
-    <div class="title-ab"><h2>Abilities</h2></div>
-    <div class="text-ab"><p class="para-2">Ambush:<br>Critical rate up by 16%.<br><br>Fleetfoot:<br>Agility up by 16%.</p></div>
 
-  </div>
-  <div class="skill">
-    <div class="title-s"><h2>Skill</h2></div>
-    <div class="text-s"><p class="para-2">Firm Pride:<br>Deal 100% damage to one enemy 4 times. (Critical damage increased by 40%).</p></div>
-  </div>
-  <div class="awakening">
-    <div class="title-aw"><h2>Awakening</h2></div>
-    <div class="text-aw"><p class="para-2">Fatal:<br>Critical hit damage up by 12%.</p></div>
-  </div>
-  <div class="debris">
-    <div class="title-d"><h2>Debris</h2></div>
-    <div class="text-d"><p class="para-2">Fleetfoot Clump<br>Agility up by 5%.</p></div>
-  </div>
-</div></div>
-<h2>Source</h2><img src="">
+<img src="https://i.imgur.com/Ax28uA7.png">
+<h2>Source</h2><img src="https://i.imgur.com/R5wqFW5.png">
 <h1>Costume Story</h1><p class="para-1">Ri5:30 - Philosophical Guardian
 <br>If god existed, it would mourn this world of endless war and blood.
 <br>If god existed, it would send messengers to those who await salvation.

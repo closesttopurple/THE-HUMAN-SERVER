@@ -1,0 +1,209 @@
+---
+import TextLayout from "@/layouts/TextLayout.astro"
+import '@/styles/text.css'
+---
+
+<TextLayout>
+</TextLayout>
+<title>Crossover Costumes</title>
+<style>  
+    #icon{
+display:inline-block;
+    }
+.title{
+    margin-bottom: 0.1cm;
+    font-size: 85%;
+}
+.title-1{
+  font-size: 130%;
+}
+#title-sub{
+  margin-top: 0%;
+  margin-bottom: 0.1cm;
+    font-size: 50%;
+    margin-top: -0.5cm;
+}
+
+#top-right{
+    font-size: 65%;
+    margin-top: 0%;
+}
+
+.para{
+    font-size: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+  border: thick solid rgb(58, 58, 58);
+  background-color:rgb(70, 70, 70);
+  padding: 10px;
+
+}
+    @media screen and (orientation: landscape)
+{
+  .para-1{
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    margin-right: 25%;
+    margin-left: 25%;
+    text-align:left;
+    font-size: 110%;
+    margin-top: 0.6cm;
+      border: thick solid rgb(58, 58, 58);
+  background-color:rgb(70, 70, 70);
+  padding: 10px;
+}
+  .para-2{
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-align:left;
+    font-size: 100%;
+  padding: 10px;
+  margin-left: 2%;
+  margin-right: 2%;
+        border: thick solid rgb(58, 58, 58);
+  background-color:rgb(70, 70, 70);
+    padding: 10px;
+}
+}
+
+
+    @media screen and (orientation: portrait)
+{
+  .para-1{
+    margin-right: 8%;
+    margin-left: 8%;
+    text-align:left;
+    font-size: 130%;
+    margin-top: 0.2cm;
+    border: thick solid rgb(58, 58, 58);
+    background-color:rgb(70, 70, 70);
+    padding: 10px;
+    letter-spacing: 1.5px;
+
+}
+  .para-2{
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-align:left;
+    font-size: 100%;
+  padding: 10px;
+  margin-left: 2%;
+  margin-right: 2%;
+  }
+    h2{
+    font-weight: 520;
+    margin-bottom: -0.4%;
+  }
+  hp{
+    margin-bottom: -5%;
+  }
+    #atk{
+    display:none;
+  }
+  #def{
+    display:none;
+  }
+  #agi{
+    display:none;  }
+    #hp{
+        display:none;
+    }
+    .below{
+        padding: 5%;
+    }
+}
+  @media screen and (prefers-color-scheme: light){
+    .para-1{
+  border: thick solid rgb(165, 164, 164);
+  background-color:rgb(224, 224, 224);
+    }
+      .para{
+  border: thick solid rgb(165, 164, 164);
+  background-color:rgb(224, 224, 224);
+    }
+    .container > div.content {
+  background-color: rgba(207, 207, 207, 0.8);
+}
+    .container > div.source {
+  background-color: rgba(207, 207, 207, 0.8);
+}
+div{
+    text-align: center;
+    margin: 0 auto;
+}
+  }
+  h2{
+    font-weight: 520;
+    margin-top: 1.2%;
+  }
+  #atk{
+    color: #f9a5a5;
+  }
+  #def{
+    color: #93c5ea;
+  }
+  #agi{
+    color: #86efac;
+  }
+</style>
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a href="/" class="menu-logo">
+    <img src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a href="/series-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a href="/credits">
+          Credits
+        </a>
+      </li>
+      <li>
+        <a href="https://archive.thehumanserver.org" target="_blank" rel="noopener noreferrer">
+          Gallery
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/bug-report">
+          Bug Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+    
+<img src="https://i.imgur.com/sDUeTRT.png">
+<h2>Source</h2><img src="https://i.imgur.com/A7hFWCw.png">
+<h2>Costume Story</h2><p class="para-1">
+An Attacker-type android that deserted YoRHa. Attacker types mainly
+specialize in close-quarters combat, and served as models for the
+B-types which were later formally deployed.
+<br><br>
+All A-type models can access a special function called Berserker
+mode that offers an explosive increase in attack power at the
+expense of defense.
+<br><br>
+This mode was not part of the loadout package for later B-types.</p>
+<p class="line"></p>
+<p class="menu"><a href="/stories/reincarnation/characters/crossovers">Back</a></p>

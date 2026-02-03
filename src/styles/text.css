@@ -483,6 +483,9 @@ p a:hover
   user-select: none;
   box-sizing: border-box;
 }
+    u{
+    color:rgb(24, 0, 113);
+    }
 }
 
 .menu-logo {
@@ -675,7 +678,7 @@ p a:hover
     padding: 0 20px;
   }
   .over{
-  margin: 0px auto;
+  margin: 0 auto;
   max-width: fit-content;
   position: relative;
 }
@@ -744,5 +747,15 @@ summary{
     background-color: transparent;
     border-color: transparent;
 }
+}
+.Guide > img{
+  display: inline-block;
+  object-fit: cover;
+  min-width: 650px;
+  min-height: 150px;
+  max-width: 650px;
+  max-height: 150px;
+
+
 }
 }

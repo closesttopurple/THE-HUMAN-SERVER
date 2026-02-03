@@ -6,37 +6,7 @@ import '@/styles/text.css'
 <TextLayout>
 </TextLayout>
 <title>Rion's Character Stories</title>
-<style>
-    @media screen and (orientation: landscape) {
-        .container {
-display: grid;
-grid-template-areas:
-    "header header"
-    "menu content"
-    "footer footer";
-
-grid-template-columns: 0.5fr 1.2fr;
-margin: 0px auto;
-margin-bottom: 2.5%;
-float:center;
-
-}
-    }
-
-    @media screen and (orientation: portrait) {
-.container {
-display: grid;
-grid-template-areas:
-    "header header"
-    "content content"
-    "menu menu";
-grid-template-columns: 1fr 1fr;
-margin: 0px auto;
-margin-top: 3%;
-margin-bottom: 45%;
-gap: 2.5%;
-}
-    }
+<style>  
     #icon{
 display:inline-block;
     }
@@ -58,24 +28,7 @@ display:inline-block;
     font-size: 65%;
     margin-top: 0%;
 }
-.container > div {
-width: 100%;
-  padding: 10px;
-}
-.container > div.header {
-  grid-area: header;
-  text-align: center;
-}
-.container > div.menu {
-grid-area: menu;
-}
-.container > div.content {
-  grid-area: content;
-background-color: rgba(65, 65, 65, 0.8);
-}
-.menu{
-  margin-top: 2.5%;
-}
+
 .para{
     font-size: 65%;
     margin-left: auto;
@@ -100,6 +53,18 @@ background-color: rgba(65, 65, 65, 0.8);
   background-color:rgb(70, 70, 70);
   padding: 10px;
 }
+  .para-2{
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-align:left;
+    font-size: 100%;
+  padding: 10px;
+  margin-left: 2%;
+  margin-right: 2%;
+        border: thick solid rgb(58, 58, 58);
+  background-color:rgb(70, 70, 70);
+    padding: 10px;
+}
 }
 
 
@@ -117,6 +82,36 @@ background-color: rgba(65, 65, 65, 0.8);
     letter-spacing: 1.5px;
 
 }
+  .para-2{
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-align:left;
+    font-size: 100%;
+  padding: 10px;
+  margin-left: 2%;
+  margin-right: 2%;
+  }
+    h2{
+    font-weight: 520;
+    margin-bottom: -0.4%;
+  }
+  hp{
+    margin-bottom: -5%;
+  }
+    #atk{
+    display:none;
+  }
+  #def{
+    display:none;
+  }
+  #agi{
+    display:none;  }
+    #hp{
+        display:none;
+    }
+    .below{
+        padding: 5%;
+    }
 }
   @media screen and (prefers-color-scheme: light){
     .para-1{
@@ -130,6 +125,26 @@ background-color: rgba(65, 65, 65, 0.8);
     .container > div.content {
   background-color: rgba(207, 207, 207, 0.8);
 }
+    .container > div.source {
+  background-color: rgba(207, 207, 207, 0.8);
+}
+div{
+    text-align: center;
+    margin: 0 auto;
+}
+  }
+  h2{
+    font-weight: 520;
+    margin-top: 1.2%;
+  }
+  #atk{
+    color: #f9a5a5;
+  }
+  #def{
+    color: #93c5ea;
+  }
+  #agi{
+    color: #86efac;
   }
 </style>
 <nav class="menu-container">
@@ -177,24 +192,11 @@ background-color: rgba(65, 65, 65, 0.8);
     </ul>
   </div>
 </nav>
-<div class="container" id="character">
-<div class="header"><h1>Sickly Exile</h1></div>
-<div class="menu"><p style="margin-top: 5%;"><img id="icon" src="https://i.imgur.com/1yEzR4h.png"> <img id="icon" src="https://i.imgur.com/hW0Ad7x.png"></p>
-<p class="line"></p><p class="h1">Skill</p><p class="line"></p><p class="title">Will of Resistance</p><p class="title" id="top-right">Level 15/15</p><p class="para">Deal 60% damage to one enemy 3 times and increase damage of 2x or more chains by 25% for 30 seconds.</p><p class="line"></p>
-</p><p class="h1">Abilities</p><p class="line"></p><p class="title">Toughness</p><p class="title" id="top-right">Level 4/4</p><p class="para">HP up by 12%.</p>
-<p class="line"></p><p class="title">Aegis<p class="line"></p><p class="title">Level 4/4</p></p><p class="para">Defense up by 12%.</p>
-<p class="line"></p><p class="h1">Awakening</p><p class="line"></p><p class="title">Vigor</p><p class="title" id="top-right">Level 3</p><p class="para">Attack up by 9%.</p>
-<p class="line"></p><p class="title">Debris:<br>Toughness Fragment</p><p class="title" id="top-right">Level 5</p><p class="para">HP up by 3%.</p>
-<p class="line">
-</div>
 
-<div class="content"><h1>Design</h1><img src="https://i.imgur.com/kRUZLuX.png"></div>
-</div>
-<h1>Costume Story</h1><p class="para-1">A young prince who travels with a bandaged, taciturn man.
-<br>Due to his royal lineage, he is often targeted by both bounty hunters
-and common citizens dissatisfied with the current state of affairs.<br><br>
-Given these dangers, why does he continue this journey?</p>
+<img src="https://i.imgur.com/Kq8iaLP.png">
+<h1>Costume Story</h1><p class="para-1">
+A young prince who travels with a bandaged, taciturn man.<br><br>
+Due to his royal lineage, he is often targeted by both bounty hunters
+and common citizens dissatisfied with the current state of affairs.</p>
 <p class="line"></p>
 <p class="menu"><a href="/stories/reincarnation/characters/s1/rion/costumes">Back</a></p>
-
-
