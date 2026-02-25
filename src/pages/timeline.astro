@@ -1,0 +1,156 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro"
+import '@/styles/text.css'
+import TextLayout from "@/layouts/TextLayout.astro"
+---
+
+<TextLayout>
+</TextLayout>
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a href="/" class="menu-logo">
+    <img src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a href="/series-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a href="/credits">
+          Credits
+        </a>
+      </li>
+      <li>
+        <a href="https://archive.thehumanserver.org" target="_blank" rel="noopener noreferrer">
+          Gallery
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/bug-report">
+          Bug Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<title>DrakeNieR Timeline</title>
+<style>
+  .para{
+  display: inline-block;
+  height:auto;
+  text-size-adjust: auto;
+  margin-bottom: 1%;
+    margin-top: 0.6cm;
+  margin-left: 8%;
+  margin-right: 8%;
+  letter-spacing: 0.17rem;
+  font-size: 115%;
+    border: thick solid rgb(58, 58, 58);
+  background-color:rgb(70, 70, 70);
+  border-style: groove;
+  padding: 1.5%;
+}
+.Guide{
+    margin: 0 auto;
+}
+div{
+  text-align: center;
+}
+@media screen and (orientation: portrait) {
+  .line{
+  margin-top: 6.5%;
+}
+.para u a{
+  margin-top: 5%;
+  margin-bottom: 30px;
+}
+.para{
+    font-size: 135%;
+}
+}
+@media screen and (min-width: 320px ) {
+  .Guide {
+  display: inline-grid;
+    grid-template-columns: auto;
+}
+
+}
+@media screen and (min-width: 481px) {
+  .Guide {
+  display: inline-grid;
+  grid-template-columns: auto;
+}
+}
+@media screen and (min-width: 769px) {
+  .Guide {
+  display: inline-grid;
+  grid-template-columns: auto;
+}
+}
+@media screen and (min-width: 1025px) {
+  .Guide {
+  display: inline-grid;
+  grid-template-columns: auto;
+}
+}
+@media screen and (min-width: 1201px) {
+  .Guide {
+  display: inline-grid;
+  grid-template-columns: auto;
+}
+}
+@media screen and (min-width: 1919px) {
+  .Guide {
+  display: inline-grid;
+  grid-template-columns: auto;
+}
+}
+@media screen and (min-width: 1921px) {
+  .Guide {
+  display: inline-grid;
+  grid-template-columns: auto;
+}
+}
+details{
+    margin: 0 auto;
+}
+summary{
+    margin: 0 auto;
+}
+</style>
+<div class="over"><p class="para" style="margin-top: 1cm; font-size: 250%;" >Compiled from strictly canon sources and interviews.</p></div>
+<p class="line"></p>
+<div class="over"><details><summary class="title" style="margin-top: 1cm; font-size: 250%;">Years 1-856</summary>
+    <p class="para">Before the year 856, the world was the same as ours.</p><div class="Guide">
+<p class="title">
+    Year 1</p><p class="para">Jesus Christ is born.</p>
+    </details>
+</div></div>
+<!--
+Source - https://stackoverflow.com/a/18071634
+Posted by Chris Rockwell, modified by community. See post 'Timeline' for change history
+Retrieved 2026-02-13, License - CC BY-SA 3.0
+-->
+
+
+<p class="menu"><a href="/stories/nier-automata/stage-plays">Back</a></p>

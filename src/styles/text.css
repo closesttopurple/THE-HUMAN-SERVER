@@ -9,8 +9,14 @@
     margin-bottom:0.3cm;
     margin-top: 1.5%;
   }
-
-
+@font-face{
+  font-family: "Angelic-Script";
+  src: url(ANGELIC.TTF)
+}
+@font-face{
+  font-family: "Life-Regular";
+  src: url(Life-Regular.otf)
+}
   .logo{
     display: block;
     margin-left: auto;
@@ -257,6 +263,7 @@
     text-align:left;
     font-size: 110%;
     margin-top: 0.6cm;
+    text-indent: 1.4em;
 }
 }
 
@@ -269,32 +276,35 @@
     text-align:left;
     font-size: 130%;
     margin-top: 0.2cm;
+    margin-bottom: 0.3cm;
     letter-spacing: 1.5px;
 
 }
 }
-p.title{
+
   @media screen and (orientation: landscape)
 {
+  p.title{
   margin-top: 0.6cm;
-  font-size: 140%;
-  font-family: "'Open Sans Variable','Montserrat Variable','Noto Sans Variable', sans-serif";
+  font-size: 150%;
+  font-family: "Life-Regular";
   margin-bottom: 0.1cm;
   margin-left: 8%;
   margin-right: 8%;
-  font-weight: 465;
-  letter-spacing: 0.17rem;
+  font-weight: 575;
+letter-spacing: 2.5px;
 }
 }
-p.title{
+
   @media screen and (orientation: portrait)
 {
+  p.title{
   margin-top: 1cm;
   font-size: 130%;
-  font-family: "'Open Sans Variable','Montserrat Variable','Noto Sans Variable', sans-serif";
+  font-family: "Life-Regular";
   margin-left: 7%;
   margin-right: 7%;
-  font-weight: 465;
+  font-weight: 400;
   margin-bottom: 0.1cm;
 }
 }
@@ -757,5 +767,9 @@ summary{
   max-height: 150px;
 
 
+}
+sup{
+  font-size: 145%;
+  text-indent: 0em;
 }
 }
