@@ -76,13 +76,13 @@
     content:url("https://i.imgur.com/lNOnTWA.png");
   }
   .title-box{
-        margin-left: auto;
-    margin-right: auto;
   border: thick solid rgb(58, 58, 58);
   background-color:rgb(70, 70, 70);
   padding: 10px;
   margin-top: 1.5%;
   margin-bottom: 1.5%;
+  width: fit-content;
+      margin: 0 auto;
 }
 }
   @media  (prefers-color-scheme: light){
@@ -97,12 +97,14 @@
 
   }
   .title-box{
-        margin-left: auto;
+    width: fit-content;
     margin-right: auto;
   border: thick solid rgb(201, 201, 201);
   background-color:rgb(253, 253, 253);
   padding: 10px;
+    margin: 0 auto;
 }
+
 }
 @media screen and (orientation: landscape){
    #title3{
@@ -265,6 +267,20 @@
     margin-top: 0.6cm;
     text-indent: 1.4em;
 }
+.why-is-this-a-problem{
+  margin-left: 8%;
+  margin-right: 8%;
+}
+  .para-special{
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    margin-right: 25%;
+    margin-left: 25%;
+    text-align:left;
+    font-size: 110%;
+    margin-top: 0.6cm;
+    text-indent: 1.4em;
+}
 }
 
 
@@ -294,16 +310,22 @@
   font-weight: 575;
 letter-spacing: 2.5px;
 }
+  p.title-special{
+  margin-top: 0.6cm;
+  font-size: 150%;
+  font-family: "Life-Regular";
+  margin-bottom: 0.1cm;
+  font-weight: 575;
+letter-spacing: 2.5px;
+}
 }
 
   @media screen and (orientation: portrait)
 {
-  p.title{
+  p.title-special{
   margin-top: 1cm;
   font-size: 130%;
   font-family: "Life-Regular";
-  margin-left: 7%;
-  margin-right: 7%;
   font-weight: 400;
   margin-bottom: 0.1cm;
 }
@@ -751,13 +773,6 @@ summary{
   background-color: #585858;
   padding: -10%;
 }
-@media screen and (orientation: portrait) {
-
-.title-box{
-    background-color: transparent;
-    border-color: transparent;
-}
-}
 .Guide > img{
   display: inline-block;
   object-fit: cover;
@@ -769,7 +784,7 @@ summary{
 
 }
 sup{
-  font-size: 145%;
+  font-size: 125%;
   text-indent: 0em;
 }
 }

@@ -1,0 +1,196 @@
+---
+import TextLayout from "@/layouts/TextLayout.astro"
+import '@/styles/text.css'
+---
+
+<TextLayout>
+</TextLayout>
+<title>Beastbain</title>
+<style>
+    @media screen and (orientation: landscape) {
+        .container {
+display: grid;
+grid-template-areas:
+    "header header"
+    "content content"
+    "footer footer";
+
+grid-template-columns: 0.5fr 0.5fr;
+margin: 0px auto;
+margin-bottom: 2.5%;
+float:center;
+
+}
+    }
+
+    @media screen and (orientation: portrait) {
+.container {
+display: grid;
+grid-template-areas:
+    "header header"
+    "content content";
+grid-template-columns: 1fr 1fr;
+margin: 0px auto;
+margin-top: 3%;
+margin-bottom: 45%;
+gap: 2.5%;
+}
+    }
+    #icon{
+display:inline-block;
+    }
+.title{
+        margin-top: 0.1cm;
+    margin-bottom: 0.1cm;
+    font-size: 85%;
+}
+.title-1{
+  font-size: 130%;
+}
+#title-sub{
+  margin-top: 0%;
+  margin-bottom: 0.1cm;
+    font-size: 50%;
+    margin-top: -0.5cm;
+}
+
+#top-right{
+    font-size: 65%;
+    margin-top: 0%;
+}
+.container > div {
+width: 100%;
+  padding: 10px;
+}
+.container > div.header {
+  grid-area: header;
+  text-align: center;
+}
+.container > div.content {
+  grid-area: content;
+background-color: rgba(65, 65, 65, 0.8);
+}
+
+.para{
+    font-size: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+  border: thick solid rgb(58, 58, 58);
+  background-color:rgb(70, 70, 70);
+  padding: 10px;
+
+}
+    @media screen and (orientation: landscape)
+{
+  .para-1{
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    margin-right: 25%;
+    margin-left: 25%;
+    text-align:left;
+    font-size: 110%;
+    margin-top: 0.6cm;
+      border: thick solid rgb(58, 58, 58);
+  background-color:rgb(70, 70, 70);
+  padding: 10px;
+}
+}
+
+
+    @media screen and (orientation: portrait)
+{
+  .para-1{
+    margin-right: 8%;
+    margin-left: 8%;
+    text-align:left;
+    font-size: 130%;
+    margin-top: 0.2cm;
+    border: thick solid rgb(58, 58, 58);
+    background-color:rgb(70, 70, 70);
+    padding: 10px;
+    letter-spacing: 1.5px;
+
+}
+}
+  @media screen and (prefers-color-scheme: light){
+    .para-1{
+  border: thick solid rgb(165, 164, 164);
+  background-color:rgb(224, 224, 224);
+    }
+      .para{
+  border: thick solid rgb(165, 164, 164);
+  background-color:rgb(224, 224, 224);
+    }
+    .container > div.content {
+  background-color: rgba(207, 207, 207, 0.8);
+}
+  }
+</style>
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a href="/" class="menu-logo">
+    <img src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a href="/series-guide/ths-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a href="/credits">
+          Credits
+        </a>
+      </li>
+      <li>
+        <a href="https://archive.thehumanserver.org" target="_blank" rel="noopener noreferrer">
+          Gallery
+        </a>
+      </li>
+            </li>
+            <li>
+        <a href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
+          Reader
+        </a>
+      </li>
+            <li>
+        <a href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/bug-report">
+          Contact
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container" id="character">
+<div class="header"><h1>Beastbain</h1></div>
+
+<div class="content"><h1>Design</h1><img src="https://i.imgur.com/F7f80GH.png"><img src="https://i.imgur.com/8wzfv1y.png"><img src="https://i.imgur.com/76BP335.png"></div>
+</div>
+<h1>Weapon Story</h1><h2>Level 1</h2><p class="para-1"></p>
+<h2>Level 2</h2><p class="para-1"></p>
+<h2>Level 3</h2><p class="para-1">.</p>
+<h2>Level 4</h2><p class="para-1"></p>
+<p class="line"></p>
+<p class="menu"><a href="/stories/nier/weapons">Back</a></p>
