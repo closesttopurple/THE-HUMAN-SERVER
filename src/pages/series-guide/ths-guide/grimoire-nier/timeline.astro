@@ -7,18 +7,7 @@ import '@/styles/text.css'
 </TextLayout>
 <style>
 
-.para{
-  display: inline-block;
-  height:auto;
-  text-size-adjust: auto;
-  margin-bottom: 1%;
-    margin-top: 0.6cm;
-  margin-left: 8%;
-  margin-right: 8%;
-  letter-spacing: 0.17rem;
-  font-size: 115%;
-    text-indent: 0em;
-}
+
 div{
   text-align: center;
 }
@@ -35,7 +24,43 @@ div{
         text-indent: 0em;
 }
 }
+.timeline-table {
+    overflow: auto;
+    width: 100%;
+}
+
+.timeline-table table {
+    border: 1px solid #dededf;
+    height: 100%;
+    width: 100%;
+    table-layout: auto;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: left;
+}
+
+.timeline-table caption {
+    caption-side: top;
+    text-align: left;
+}
+
+.timeline-table th {
+    border: 1px solid #b6b6b6;
+    background-color: #e5e5e5;
+    color: #000000;
+    padding: 5px;
+}
+
+.timeline-table td {
+    border: 1px solid #b6b6b6;
+    background-color: #e5e5e5;
+    color: #000000;
+    padding: 5px;
+}
+
 </style>
+
+
 <nav class="menu-container">
   <!-- burger menu -->
   <input type="checkbox" aria-label="Toggle menu" />
@@ -93,7 +118,54 @@ div{
   </div>
 </nav>
 <title>THS's Guide</title>
-<p style="margin-top: 1cm; font-size: 250%;">Grimoire NieR Timeline Chart</p>
-uhh idk 
+<p style="margin-top: 1cm; font-size: 250%;">Grimoire NieR</p>
+<p class="title-special title-box">Investigation Reports</p>
+<p class="para"><span style="color: rgb(194, 0, 0);"><b>11/04/2003</b> 22:53</span><br>I'm about to get briefed on the project. Extremely top-secret stuff. They wouldn't take no for an answer, so I'm doing this entirely against my will. I can't begin to imagine why they need a particle physicist in the first place, but here I am.</p>
+<p class="para"><span style="color: rgb(194, 0, 0);"><b>11/09/2003</b> 23:05</span><br>I saw the specimens that are the purported cause of the incident. The whole thing sounds like a bad joke: a dragon and a giant appearing over Shinjuku? Who could take any of this seriously? That said, the energy characteristics of the samples are undeniably strange, so I'm going to begin a detailed analysis tomorrow. I now understand why they involved me in this.
+</p>
+<p class="para"><span style="color: rgb(194, 0, 0);"><b>12/04/2003</b> 23:05</span><br>The food here is awful; I think the cook's only skill is to dump MSG on everything to try to cover up the taste. Sure, it's free, so I probably shouldn't complain. But if they want to keep their research team motivated, they really should put in a little more effort.</p>
+<p class="para"><span style="color: rgb(194, 0, 0);"><b>02/08/2004</b> 23:17</span><br>Another worker in the facility came down with that strange disease, and now I'm hearing disquieting rumors that the particles we're studying may be the cause. There's still a lot we don't know about them, so I'm not surprised people would believe such a thing. I worry this may slow our research.</p>
+<p class="para"><span style="color: rgb(194, 0, 0);"><b>02/22/2004</b> 23:43</span><br>I heard from Watanabe. Just as we feared, there's a high probability the particles we're researching are the cause of the disease. As a result, we've been forbidden from coming into direct contact with them, which is only going to make our work more difficult.<br><br>
+We've almost confirmed the particles that made up the Giant change their energy levels in response to observation, but we have no idea what they're reacting to. Variations in the observer's brain waves? Body temperature? Differences in atmospheric humidity caused by sweat? Some people believe the particles are reacting to the observer's feelings, but that's no longer science at that point.</p>
+<p class="para"><span style="color: rgb(194, 0, 0);"><b>02/25/2004</b> 23:07</span><br>They brought in cadavers so we can study the connection between the particles and the disease. They look more like statues than bodies, and give an impression similar to the videos we've been shown of the Giant. At first, I attributed their white color to protein denaturation, but we soon discovered they were composed entirely out of sodium chloride—in other words, they turned to salt. Considering how little sodium there is in the human body, it's a mystery as to where they absorbed it all from.<br><br>One final note: Reports of auditory hallucinations among the infected suggest the damage begins in the brain and spreads from there, but I'll leave that kind of thing to the neuroscientists.
+</p>
+<p class="para"><span style="color: rgb(194, 0, 0);"><b>07/04/2004</b> 02:18</span><br>Today wore me out. Is there no way to eliminate all these pointless meetings and conferences? Such a waste of time.</p>
+<p class="para"><span style="color: rgb(194, 0, 0);"><b>02/24/2005</b> 01:15</span><br>I heard from Kobayashi. He says they've succeeded in cultivating D tissue using the Sea of Origin, and that as expected the density of G particles is an important factor. This should lead to rapid progress in D tissue research. Apparently the tissue is quite resistant to extremes of temperature and pressure, and they'll be arranging experiments to study its resilience on a much grander scale.</p>
+<p class="para"><span style="color: rgb(194, 0, 0);"><b>03/08/2005</b> 00:45</span><br>No matter how many times we run the tests, the energy level fluctuations accompanying the cultivation of D tissue defy the law of conservation of energy. If it were observed only at the quantum mechanical level, that'd be one thing, but I can't begin to account for such macro-level energy deviation. The source of the excess energy has to be these mysterious G particles.</p>
+<p class="para"><span style="color: rgb(194, 0, 0);"><b>11/15/2005</b> 02:11</span><br>It appears there was some sort of incident with the D tissue resilience tests, and the lack of information makes me suspect it's been classified. It feels like pressure to show results has been leading to a lot of ill-advised experimentation lately. I wonder what happened to light such a fire under the facility directors?</p>
+<p class="para"><span style="color: rgb(194, 0, 0);"><b>12/24/2005</b> 01:45</span><br>It's Christmas Eve, but I can't leave because we've been on permanent red alert ever since the incident. I had to instruct my husband to buy our daughter's Christmas present—I sure hope he doesn't forget. Also, I worry she may be too old for teddy bears now. Statistically, she should be within the target demographic for such things, but matters of personal preference always have high levels of deviation above the norm. Next time I should just ask her directly.</p>
+<p class="para"><span style="color: rgb(194, 0, 0);"><b>01/08/2006</b> 01:33</span><br>Rumors are flying about some sort of black monster, but I suspect it's just group hysteria brought on by our recent stressful circumstances. The ill-conceived experiments are continuing, as is our red-alert status. Whatever's going on, I assume it has something to do with the total blackout on research results related to D tissue.</p>
+<p class="para"><span style="color: rgb(194, 0, 0);"><b>04/15/2006</b> 02:22</span><br>Can't say I've felt very good lately. So tired now. We devised a theoretical revision to the law of conservation of energy based on the now-accepted multi-origin theory. It's holding up mathematically, but it still feels so far-fetched. Factor in the concept that our Dragon and Giant are supposedly otherworldly beings, and it's like I'm living in the pages of a science-fiction novel. As a scientist, it's just so difficult to accept these findings.<br><br>
+Ugh. This buzzing in my ears is driving me dizzy.
+</p>
+<p class="para"><span style="color: rgb(194, 0, 0);"><b>104/19/2006</b> 03:11</span><br>Physical health deteriorating. Ear buzzing sounds like bells. Can't sleep anymore.</p>
+<p class="para"><span style="color: rgb(194, 0, 0);"><b>04/22/2006</b> 06:24</span><br>I<br>
+ca n<br><br>
+hear
+<br><br>
+sou </p>
+<p class="title-special title-box">Timeline Chart</p>
+<div style="margin-left: 1.5%; margin-right: 1.5%; max-width: 90%; margin: 0 auto; padding: 6px; margin-top: 1.5%;"><div class="timeline-table">
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Event</th>
+            <th>Details</th>
+        </tr>
+        <tr>
+            <td>yeah</td>
+            <td>yeah</td>
+            <td>yeah</td>
+        </tr>
+                <tr>
+            <td>yeah</td>
+            <td>yeah</td>
+            <td>yeah</td>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+</div></div>
 <p class="line"></p>
-<p class="menu"><a href="/series-guide/ths-guide">Back</a></p>
+<p class="menu"><a href="/series-guide/ths-guide-main">Back</a></p>

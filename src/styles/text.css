@@ -373,9 +373,8 @@ iframe{
   margin-left: 7%;
   margin-right: 7%;
   font-weight: 480;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
+
+  margin: 0 auto;
 }
   body {
     background-color: light-dark(
@@ -473,6 +472,7 @@ p a
 {
   display: inline-block;
   padding: 0%;
+  text-indent: 0em;
 }
 
 p a:hover
@@ -716,7 +716,6 @@ p a:hover
 .Guide > div {
   padding: 10px;
   text-align: center;
-  margin-left: 5%;
 
 }
 
