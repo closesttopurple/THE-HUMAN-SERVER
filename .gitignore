@@ -27,3 +27,6 @@ TODO.txt
 
 node_modules
 .env
+
+# VS Code settings
+.vscode/
