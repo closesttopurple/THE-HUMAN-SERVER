@@ -44,6 +44,19 @@
       -webkit-filter: brightness(70%);
       transform: scale(0.98);
   }
+.home-icon {
+  display: inline-flex;     
+  font-size: 3rem !important;
+  margin: 0 !important;      
+  padding: 0;
+  text-decoration: none;
+  color: white;
+}
+
+  .home-icon:hover{
+          -webkit-filter: brightness(70%);
+      transform: scale(0.98);
+  }
   .art{
       object-fit: cover;
       display: block;
@@ -197,9 +210,9 @@
     border-bottom-length: 2px;
     border-radius: 7px;
   }
-
+  
   div{
-    margin-bottom: -5%;
+    margin-bottom: -3.5%;
   }
   #title2{
     display:none;
@@ -713,6 +726,13 @@ p a:hover
   max-width: fit-content;
   position: relative;
 }
+.over-icon{
+  margin: 0;
+  white-space: nowrap;   
+  display: flex;
+  align-items: center;
+}
+
 .Guide > div {
   padding: 10px;
   text-align: center;
@@ -762,6 +782,7 @@ p a:hover
   display: inline-grid;
   grid-template-columns: auto auto auto  auto auto;
 }
+
 }
 summary{
   margin: 0 auto;
@@ -770,6 +791,16 @@ summary{
 #box{
   background-color: #585858;
   padding: -10%;
+}
+.icon-container{
+  display: flex !important;
+  flex-direction: row;     
+  flex-wrap: nowrap;      
+  align-items: center;    
+  justify-content: center; 
+  gap: 15px;              
+  width: 100%;
+  
 }
 .Guide > img{
   display: inline-block;
@@ -785,5 +816,57 @@ sup{
   font-size: 125%;
   text-indent: 0em;
 }
+@media  (prefers-color-scheme: dark){
+    .icon {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:0.3cm;
+    content:url("https://ik.imagekit.io/closesttopurple/home-icon-light.svg");
+
+  width: 6.5%;
+  height: 6.5%;
+
+  }
+  .icon-border{
+        border-radius: 36px; padding: 2.5%;
+  background-color: #868686;
+}
+}
+
+  @media  (prefers-color-scheme: light){
+    .icon {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:0.3cm;
+
+  width: 6.5%;
+  height: 6.5%;
+    content:url("https://ik.imagekit.io/closesttopurple/home-icon-dark.svg");
+  }
+    .icon-border{
+              border-radius: 36px; padding: 10px 25px;
+  background-color: #a2a2a2;
+}
+}
+menu-icon{
+  font-size: 165%;
+}
+@media (max-width: 600px) {
+  .home-icon {
+    font-size: 2rem !important;
+  }
+
+  .icon-container {
+    gap: 8px;
+  }
+
+  .over-icon p {
+    font-size: 0.9rem;
+  }
+}
 
 }
+
+
+
+
