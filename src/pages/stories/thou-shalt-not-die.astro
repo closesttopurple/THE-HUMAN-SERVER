@@ -36,11 +36,7 @@ import TextLayout from "@/layouts/TextLayout.astro"
           Credits
         </a>
       </li>
-      <li>
-        <a href="https://archive.thehumanserver.org" target="_blank" rel="noopener noreferrer">
-          Gallery
-        </a>
-      </li>
+
             </li>
             <li>
         <a href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
@@ -64,43 +60,10 @@ import TextLayout from "@/layouts/TextLayout.astro"
 </nav>
 <title>Thou Shalt Not Die</title>
 <style>
-    body{
-@media screen and (orientation: portrait) and (prefers-color-scheme: dark)
-{
-    background-image: url("https://ik.imagekit.io/closesttopurple/bg-dark/tsnd-portrait.avif");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
-@media screen and (orientation: landscape) and (prefers-color-scheme: dark)
-{
-    background-image: url("https://ik.imagekit.io/closesttopurple/bg-dark/tsnd-landscape.avif");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
-@media screen and (orientation: portrait) and (prefers-color-scheme: light)
-{
-    background-image: url("https://ik.imagekit.io/closesttopurple/bg-light/tsnd-portrait.avif");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
-@media screen and (orientation: landscape) and (prefers-color-scheme: light)
-{
-    background-image: url("https://ik.imagekit.io/closesttopurple/bg-light/tsnd-landscape.avif");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
-    }
+  
 </style>
 <p class="menu"><a href="/stories/thou-shalt-not-die/manga">Manga</a></p>
 <p class="line"></p>
 <p class="menu"><a href="/stories/thou-shalt-not-die/stage-plays">Stage Plays</a></p>
 <p class="line"></p>
-<p class="menu"><a href="/stories">Back</a></p>
+<p class="menu" id="backButton"><a href="/stories">Back</a></p>
