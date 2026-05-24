@@ -7,7 +7,7 @@ I will slowly add resources to learn more about his works over time. Feel free t
 I also have *THS-Archive*, a tag-based image hosting service. WARNING: I haven't updated it in months, and it's currently under lockdown. If you're interested in doing that for me, please reach out !!
 
 ### How to contact me?
-You can find my email and social media at https://me.closesttopurple.org. Social media would probably be easier. Just don't message me on steam... Why would you ?
+You can find my email and social media at https://admin.thehumanserver.org. Social media would probably be easier. Just don't message me on steam... Why would you ?
 ### Plans For the Future
 * Transcribing NieR's novellas from my English copy of <i>Grimoire NieR Revised Edition</i> and making outlines for Yonah's Diary, Interviews, weapon stories, and the text adventures.
 * Finishing the SINoALICE section. Someday...
