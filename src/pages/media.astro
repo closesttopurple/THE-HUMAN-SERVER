@@ -64,18 +64,20 @@ import TextLayout from "@/layouts/TextLayout.astro"
 
 .media-card:hover{
     -webkit-filter: brightness(70%);
-    transform: scale(0.98);
+    transform: scale(1.08);
 
 }
 
 .img-special{
-        max-width: 80%;
-    max-height: 80%;
+        max-width: 90%;
+    max-height: 90%;
+          border: thick solid rgb(25, 25, 25);
+    background-color: rgb(70, 70, 70);
 }
-@media screen and (min-width: 320px ) {
+@media screen and (max-width: 320px ) {
   .Guide {
   display: inline-grid;
-    grid-template-columns: auto auto;
+grid-template-columns: repeat(4, 5fr);
     
     
 }
@@ -83,11 +85,13 @@ import TextLayout from "@/layouts/TextLayout.astro"
 margin-top: 3.5%;
 margin-bottom: 3.5%;
 }
+
 }
+
 @media screen and (min-width: 481px) {
   .Guide {
   display: inline-grid;
-  grid-template-columns: auto auto auto auto auto;
+grid-template-columns: repeat(4, 5fr);
 }
 .media-card{
 margin-top: 3.5%;
@@ -96,32 +100,32 @@ margin-bottom: 3.5%;
 }
 @media screen and (min-width: 769px) {
   .Guide {
-  display: inline-grid;
-  grid-template-columns: auto auto auto auto auto;
+  display: inline-grid; 
+grid-template-columns: repeat(5, 5fr);
 }
 }
 @media screen and (min-width: 1025px) {
   .Guide {
   display: inline-grid;
-  grid-template-columns: auto auto auto auto auto;
+grid-template-columns: repeat(6, 5fr);
 }
 }
 @media screen and (min-width: 1201px) {
   .Guide {
   display: inline-grid;
-  grid-template-columns: auto auto auto  auto auto auto;
+grid-template-columns: repeat(6, 5fr);
 }
 }
 @media screen and (min-width: 1919px) {
   .Guide {
   display: inline-grid;
-  grid-template-columns: auto auto auto  auto auto auto auto;
+grid-template-columns: repeat(7, 5fr);
 }
 }
 @media screen and (min-width: 1921px) {
   .Guide {
   display: inline-grid;
-  grid-template-columns: auto auto auto  auto auto auto auto auto;
+grid-template-columns: repeat(10, 5fr);
 }
 }
 
@@ -141,31 +145,179 @@ margin-bottom: 3.5%;
 <div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/UxnWhsB.jpeg" loading="lazy"></a></div>
 <div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/43i3u0x.jpeg" loading="lazy"></a></div>
 <div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/NsAZs2Z.jpeg" loading="lazy"></a></div>
-<div class="media-card"><a href=""><img class="img-special" src="" loading="lazy"></a></div>
-<div class="media-card"><a href=""><img class="img-special" src="" loading="lazy"></a></div>
-<div class="media-card"><a href=""><img class="img-special" src="" loading="lazy"></a></div>
-<div class="media-card"><a href=""><img class="img-special" src="" loading="lazy"></a></div>
-<div class="media-card"><a href=""><img class="img-special" src="" loading="lazy"></a></div>
-<div class="media-card"><a href=""><img class="img-special" src="" loading="lazy"></a></div>
-<div class="media-card"><a href=""><img class="img-special" src="" loading="lazy"></a></div>
-<div class="media-card"><a href=""><img class="img-special" src="" loading="lazy"></a></div>
-<div class="media-card"><a href=""><img class="img-special" src="" loading="lazy"></a></div>
-<div class="media-card"><a href=""><img class="img-special" src="" loading="lazy"></a></div>
-<div class="media-card"><a href=""><img class="img-special" src="" loading="lazy"></a></div>
-<div class="media-card"><a href=""><img class="img-special" src="" loading="lazy"></a></div>
-<div class="media-card"><a href=""><img class="img-special" src="" loading="lazy"></a></div>
-<div class="media-card"><a href=""><img class="img-special" src="" loading="lazy"></a></div>
-<div class="media-card"><a href=""><img class="img-special" src="" loading="lazy"></a></div>
-<div class="media-card"><a href=""><img class="img-special" src="" loading="lazy"></a></div>
-<div class="media-card"><a href=""><img class="img-special" src="" loading="lazy"></a></div>
-<div class="media-card"><a href=""><img class="img-special" src="" loading="lazy"></a></div>
-<div class="media-card"><a href=""><img class="img-special" src="" loading="lazy"></a></div>
-<div class="media-card"><a href=""><img class="img-special" src="" loading="lazy"></a></div>
-<div class="media-card"><a href=""><img class="img-special" src="" loading="lazy"></a></div>
-<div class="media-card"><a href=""><img class="img-special" src="" loading="lazy"></a></div>
-<div class="media-card"><a href=""><img class="img-special" src="" loading="lazy"></a></div>
-<div class="media-card"><a href=""><img class="img-special" src="" loading="lazy"></a></div>
-
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/Gcgau6Z.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/EYLDYPz.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/goojdMH.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/LsrogjA.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/U12AZr2.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/h7y9XiP.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/9apYGkL.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/QuhvmoF.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/TaxTZvT.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/da3mub9.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/V3CCvgq.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/5O2FlUS.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/opgx4Jh.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/VsiFdet.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/vWcwXgM.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/S3wP63U.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/daLfpcq.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/0wSJtqc.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/L36AQmb.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/7aplaoA.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/lfhhOPO.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/okDOelV.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/qzI0swj.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/2eKbERg.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/HLwPPgy.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/Mk6fi99.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/qIPDwkR.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/HIqFpNb.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/EMcwKCC.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/HGkbStQ.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/E2i86Hj.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/ePYDtWY.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/87qtQOg.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/VomylNl.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/eMHOSXE.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/RzSqXLA.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/UhhfKSi.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/Ix7teNy.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://wiki.thehumanserver.org/images/8/83/Nier-gestalt-jpg-xbox-360-box-art-01.png" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/x92k2DJ.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/5SUQ0UC.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/fBRkNcz.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/TLhen4Y.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/41IT89T.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/WiJGmkz.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/WsYhsqI.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/tirFYCW.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/LE4uYYq.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/nGK5eIX.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/ZCJTGXs.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/Y2hN8jL.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/kBU8wwR.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/vmfX71C.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/k51HnRy.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/HVWiGRM.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/bmVMIPE.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/fA6BXzl.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/iOq2oNI.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/cx1Zfux.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/ImTkbKZ.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/whajtPx.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/3fHsrrk.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/qg5hCvr.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://wiki.thehumanserver.org/images/0/09/Nier-replicant-eng-box-art-01.png" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://wiki.thehumanserver.org/images/9/93/Nier-replicant-1.22-eng-box-art-01.jpg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://wiki.thehumanserver.org/images/3/39/Nier-automata-ps4-eng-box-art-01.jpg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/Qyzpvby.png" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/bz7Qunn.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/03LbNd8.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/cF5930g.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/iIUTK1F.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/3pi5R5k.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/fh2pjww.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/c4C2KYo.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/Y5ji69a.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/i8Ogkxd.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/bn6239H.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/b1KPjDJ.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/84q9wkv.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/YKEzsUO.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/cQc5wOp.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/1tGycLK.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/5L7gns9.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/PUYy69B.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/tWpoJGg.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/lnknDOk.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/W6Ri8OL.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/3tZ86pp.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/S45Dq6V.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/dPQrC0w.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/rBjw5J0.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/o71dfXB.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/WS1kVV8.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/bR4AaYi.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/Sw9DlQx.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/CQ8FLNt.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/0cN4EPI.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/TPQQryI.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/cFYQbAc.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/87QegYe.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/HVEi419.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/ePxnclR.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/1X1CZCK.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/xIOzfL9.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/SS60Vzo.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/lm3nk6B.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/ejX0XkC.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/SfiOd8Y.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/zujB469.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/LtH4I3r.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/bxZFKcY.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/njzxHc0.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/GyrMWHV.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/3sL0OYQ.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/lgMYTYc.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/YkYvSST.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/oxtgrsb.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/G583iFT.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/bZgrtoo.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/KR2uRLR.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/yybxVgn.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/XymXYSU.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/AbZlXgp.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/x58MJoE.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/EXBmuIy.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/Wf4xU58.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/JHHfxzv.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/z9630di.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/QmnHN77.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/2Wu4OPM.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/zEcmSR0.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/IQyPDDC.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/Hw0XLvd.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/NA4L6He.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/eMEkWz3.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/8jbeHbn.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/nTFcJZC.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/SI3JvcF.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/TcbpkLG.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/FBpr1Lv.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/2tZvNDX.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/Rcv391f.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/JBpUN93.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/7romaec.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/r4AkCVh.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/GtcpAQG.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/kWF0k6Q.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/8U6U1lp.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/oqhR7qC.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/iUpj3ge.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/uxdlkkB.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/RzAShoV.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/S3GC6HI.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/3GXtwo3.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/BFOe3qo.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/9nHelBu.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/ncUFouJ.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/Cfpj4uV.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/36oAEXK.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/3zQqS5Q.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/abXSbCU.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/ggqrMzc.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/96wLRIn.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/2QoAJvZ.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/bjeSm4I.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/Lp40yLC.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/69NlHpy.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/e7QsOye.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/FkaYqhK.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/pSbHluN.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/Cg2iHPx.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/lnO4zVF.jpeg" loading="lazy"></a></div>
+<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/iQokwpJ.jpeg" loading="lazy"></a></div>
 </div>
 </div>
 <p class="line"></p>

@@ -209,6 +209,7 @@
     letter-spacing: 3px;
     border-bottom: double solid;
     border-bottom-width: medium;
+    border-bottom-length: 2px;
     border-radius: 7px;
   }
   
@@ -741,44 +742,57 @@ p a:hover
 @media screen and (min-width: 320px ) {
   .Guide {
   display: inline-grid;
-grid-template-columns: repeat(2, 1fr);
+grid-template-columns: repeat(2, 4fr);
+font-size: 0.9rem;
+
 }
 
 }
 @media screen and (min-width: 481px) {
   .Guide {
   display: inline-grid;
-grid-template-columns: repeat(2, 1fr);
+grid-template-columns: repeat(2, 4fr);
+font-size: 0.9rem;
+
 }
 }
 @media screen and (min-width: 769px) {
   .Guide {
   display: inline-grid;
-grid-template-columns: repeat(2, 1fr);
+grid-template-columns: repeat(2, 4fr);
+font-size: 0.9rem;
+
 }
 }
 @media screen and (min-width: 1025px) {
   .Guide {
   display: inline-grid;
-grid-template-columns: repeat(3, 1fr);
+grid-template-columns: repeat(3, 4fr);
+font-size: 0.9rem;
+
 }
 }
 @media screen and (min-width: 1201px) {
   .Guide {
   display: inline-grid;
-grid-template-columns: repeat(3, 1fr);
+grid-template-columns: repeat(3, 4fr);
+font-size: 0.9rem;
+
 }
 }
 @media screen and (min-width: 1919px) {
   .Guide {
   display: inline-grid;
-grid-template-columns: repeat(4, 1fr);
+grid-template-columns: repeat(4, 4fr);
+font-size: 0.9rem;
 }
 }
 @media screen and (min-width: 1921px) {
   .Guide {
   display: inline-grid;
-grid-template-columns: repeat(5, 1fr);
+grid-template-columns: repeat(5, 4fr);
+font-size: 0.9rem;
+
 }
 }
 summary{
