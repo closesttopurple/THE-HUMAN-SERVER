@@ -169,6 +169,8 @@
     position: relative;
     align-items: center;
     display: block;
+  font-family: "Life-Regular";
+
   }
   .menu:hover{
 
@@ -207,7 +209,6 @@
     letter-spacing: 3px;
     border-bottom: double solid;
     border-bottom-width: medium;
-    border-bottom-length: 2px;
     border-radius: 7px;
   }
   
@@ -319,7 +320,7 @@
   margin-bottom: 0.1cm;
   margin-left: 8%;
   margin-right: 8%;
-  font-weight: 535;
+  font-weight: 500;
 letter-spacing: 2.5px;
 }
   p.title-special{
@@ -345,7 +346,7 @@ letter-spacing: 2.5px;
 p.titlesmall{
   @media screen and (orientation: landscape)
 {
-  margin-top: 1.cm;
+  margin-top: 1cm;
   font-size: 115%;
   font-family: "'Open Sans Variable','Montserrat Variable','Noto Sans Variable', sans-serif";
   margin-bottom: 0.1cm;
@@ -642,7 +643,6 @@ p a:hover
   font-size: 28px;
 }
 
-/* mobile styles */
 @media only screen and (max-width: 767px) {
   .menu-container {
     flex-direction: column;
@@ -671,7 +671,6 @@ p a:hover
     background: #949494;
     border-radius: 10px;
     -webkit-font-smoothing: antialiased;
-    /* to stop flickering of text in safari */
     transform-origin: 0% 0%;
     transform: translateX(0%);
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
@@ -682,7 +681,6 @@ p a:hover
   }
 }
 
-/* desktop styles */
 @media only screen and (min-width: 768px) {
   .menu-container {
     width: 100%;
@@ -743,46 +741,45 @@ p a:hover
 @media screen and (min-width: 320px ) {
   .Guide {
   display: inline-grid;
-    grid-template-columns: auto;
+grid-template-columns: repeat(2, 1fr);
 }
 
 }
 @media screen and (min-width: 481px) {
   .Guide {
   display: inline-grid;
-  grid-template-columns: auto auto;
+grid-template-columns: repeat(2, 1fr);
 }
 }
 @media screen and (min-width: 769px) {
   .Guide {
   display: inline-grid;
-  grid-template-columns: auto auto;
+grid-template-columns: repeat(2, 1fr);
 }
 }
 @media screen and (min-width: 1025px) {
   .Guide {
   display: inline-grid;
-  grid-template-columns: auto auto ;
+grid-template-columns: repeat(3, 1fr);
 }
 }
 @media screen and (min-width: 1201px) {
   .Guide {
   display: inline-grid;
-  grid-template-columns: auto auto auto  ;
+grid-template-columns: repeat(3, 1fr);
 }
 }
 @media screen and (min-width: 1919px) {
   .Guide {
   display: inline-grid;
-  grid-template-columns: auto auto auto  auto;
+grid-template-columns: repeat(4, 1fr);
 }
 }
 @media screen and (min-width: 1921px) {
   .Guide {
   display: inline-grid;
-  grid-template-columns: auto auto auto  auto auto;
+grid-template-columns: repeat(5, 1fr);
 }
-
 }
 summary{
   margin: 0 auto;
@@ -805,13 +802,14 @@ summary{
 .Guide > img{
   display: inline-block;
   object-fit: cover;
-  min-width: 650px;
-  min-height: 150px;
-  max-width: 650px;
-  max-height: 150px;
-
-
+  aspect-ratio: 4.33 / 1;
+  width: 80%;
+  height: 80%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
 }
+
+
 sup{
   font-size: 125%;
   text-indent: 0em;
@@ -863,6 +861,12 @@ menu-icon{
   .over-icon p {
     font-size: 0.9rem;
   }
+}
+ body .timeline-div{
+  background-color: rgba(94, 94, 94, 0.4) !important;
+  margin: 16px;
+  border: thick solid rgba(135, 135, 135, 0.6) !important;
+    display: block; 
 }
 
 }
