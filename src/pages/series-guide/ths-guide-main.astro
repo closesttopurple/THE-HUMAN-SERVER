@@ -18,6 +18,8 @@ import '@/styles/text.css'
   letter-spacing: 0.17rem;
   font-size: 115%;
     text-indent: 0em;
+      text-align: center;
+
 }
 div{
   text-align: center;
@@ -35,45 +37,60 @@ div{
         text-indent: 0em;
 }
 }
+.Guide {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 0 16px;
+}
 
-
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 320px) {
   .Guide {
-  display: inline-grid;
-grid-template-columns: repeat(2, 2fr);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .img-special {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 }
-}
+
 @media screen and (min-width: 769px) {
   .Guide {
-  display: inline-grid;
-grid-template-columns: repeat(3, 5fr);
-}
-}
-@media screen and (min-width: 1025px) {
-  .Guide {
-  display: inline-grid;
-grid-template-columns: repeat(4, 5fr);
-}
-}
-@media screen and (min-width: 1201px) {
-  .Guide {
-  display: inline-grid;
-grid-template-columns: repeat(4, 5fr);
-}
-}
-@media screen and (min-width: 1919px) {
-  .Guide {
-  display: inline-grid;
-grid-template-columns: repeat(6, 5fr);
-}
-}
-@media screen and (min-width: 1921px) {
-  .Guide {
-  display: inline-grid;
-grid-template-columns: repeat(6, 5fr);
-}
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
+@media screen and (min-width: 1025px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1919px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
 
 </style>
 <nav class="menu-container">

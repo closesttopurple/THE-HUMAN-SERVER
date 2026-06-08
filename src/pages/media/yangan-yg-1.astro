@@ -1,0 +1,159 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro"
+import '@/styles/text.css'
+import TextLayout from "@/layouts/TextLayout.astro"
+---
+
+<TextLayout>
+</TextLayout>
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a href="/" class="menu-logo">
+    <img src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a href="/series-guide/ths-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a href="/credits">
+          Credits
+        </a>
+      </li>
+
+            </li>
+            <li>
+        <a href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
+          Reader
+        </a>
+      </li>
+            <li>
+        <a href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/bug-report">
+          Contact
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<style>
+
+  @media screen and (orientation: landscape)
+{
+  .sub-title{
+  margin-top: 0.6cm;
+  font-size: 150%;
+  font-family: "Life-Regular";
+  margin-bottom: 0.1cm;
+  margin-left: 8%;
+  margin-right: 8%;
+  font-weight: 500;
+letter-spacing: 2.5px;
+}
+.title{
+  font-size: 200%;
+
+}
+
+}
+.img-special{
+        width: 362.75px;
+    height: 512px;
+          border: thick solid rgb(25, 25, 25);
+    background-color: rgb(70, 70, 70);
+}
+  @media screen and (orientation: portrait)
+{
+  .sub-title{
+  margin-top: 1cm;
+  font-size: 130%;
+  font-family: "Life-Regular";
+  font-weight: 400;
+  margin-bottom: 0.1cm;
+}
+.title{
+    font-size: 180%;
+}
+
+}
+.title{
+    margin: 0%;
+}
+.over-text-media{
+width: 60%;
+height: 40%;
+margin: 0 auto;
+  text-align: justify;
+padding: 1rem;}
+ @media  (prefers-color-scheme: dark){
+
+  .text-bg{
+  background-color:rgb(70, 70, 70);
+  padding: 0.7rem;
+}
+}
+  @media  (prefers-color-scheme: light){
+
+  .text-bg{
+  background-color:rgb(253, 253, 253);
+  padding: 0.7rem;
+}
+
+}
+
+</style>
+<title>ガンガンYG</title>
+<img class="img-special" src="https://ik.imagekit.io/closesttopurple/og/drakengard_us.avif">
+<div class="over-text-media">
+<div class="text-bg">
+<p class="title">ガンガンYG</p>
+<p class="sub-title">Gangan YG Issue 1</p>
+</div>
+</div>
+
+<div class="over-text-media">
+<div class="text-bg">
+<p class="title">Type</p>
+<p class="sub-title">Video Game</p>
+</div>
+</div>
+
+<div class="over-text-media">
+<div class="text-bg">
+<p class="title"><a href="https://wiki.thehumanserver.org/index.php/Drakengard_(Game)"><u></u></a></p>
+
+</div>
+</div>
+
+<div class="over-text-media">
+<div class="text-bg">
+<p class="title"><a href="/media/yangan-yg-2">Issue 2</a></p>
+
+</div>
+</div>
+<img class="img-special" src="https://ik.imagekit.io/closesttopurple/og/drakengard_jp.avif">
+
+<p class="line"></p>
+<p class="menu" id="backButton"><a href="/media">Back</a></p>

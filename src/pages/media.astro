@@ -6,7 +6,7 @@ import TextLayout from "@/layouts/TextLayout.astro"
 <TextLayout>
 </TextLayout>
 
-</html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DrakeNieR Media</title>
 <nav class="menu-container">
   <!-- burger menu -->
@@ -74,69 +74,71 @@ import TextLayout from "@/layouts/TextLayout.astro"
           border: thick solid rgb(25, 25, 25);
     background-color: rgb(70, 70, 70);
 }
-@media screen and (min-width: 320px ) {
-  .Guide {
-  display: inline-grid;
-grid-template-columns: repeat(2, 5fr);
-    
-    
-}
-.media-card{
-margin-top: 3.5%;
-margin-bottom: 3.5%;
+.Guide {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 0 16px;
 }
 
+@media screen and (min-width: 320px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .img-special {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 }
 
-@media screen and (min-width: 481px) {
-  .Guide {
-  display: inline-grid;
-grid-template-columns: repeat(2, 5fr);
-}
-.media-card{
-margin-top: 3.5%;
-margin-bottom: 3.5%;
-}
-}
 @media screen and (min-width: 769px) {
   .Guide {
-  display: inline-grid; 
-grid-template-columns: repeat(5, 5fr);
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
-}
+
 @media screen and (min-width: 1025px) {
   .Guide {
-  display: inline-grid;
-grid-template-columns: repeat(6, 5fr);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
-}
+
 @media screen and (min-width: 1201px) {
   .Guide {
-  display: inline-grid;
-grid-template-columns: repeat(6, 5fr);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
-}
+
 @media screen and (min-width: 1919px) {
   .Guide {
-  display: inline-grid;
-grid-template-columns: repeat(7, 5fr);
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
 }
-}
+
 @media screen and (min-width: 1921px) {
   .Guide {
-  display: inline-grid;
-grid-template-columns: repeat(10, 5fr);
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+  }
 }
-}
+
 
 </style>
 <p class="title-special title-box">Work in progress.</p>
+<p class="title-special title-box">Blatant inspiration from Accord's Library.</p>
+
 <p class="line"></p>
 <div class="over">
 <div class="Guide">
-<div class="media-card"><a href="https://wiki.thehumanserver.org/index.php/Drakengard_(Game)"><img class="img-special" src="https://wiki.thehumanserver.org/images/thumb/5/5f/Dod-eng-box-art-01.png/300px-Dod-eng-box-art-01.png" loading="lazy"></a></div>
-<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/0V2mNU5.png" loading="lazy"></a></div>
-<div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/ZiYc3jl.png" loading="lazy"></a></div>
+<div class="media-card"><a href="/media/drakengard-1"><img class="img-special" src="https://wiki.thehumanserver.org/images/thumb/5/5f/Dod-eng-box-art-01.png/300px-Dod-eng-box-art-01.png" loading="lazy"></a></div>
+<div class="media-card"><a href="/media/yangan-yg"><img class="img-special" src="https://i.imgur.com/0V2mNU5.png" loading="lazy"></a></div>
 <div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/YDN9NME.jpeg" loading="lazy"></a></div>
 <div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/MtsjCMh.jpeg" loading="lazy"></a></div>
 <div class="media-card"><a href=""><img class="img-special" src="https://i.imgur.com/FTPemMH.jpeg" loading="lazy"></a></div>
