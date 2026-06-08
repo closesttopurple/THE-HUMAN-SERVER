@@ -47,34 +47,83 @@ div{
     font-size: 135%;
 }
 }
+.Guide {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+@media screen and (orientation: portrait){
+.Guide > .title { 
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+}
+}
+@media screen and (min-width: 320px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media screen and (min-width: 769px) {
+  .Guide {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media screen and (min-width: 1919px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
 @media screen and (min-width: 1921px) {
   .Guide {
-  display: inline-grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  gap: 3%;
-}
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+  }
 }
 </style>
 <p style="margin-top: 1cm; font-size: 300%;">Rion's Costumes</p>
 
+
 <div class="over">
 <div class="Guide">
-<p class="title"><a href="/stories/reincarnation/characters/s1/rion/costumes/sickly-exile"><img src="https://ik.imagekit.io/closesttopurple/nier-rein-costume-icons/rion/rion-c-001.png?updatedAt=1756124583022">Sickly Exile</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/rion/costumes/guardian-exile"><img src="https://ik.imagekit.io/closesttopurple/nier-rein-costume-icons/rion/rion-c-002.png?updatedAt=1756124582644">Guardian Exile</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/rion/costumes/dissenting-exile"><img src="https://ik.imagekit.io/closesttopurple/nier-rein-costume-icons/rion/rion-c-003.png?updatedAt=1756124582481">Dissenting Exile</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/rion/costumes/abyssal-exile"><img src="https://ik.imagekit.io/closesttopurple/nier-rein-costume-icons/rion/rion-c-004.png?updatedAt=1756124582891">Abyssal Exile</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/rion/costumes/celebratory-exile"><img src="https://ik.imagekit.io/closesttopurple/nier-rein-costume-icons/rion/rion-c-005.png?updatedAt=1756124581776">Celebratory Exile</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/rion/costumes/oathbound-exile"><img src="https://ik.imagekit.io/closesttopurple/nier-rein-costume-icons/rion/rion-c-006.png?updatedAt=1756124582912">Oathbound Exile</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/rion/costumes/abstract-exile"><img src="https://ik.imagekit.io/closesttopurple/nier-rein-costume-icons/rion/rion-c-007.png?updatedAt=1756124582823">Abstract Exile</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/rion/costumes/summer-exile"><img src="https://ik.imagekit.io/closesttopurple/nier-rein-costume-icons/rion/rion-c-008.png?updatedAt=1756124582706">Summer Exile</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/rion/costumes/new-years-exile"><img src="https://ik.imagekit.io/closesttopurple/nier-rein-costume-icons/rion/rion-c-009.png?updatedAt=1756124582940">New Year's Exile</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/rion/costumes/phantasmal-exile"><img src="https://ik.imagekit.io/closesttopurple/nier-rein-costume-icons/rion/rion-c-010.png?updatedAt=1756124582981">Phantasmal Exile</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/rion/costumes/mechanical-exile"><img src="https://ik.imagekit.io/closesttopurple/nier-rein-costume-icons/rion/rion-c-011.png?updatedAt=1756124583175">Mechanical Exile</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/rion/costumes/yuletide-exile"><img src="https://ik.imagekit.io/closesttopurple/nier-rein-costume-icons/rion/rion-c-012.png?updatedAt=1756124583704">Yuletide Exile</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/rion/costumes/shadowbound-exile"><img src="https://ik.imagekit.io/closesttopurple/nier-rein-costume-icons/rion/rion-c-013.png?updatedAt=1756124583715">Shadowbound Exile</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/rion/costumes/festive-exile"><img src="https://ik.imagekit.io/closesttopurple/nier-rein-costume-icons/rion/rion-c-014.png?updatedAt=1756124583633">Festive Exile</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/rion/costumes/reborn-revolutionary"><img src="https://ik.imagekit.io/closesttopurple/nier-rein-costume-icons/rion/rion-c-015.png?updatedAt=1756124584859">Reborn Revolutionary</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/rion/costumes/f-h-revolutionary"><img src="https://ik.imagekit.io/closesttopurple/nier-rein-costume-icons/rion/rion-c-016.png?updatedAt=1756124584856">F-H Revolutionary</a></p>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/rion/costumes/sickly-exile"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/nier-rein-costume-icons/rion/rion-c-001.png?updatedAt=1756124583022" loading="lazy"><p class="title">Sickly Exile</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/rion/costumes/yeah-exile"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/nier-rein-costume-icons/rion/rion-c-002.png?updatedAt=1756124582644" loading="lazy"><p class="title">Guardian Exile</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/rion/costumes/yeah-exile"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/nier-rein-costume-icons/rion/rion-c-003.png?updatedAt=1756124582481" loading="lazy"><p class="title">Dissenting Exile</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/rion/costumes/yeah-exile"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/nier-rein-costume-icons/rion/rion-c-004.png?updatedAt=1756124582891" loading="lazy"><p class="title">Abyssal Exile</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/rion/costumes/yeah-exile"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/nier-rein-costume-icons/rion/rion-c-005.png?updatedAt=1756124581776" loading="lazy"><p class="title">Celebratory Exile</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/rion/costumes/yeah-exile"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/nier-rein-costume-icons/rion/rion-c-006.png?updatedAt=1756124582912" loading="lazy"><p class="title">Oathbound Exile</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/rion/costumes/yeah-exile"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/nier-rein-costume-icons/rion/rion-c-007.png?updatedAt=1756124582823" loading="lazy"><p class="title">Abstract Exile</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/rion/costumes/yeah-exile"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/nier-rein-costume-icons/rion/rion-c-008.png?updatedAt=1756124582706" loading="lazy"><p class="title">Summer Exile</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/rion/costumes/yeah-exile"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/nier-rein-costume-icons/rion/rion-c-009.png?updatedAt=1756124582940" loading="lazy"><p class="title">New Year's Exile</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/rion/costumes/yeah-exile"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/nier-rein-costume-icons/rion/rion-c-010.png?updatedAt=1756124582981" loading="lazy"><p class="title">Phantasmal Exile</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/rion/costumes/yeah-exile"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/nier-rein-costume-icons/rion/rion-c-011.png?updatedAt=1756124583175" loading="lazy"><p class="title">Mechanical Exile</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/rion/costumes/yeah-exile"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/nier-rein-costume-icons/rion/rion-c-012.png?updatedAt=1756124583704" loading="lazy"><p class="title">Yuletide Exile</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/rion/costumes/yeah-exile"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/nier-rein-costume-icons/rion/rion-c-013.png?updatedAt=1756124583715" loading="lazy"><p class="title">Shadowbound Exile</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/rion/costumes/yeah-exile"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/nier-rein-costume-icons/rion/rion-c-014.png?updatedAt=1756124583633" loading="lazy"><p class="title">Festive Exile</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/rion/costumes/reborn-revolutionary"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/nier-rein-costume-icons/rion/rion-c-015.png?updatedAt=1756124584859" loading="lazy"><p class="title">Reborn Revolutionary</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/rion/costumes/f-h-revolutionary"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/nier-rein-costume-icons/rion/rion-c-016.png?updatedAt=1756124584856" loading="lazy"><p class="title">F-H Revolutionary</p></a></div>
+
 </div>
 </div>
 <br><br><br><br>

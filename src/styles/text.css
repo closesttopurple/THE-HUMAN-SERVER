@@ -742,7 +742,6 @@ p a:hover
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 12px;
-  padding: 3rem;
 }
 .Guide > .title { 
   font-size: 0.94rem;
@@ -793,7 +792,7 @@ p a:hover
 @media screen and (min-width: 1921px) {
   .Guide {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 summary{
@@ -813,13 +812,6 @@ summary{
   gap: 15px;              
   width: 100%;
   
-}
-.Guide > img{
-  display: inline-block;
-  width: 80%;
-  height: 80%;
-  margin-left: 0.5%;
-  margin-right: 0.5%;
 }
 
 
@@ -860,41 +852,8 @@ sup{
 }
 }
 
-.Guide .title {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
 
-.Guide .title a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
 
-.Guide .art {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-}
-
-.Guide .text-overlay {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-  text-align: center;
-  font-size: 12px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  pointer-events: none;
-}
 
 
 menu-icon{
@@ -922,6 +881,6 @@ menu-icon{
 
 .media-card:hover{
     -webkit-filter: brightness(70%);
-    transform: scale(0.9);
+    transform: scale(0.98);
 
 }
