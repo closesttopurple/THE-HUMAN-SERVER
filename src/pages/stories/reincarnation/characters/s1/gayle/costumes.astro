@@ -10,10 +10,8 @@ import '@/styles/text.css'
     img{
         -webkit-filter: brightness(100%);
         padding: 0%;
-        max-width: 192px;
-        max-height: 192px;
-        min-width: 192px;
-        min-height: 192px;
+        max-width: 144px;
+        max-height: 144px;
     }
     img:hover{
         -webkit-filter: brightness(70%);
@@ -26,8 +24,6 @@ import '@/styles/text.css'
   text-size-adjust: auto;
   margin-bottom: 1%;
     margin-top: 0.6cm;
-  margin-left: 8%;
-  margin-right: 8%;
   letter-spacing: 0.17rem;
   font-size: 115%;
 
@@ -47,33 +43,81 @@ div{
     font-size: 135%;
 }
 }
+.Guide {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (orientation: portrait){
+.Guide > .title { 
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+}
+}
+@media screen and (min-width: 320px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media screen and (min-width: 769px) {
+  .Guide {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media screen and (min-width: 1919px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
 @media screen and (min-width: 1921px) {
   .Guide {
-  display: inline-grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  gap: 3%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+  }
 }
-}
+
 </style>
 <p style="margin-top: 1cm; font-size: 300%;">Rion's Costumes</p>
 
 <div class="over">
 <div class="Guide">
-<p class="title"><a href="/stories/reincarnation/characters/s1/gayle/costumes/wounded-hunter"><img src="https://i.imgur.com/E1fL1L8.png">Wounded Hunter</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/gayle/costumes/dissenting-hunter"><img src="https://i.imgur.com/vTWQkSS.png">Dissenting Hunter</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/gayle/costumes/guardian-hunter"><img src="https://i.imgur.com/VNoZ1Xo.png">Guardian Hunter</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/gayle/costumes/summer-hunter"><img src="https://i.imgur.com/usIwqzY.png">Summer Hunter</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/gayle/costumes/yuletide-hunter"><img src="https://i.imgur.com/3LeRTOS.png">Yuletide Hunter</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/gayle/costumes/abstract-hunter"><img src="https://i.imgur.com/E9FkYeX.png">Abstract Hunter</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/gayle/costumes/bloody-hunter"><img src="https://i.imgur.com/Kf2LVcX.png">Bloody Hunter</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/gayle/costumes/festive-hunter"><img src="https://i.imgur.com/wPjhXMw.png">Festive Hunter</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/gayle/costumes/celebratory-hunter"><img src="https://i.imgur.com/WORLS7n.png">Celebratory Hunter</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/gayle/costumes/fractured-hunter"><img src="https://i.imgur.com/zWeb7sG.png">Fractured Hunter</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/gayle/costumes/new-years-hunter"><img src="https://i.imgur.com/wID2HTh.png">New Year's Hunter</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/gayle/costumes/abyssal-hunter"><img src="https://i.imgur.com/PwLq3II.png">Abyssal Hunter</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/gayle/costumes/mechanical-hunter"><img src="https://i.imgur.com/GpKKs3r.png">Mechanical Hunter</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/gayle/costumes/reborn-contractor"><img src="https://i.imgur.com/4VPoenV.png">Reborn Contractor</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/gayle/costumes/f-h-contractor"><img src="https://i.imgur.com/K7eVDf5.png">F-H Contractor</a></p>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/gayle/costumes/wounded-hunter"><img class="img-special" src="https://i.imgur.com/E1fL1L8.png" loading="lazy"><p class="title">Reborn Hunter</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/gayle/costumes/dissenting-hunter"><img class="img-special" src="https://i.imgur.com/vTWQkSS.png" loading="lazy"><p class="title">Dissenting Hunter</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/gayle/costumes/guardian-hunter"><img class="img-special" src="https://i.imgur.com/VNoZ1Xo.png" loading="lazy"><p class="title">Guardian Hunter</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/gayle/costumes/summer-hunter"><img class="img-special" src="https://i.imgur.com/usIwqzY.png" loading="lazy"><p class="title">Summer Hunter</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/gayle/costumes/yuletide-hunter"><img class="img-special" src="https://i.imgur.com/3LeRTOS.png" loading="lazy"><p class="title">Yuletide Hunter</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/gayle/costumes/abstract-hunter"><img class="img-special" src="https://i.imgur.com/E9FkYeX.png" loading="lazy"><p class="title">Abstract Hunter</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/gayle/costumes/bloody-hunter"><img class="img-special" src="https://i.imgur.com/Kf2LVcX.png" loading="lazy"><p class="title">Bloody Hunter</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/gayle/costumes/festive-hunter"><img class="img-special" src="https://i.imgur.com/wPjhXMw.png" loading="lazy"><p class="title">Festive Hunter</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/gayle/costumes/celebratory-hunter"><img class="img-special" src="https://i.imgur.com/WORLS7n.png" loading="lazy"><p class="title">Celebratory Hunter</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/gayle/costumes/fractured-hunter"><img class="img-special" src="https://i.imgur.com/zWeb7sG.png" loading="lazy"><p class="title">Fractured Hunter</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/gayle/costumes/new-years-hunter"><img class="img-special" src="https://i.imgur.com/wID2HTh.png" loading="lazy"><p class="title">New Year's Hunter</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/gayle/costumes/abyssal-hunter"><img class="img-special" src="https://i.imgur.com/PwLq3II.png" loading="lazy"><p class="title">Abyssal Hunter</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/gayle/costumes/mechanical-hunter"><img class="img-special" src="https://i.imgur.com/GpKKs3r.png" loading="lazy"><p class="title">Mechanical Hunter</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/gayle/costumes/reborn-contractor"><img class="img-special" src="https://i.imgur.com/4VPoenV.png" loading="lazy"><p class="title">Reborn Contractor</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/gayle/costumes/f-h-contractor"><img class="img-special" src="https://i.imgur.com/K7eVDf5.png" loading="lazy"><p class="title">F-H Contractor</p></a></div>
+
 </div>
 </div>
 <br><br><br><br>

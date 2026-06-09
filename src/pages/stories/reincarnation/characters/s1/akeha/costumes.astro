@@ -10,10 +10,8 @@ import '@/styles/text.css'
     img{
         -webkit-filter: brightness(100%);
         padding: 0%;
-        max-width: 192px;
-        max-height: 192px;
-        min-width: 192px;
-        min-height: 192px;
+        max-width: 144px;
+        max-height: 144px;
     }
     img:hover{
         -webkit-filter: brightness(70%);
@@ -47,39 +45,85 @@ div{
     font-size: 135%;
 }
 }
+.Guide {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+@media screen and (orientation: portrait){
+.Guide > .title { 
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+}
+}
+@media screen and (min-width: 320px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media screen and (min-width: 769px) {
+  .Guide {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media screen and (min-width: 1919px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
 @media screen and (min-width: 1921px) {
   .Guide {
-  display: inline-grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  gap: 3%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+  }
 }
-}
-</style>
+</style>  
 <p style="margin-top: 1cm; font-size: 300%;">Akeha's Costumes</p>
 
 <div class="over">
 <div class="Guide">
-<p class="title"><a href="/stories/reincarnation/characters/s1/akeha/costumes/twilight-assassin"><img src="https://i.imgur.com/8sUE97e.png">Twilight Assassin</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/akeha/costumes/dissenting-assassin"><img src="https://i.imgur.com/KxfhtDw.png">Dissenting Assassin</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/akeha/costumes/guardian-assassin"><img src="https://i.imgur.com/2giGOyR.png">Guardian Assassin</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/akeha/costumes/false-guardian-assassin"><img src="https://i.imgur.com/kKUfr3x.png">False Guardian Assassin</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/akeha/costumes/fractured-assassin"><img src="https://i.imgur.com/WpymHFk.png">Fractured Assassin</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/akeha/costumes/fabled-assassin"><img src="https://i.imgur.com/ecnxjv3.png">Fabled Assassin</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/akeha/costumes/festive-assassin"><img src="https://i.imgur.com/K1bSagO.png">Festive Assassin</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/akeha/costumes/abstract-assassin"><img src="https://i.imgur.com/i0NEjND.png">Abstract Assassin</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/akeha/costumes/summer-assassin"><img src="https://i.imgur.com/19WJQmh.png">Summer Assassin</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/akeha/costumes/divine-assassin"><img src="https://i.imgur.com/qegrNB0.png">Divine Assassin</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/akeha/costumes/bloodless-assassin"><img src="https://i.imgur.com/n7M4HIR.png">Bloodless Assassin</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/akeha/costumes/abyssal-assassin"><img src="https://i.imgur.com/db75Zo5.png">Abyssal Assassin</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/akeha/costumes/mechanical-assassin"><img src="https://i.imgur.com/SFqc8hq.png">Mechanical Assassin</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/akeha/costumes/bloody-assassin"><img src="https://i.imgur.com/h4D0iLf.png">Bloody Assassin</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/akeha/costumes/yuletide-assassin"><img src="https://i.imgur.com/5sdWMvG.png">Yuletide Assassin</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/akeha/costumes/intoner-assassin"><img src="https://i.imgur.com/AnOj8B5.png">Intoner Assassin</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/akeha/costumes/celebratory-assassin"><img src="https://i.imgur.com/igxyGoq.png">Celebratory Assassin</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/akeha/costumes/new-years-assassin"><img src="https://i.imgur.com/DpqzRvX.png">New Year's Assassin</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/akeha/costumes/reborn-swordmaster"><img src="https://i.imgur.com/jmbZgjF.png">Reborn Swordmaster</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/akeha/costumes/f-h-swordmaster"><img src="https://i.imgur.com/rUwalBW.png">F-H Swordmaster</a></p>
-
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/akeha/costumes/twilight-assassin"><img class="img-special" src="https://i.imgur.com/8sUE97e.png" loading="lazy"><p class="title">Twilight Assassin</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/akeha/costumes/dissenting-assassin"><img class="img-special" src="https://i.imgur.com/KxfhtDw.png" loading="lazy"><p class="title">Dissenting Assassin</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/akeha/costumes/guardian-assassin"><img class="img-special" src="https://i.imgur.com/2giGOyR.png" loading="lazy"><p class="title">Guardian Assassin</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/akeha/costumes/false-guardian-assassin"><img class="img-special" src="https://i.imgur.com/kKUfr3x.png" loading="lazy"><p class="title">False Guardian Assassin</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/akeha/costumes/fractured-assassin"><img class="img-special" src="https://i.imgur.com/WpymHFk.png" loading="lazy"><p class="title">Fractured Assassin</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/akeha/costumes/fabled-assassin"><img class="img-special" src="https://i.imgur.com/ecnxjv3.png" loading="lazy"><p class="title">Fabled Assassin</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/akeha/costumes/festive-assassin"><img class="img-special" src="https://i.imgur.com/K1bSagO.png" loading="lazy"><p class="title">Festive Assassin</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/akeha/costumes/abstract-assassin"><img class="img-special" src="https://i.imgur.com/i0NEjND.png" loading="lazy"><p class="title">Abstract Assassin</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/akeha/costumes/summer-assassin"><img class="img-special" src="https://i.imgur.com/19WJQmh.png" loading="lazy"><p class="title">Summer Assassin</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/akeha/costumes/divine-assassin"><img class="img-special" src="https://i.imgur.com/qegrNB0.png" loading="lazy"><p class="title">Divine Assassin</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/akeha/costumes/bloodless-assassin"><img class="img-special" src="https://i.imgur.com/n7M4HIR.png" loading="lazy"><p class="title">Bloodless Assassin</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/akeha/costumes/abyssal-assassin"><img class="img-special" src="https://i.imgur.com/db75Zo5.png" loading="lazy"><p class="title">Abyssal Assassin</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/akeha/costumes/mechanical-assassin"><img class="img-special" src="https://i.imgur.com/SFqc8hq.png" loading="lazy"><p class="title">Mechanical Assassin</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/akeha/costumes/bloody-assassin"><img class="img-special" src="https://i.imgur.com/h4D0iLf.png" loading="lazy"><p class="title">Bloody Assassin</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/akeha/costumes/yuletide-assassin"><img class="img-special" src="https://i.imgur.com/5sdWMvG.png" loading="lazy"><p class="title">Yuletide Assassin</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/akeha/costumes/intoner-assassin"><img class="img-special" src="https://i.imgur.com/AnOj8B5.png" loading="lazy"><p class="title">Intoner Assassin</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/akeha/costumes/celebratory-assassin"><img class="img-special" src="https://i.imgur.com/igxyGoq.png" loading="lazy"><p class="title">Celebratory Assassin</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/akeha/costumes/new-years-assassin"><img class="img-special" src="https://i.imgur.com/DpqzRvX.png" loading="lazy"><p class="title">New Year's Assassin</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/akeha/costumes/reborn-swordmaster"><img class="img-special" src="https://i.imgur.com/jmbZgjF.png" loading="lazy"><p class="title">Reborn Swordmaster</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/akeha/costumes/f-h-swordmaster"><img class="img-special" src="https://i.imgur.com/rUwalBW.png" loading="lazy"><p class="title">F-H Swordmaster</p></a></div>
 </div>
 </div>
 <br><br><br><br>

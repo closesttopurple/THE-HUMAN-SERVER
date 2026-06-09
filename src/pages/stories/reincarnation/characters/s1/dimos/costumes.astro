@@ -10,10 +10,8 @@ import '@/styles/text.css'
     img{
         -webkit-filter: brightness(100%);
         padding: 0%;
-        max-width: 192px;
-        max-height: 192px;
-        min-width: 192px;
-        min-height: 192px;
+        max-width: 144px;
+        max-height: 144px;
     }
     img:hover{
         -webkit-filter: brightness(70%);
@@ -47,32 +45,79 @@ div{
     font-size: 135%;
 }
 }
+.Guide {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+@media screen and (orientation: portrait){
+.Guide > .title { 
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+}
+}
+@media screen and (min-width: 320px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media screen and (min-width: 769px) {
+  .Guide {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media screen and (min-width: 1919px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
 @media screen and (min-width: 1921px) {
   .Guide {
-  display: inline-grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  gap: 3%;
-}
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+  }
 }
 </style>
 <p style="margin-top: 1cm; font-size: 300%;">Dimos's Costumes</p>
 
 <div class="over">
 <div class="Guide">
-<p class="title"><a href="/stories/reincarnation/characters/s1/dimos/costumes/departed-gunman"><img src="https://i.imgur.com/14S6mw5.png">Departed Gunman</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/dimos/costumes/false-guardian-gunman"><img src="https://i.imgur.com/FVw4Hm5.png">False Guardian Gunman</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/dimos/costumes/dissenting-gunman"><img src="https://i.imgur.com/IKVxgeF.png">Dissenting Gunman</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/dimos/costumes/guardian-gunman"><img src="https://i.imgur.com/tsJe7k3.png">Guardian Gunman</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/dimos/costumes/new-years-gunman"><img src="https://i.imgur.com/UyE3aqz.png">New Year's Gunman</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/dimos/costumes/bloody-gunman"><img src="https://i.imgur.com/xv3jSvH.png">Bloody Gunman</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/dimos/costumes/abyssal-gunman"><img src="https://i.imgur.com/DGh3IrY.png">Abyssal Gunman</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/dimos/costumes/fractured-gunman"><img src="https://i.imgur.com/OdB60G3.png">Fractured Gunman</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/dimos/costumes/bloodless-gunman"><img src="https://i.imgur.com/fIKK2vO.png">Bloodless Gunman</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/dimos/costumes/celebratory-gunman"><img src="https://i.imgur.com/ILSfnA9.png">Celebratory Gunman</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/dimos/costumes/abstract-gunman"><img src="https://i.imgur.com/Zf5wBOU.png">Abstract Gunman</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/dimos/costumes/summer-gunman"><img src="https://i.imgur.com/dhHUZeM.png">Summer Gunman</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/dimos/costumes/reborn-automaton"><img src="https://i.imgur.com/xp6GyHk.png">Reborn Automaton</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/s1/dimos/costumes/f-h-automaton"><img src="https://i.imgur.com/C72hrLJ.png">F-H Automaton</a></p>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/dimos/costumes/departed-gunman"><img class="img-special" src="https://i.imgur.com/14S6mw5.png" loading="lazy"><p class="title">Departed Gunman</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/dimos/costumes/false-guardian-gunman"><img class="img-special" src="https://i.imgur.com/FVw4Hm5.png" loading="lazy"><p class="title">False Guardian Gunman</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/dimos/costumes/dissenting-gunman"><img class="img-special" src="https://i.imgur.com/IKVxgeF.png" loading="lazy"><p class="title">Dissenting Gunman</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/dimos/costumes/guardian-gunman"><img class="img-special" src="https://i.imgur.com/tsJe7k3.png" loading="lazy"><p class="title">Guardian Gunman</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/dimos/costumes/new-years-gunman"><img class="img-special" src="https://i.imgur.com/UyE3aqz.png" loading="lazy"><p class="title">New Year's Gunman</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/dimos/costumes/bloody-gunman"><img class="img-special" src="https://i.imgur.com/xv3jSvH.png" loading="lazy"><p class="title">Bloody Gunman</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/dimos/costumes/abyssal-gunman"><img class="img-special" src="https://i.imgur.com/DGh3IrY.png" loading="lazy"><p class="title">Abyssal Gunman</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/dimos/costumes/fractured-gunman"><img class="img-special" src="https://i.imgur.com/OdB60G3.png" loading="lazy"><p class="title">Fractured Gunman</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/dimos/costumes/bloodless-gunman"><img class="img-special" src="https://i.imgur.com/fIKK2vO.png" loading="lazy"><p class="title">Bloodless Gunman</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/dimos/costumes/celebratory-gunman"><img class="img-special" src="https://i.imgur.com/ILSfnA9.png" loading="lazy"><p class="title">Celebratory Gunman</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/dimos/costumes/abstract-gunman"><img class="img-special" src="https://i.imgur.com/Zf5wBOU.png" loading="lazy"><p class="title">Abstract Gunman</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/dimos/costumes/summer-gunman"><img class="img-special" src="https://i.imgur.com/dhHUZeM.png" loading="lazy"><p class="title">Summer Gunman</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/dimos/costumes/reborn-automaton"><img class="img-special" src="https://i.imgur.com/xp6GyHk.png" loading="lazy"><p class="title">Festive Gunman</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/dimos/costumes/f-h-automaton"><img class="img-special" src="https://i.imgur.com/C72hrLJ.png" loading="lazy"><p class="title">Festive Gunman</p></a></div>
 </div>
 </div>
 <br><br><br><br>

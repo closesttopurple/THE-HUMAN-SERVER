@@ -69,15 +69,14 @@ import TextLayout from "@/layouts/TextLayout.astro"
    margin-right: 1.5%;
    margin-top: 20px;
 }
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.Guide {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 12px;
 }
 </style>
 </head>
-<div class="Guide">
+<div class="over"><div class="Guide">
   <div class="row">
     <div class="card">
       <p class="title"><b><i>THS Gallery - Closure</i></b></p>
@@ -85,6 +84,6 @@ import TextLayout from "@/layouts/TextLayout.astro"
       <p class="para">Sorry.</p>
       <p class="para">Hiya! Karis here, Square Enix sent me a DMCA notice for specifically the gallery. It's my first DMCA (let's hope it stays that way), so I just took the subdomain down immediately. I was also notified that <i>Accord's Library</i>, a previous archival site, had their gallery DMCA'd before the main site. That's scary, huh?<br><br> Anyway, nice to meet you.</p>
     </div></div>
-    </div>
+    </div></div>
 <p class="line"></p>
 <p class="menu" id="backButton"><a href="/">Back</a></p>
