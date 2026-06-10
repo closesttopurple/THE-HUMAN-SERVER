@@ -1,0 +1,126 @@
+---
+import TextLayout from "@/layouts/TextLayout.astro"
+import '@/styles/text.css'
+---
+
+<TextLayout>
+</TextLayout>
+<title>Levania's Costumes</title>
+<style>
+    img{
+        -webkit-filter: brightness(100%);
+        padding: 0%;
+        max-width: 144px;
+        max-height: 144px;
+    }
+    img:hover{
+        -webkit-filter: brightness(70%);
+        transform: scale(98%);
+    }
+
+  .para{
+  display: inline-block;
+  height:auto;
+  text-size-adjust: auto;
+  margin-bottom: 1%;
+    margin-top: 0.6cm;
+  margin-left: 8%;
+  margin-right: 8%;
+  letter-spacing: 0.17rem;
+  font-size: 115%;
+
+}
+div{
+  text-align: center;
+}
+@media screen and (orientation: portrait) {
+  .line{
+  margin-top: 6.5%;
+}
+.para u a{
+  margin-top: 5%;
+  margin-bottom: 30px;
+}
+.para{
+    font-size: 135%;
+}
+}
+.Guide {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+@media screen and (orientation: portrait){
+.Guide > .title { 
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+}
+}
+@media screen and (min-width: 320px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media screen and (min-width: 769px) {
+  .Guide {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media screen and (min-width: 1919px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+</style>  
+<p style="margin-top: 1cm; font-size: 300%;">Levania's Costumes</p>
+
+<div class="over">
+<div class="Guide">
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/levania/costumes/human-monster"><img class="img-special" src="https://i.imgur.com/IbgJ4m1.png" loading="lazy"><p class="title">Human Monster</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/levania/costumes/dark-monster"><img class="img-special" src="https://i.imgur.com/i7dUccs.png" loading="lazy"><p class="title">Dark Monster</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/levania/costumes/guardian-monster"><img class="img-special" src="https://i.imgur.com/sSzowW1.png" loading="lazy"><p class="title">Guardian Monster</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/levania/costumes/bloodless-monster"><img class="img-special" src="https://i.imgur.com/Tjfrgli.png" loading="lazy"><p class="title">Bloodless Monster</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/levania/costumes/celebratory-monster"><img class="img-special" src="https://i.imgur.com/mVwIObR.png" loading="lazy"><p class="title">Celebratory Monster</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/levania/costumes/festive-monster"><img class="img-special" src="https://i.imgur.com/Ru2FVTy.png" loading="lazy"><p class="title">Festive Monster</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/levania/costumes/lacrima-monster"><img class="img-special" src="https://i.imgur.com/ehachoG.png" loading="lazy"><p class="title">Lacrima Monster</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/levania/costumes/yuletide-monster"><img class="img-special" src="https://i.imgur.com/hK0MJZB.png" loading="lazy"><p class="title">Yuletide Monster</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/levania/costumes/abstract-monster"><img class="img-special" src="https://i.imgur.com/74LBYJn.png" loading="lazy"><p class="title">Abstract Monster</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/levania/costumes/bloody-monster"><img class="img-special" src="https://i.imgur.com/zpSdkW7.png" loading="lazy"><p class="title">Bloody Monster</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/levania/costumes/abyssal-monster"><img class="img-special" src="https://i.imgur.com/Cg6J369.png" loading="lazy"><p class="title">Abyssal Monster</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/levania/costumes/reborn-beast"><img class="img-special" src="https://i.imgur.com/ce3BV85.png" loading="lazy"><p class="title">Reborn Beast</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/levania/costumes/f-h-beast"><img class="img-special" src="https://i.imgur.com/SWAYSKt.png" loading="lazy"><p class="title">Frozen Heart Beast</p></a></div>
+
+
+</div>
+</div>
+<br><br><br><br>
+<p class="line"></p>
+<p class="menu" id="backButton"><a href="/stories/reincarnation/characters/s1/levania">Back</a></p>

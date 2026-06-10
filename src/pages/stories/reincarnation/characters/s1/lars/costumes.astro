@@ -1,0 +1,124 @@
+---
+import TextLayout from "@/layouts/TextLayout.astro"
+import '@/styles/text.css'
+---
+
+<TextLayout>
+</TextLayout>
+<title>Lars's Costumes</title>
+<style>
+    img{
+        -webkit-filter: brightness(100%);
+        padding: 0%;
+        max-width: 144px;
+        max-height: 144px;
+    }
+    img:hover{
+        -webkit-filter: brightness(70%);
+        transform: scale(98%);
+    }
+
+  .para{
+  display: inline-block;
+  height:auto;
+  text-size-adjust: auto;
+  margin-bottom: 1%;
+    margin-top: 0.6cm;
+  margin-left: 8%;
+  margin-right: 8%;
+  letter-spacing: 0.17rem;
+  font-size: 115%;
+
+}
+div{
+  text-align: center;
+}
+@media screen and (orientation: portrait) {
+  .line{
+  margin-top: 6.5%;
+}
+.para u a{
+  margin-top: 5%;
+  margin-bottom: 30px;
+}
+.para{
+    font-size: 135%;
+}
+}
+.Guide {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+@media screen and (orientation: portrait){
+.Guide > .title { 
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+}
+}
+@media screen and (min-width: 320px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media screen and (min-width: 769px) {
+  .Guide {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media screen and (min-width: 1919px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+</style>  
+<p style="margin-top: 1cm; font-size: 300%;">Lars's Costumes</p>
+
+<div class="over">
+<div class="Guide">
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/lars/costumes/spiteful-soldier"><img class="img-special" src="https://i.imgur.com/KTcjjSs.png" loading="lazy"><p class="title">Spiteful Soldier</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/lars/costumes/dissenting-soldier"><img class="img-special" src="https://i.imgur.com/qtwKMIP.png" loading="lazy"><p class="title">Dissenting Soldier</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/lars/costumes/guardian-soldier"><img class="img-special" src="https://i.imgur.com/w5JDAYZ.png" loading="lazy"><p class="title">Guardian Soldier</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/lars/costumes/celebratory-soldier"><img class="img-special" src="https://i.imgur.com/rmhwWce.png" loading="lazy"><p class="title">Celebratory Soldier</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/lars/costumes/bloody-soldier"><img class="img-special" src="https://i.imgur.com/RIwkquq.png" loading="lazy"><p class="title">Bloody Soldier</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/lars/costumes/abstract-soldier"><img class="img-special" src="https://i.imgur.com/JvUw9EU.png" loading="lazy"><p class="title">Abstract Soldier</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/lars/costumes/fractured-soldier"><img class="img-special" src="https://i.imgur.com/umBtEDY.png" loading="lazy"><p class="title">Fractured Soldier</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/lars/costumes/phantasmal-soldier"><img class="img-special" src="https://i.imgur.com/6rWJJBM.png" loading="lazy"><p class="title">Phantasmmal Soldier</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/lars/costumes/lacrima-soldier"><img class="img-special" src="https://i.imgur.com/ZWoDho4.png" loading="lazy"><p class="title">Lacrima Soldier</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/lars/costumes/abyssal-soldier"><img class="img-special" src="https://i.imgur.com/1WqW0aM.png" loading="lazy"><p class="title">Abyssal Soldier</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/lars/costumes/yuletide-soldier"><img class="img-special" src="https://i.imgur.com/dXObgTq.png" loading="lazy"><p class="title">Yuletide Soldier</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/lars/costumes/reborn-soldier"><img class="img-special" src="https://i.imgur.com/Vo0NSp2.png" loading="lazy"><p class="title">Reborn Truant</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation/characters/s1/lars/costumes/f-h-soldier"><img class="img-special" src="https://i.imgur.com/1a5aXNY.png" loading="lazy"><p class="title">Frozen Heart Truant</p></a></div>
+
+</div>
+<br><br><br><br>
+<p class="line"></p>
+<p class="menu" id="backButton"><a href="/stories/reincarnation/characters/s1/lars">Back</a></p>
