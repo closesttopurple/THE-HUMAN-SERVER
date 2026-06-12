@@ -22,7 +22,16 @@ import '@/styles/text.css'
 }
     }
 </style>
-
+<style>body::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+  pointer-events: none; 
+  background-image: linear-gradient(to top, #1d1d1d, #1d1d1d, #474747, #474747);
+  background-size: 100% 3px;
+}</style>
 <p style="margin-top: 1cm; font-size: 300%;">Liberator</p>
 <p class="title"><a href="https://www.youtube.com/watch?v=l-CeoU_rnLc"><u>Video</u></a></p>
 <img src="https://i.imgur.com/25pDeNC.png">

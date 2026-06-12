@@ -20,8 +20,68 @@ import '@/styles/text.css'
     width: 35%;
     height: 35%;
 }
-    }
-</style>
+    }body::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+  pointer-events: none; 
+  background-image: linear-gradient(to top, #1d1d1d, #1d1d1d, #474747, #474747);
+  background-size: 100% 3px;
+}
+</style><nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a href="/" class="menu-logo">
+    <img style="width: 100%; height: 100%;" src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a href="/series-guide/ths-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a href="/credits">
+          Credits
+        </a>
+      </li>
+
+            </li>
+            <li>
+        <a href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
+          Reader
+        </a>
+      </li>
+            <li>
+        <a href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/bug-report">
+          Contact
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
 <p style="margin-top: 1cm; font-size: 300%;">Small Flowers</p>
 <img src="https://i.imgur.com/GBFBWDP.png">

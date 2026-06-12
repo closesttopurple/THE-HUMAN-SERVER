@@ -1,0 +1,470 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro"
+import TextLayout from "@/layouts/TextLayout.astro"
+import '@/styles/text.css'
+---
+<TextLayout>
+</TextLayout>
+<style>
+html, body, .page {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  transition: all .8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
+  -webkit-transition: all .8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
+  -moz-transition: all .8s cubic-bezier(0.54, 0.35, 0.29, 0.99);
+  -o-transition: all .8s cubic-bezier(0.54, 0.35, 0.29, 0.99);  
+  color: #fff;
+  overflow: hidden; 
+}
+
+* {
+  font-family: 'open sans', 'lato', 'helvetica', sans-serif;
+}
+
+.page {
+  position: absolute;
+}
+
+#p1 {
+  left: 0;
+}
+
+#p2, #p3, #p4, #p5 {
+  left: 200%;
+}
+
+#p1 { background: darkslateblue; }
+#p2 { background: tomato; }
+#p3 { background: gold; }
+#p4 { background: deeppink; }
+#p5 { background: rebeccapurple; }
+
+#t2:target #p2,
+#t3:target #p3,
+#t4:target #p4,
+#t5:target #p5 {
+  transform: translateX(-190%);
+  -webkit-transform: translateX(-190%);
+  -moz-transform: translateX(-190%);
+  -o-transform: translateX(-190%);
+  transition-delay: .4s !important;
+}
+
+#t2:target #p1, 
+#t3:target #p1,
+#t4:target #p1,
+#t5:target #p1{
+  background: black;
+}
+
+#t2:target #p1 .icon, 
+#t3:target #p1 .icon,
+#t4:target #p1 .icon,
+#t5:target #p1 .icon {
+  -webkit-filter: blur(3px);
+}
+
+.icon {
+  color: #fff;
+  font-size: 32px;
+  display: block;
+}
+
+ul .icon:hover {
+  opacity: 0.5;
+}
+
+.page .icon .title {
+  line-height: 2;
+}
+
+#t2:target ul .icon,
+#t3:target ul .icon,
+#t4:target ul .icon,
+#t5:target ul .icon{
+  transform: scale(.6);
+  -webkit-transform: scale(.6);
+  -moz-transform: scale(.6);
+  -o-transform: scale(.6);
+  transition-delay: .25s;
+}
+
+#t2:target #dos,
+#t3:target #tres,
+#t4:target #cuatro,
+#t4:target #cinco {
+  transform: scale(1.2) !important;
+  -webkit-transform: scale(1.2) !important;
+  -moz-transform: scale(1.2) !important;
+  -o-transform: scale(1.2) !important;
+}
+
+ul {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 280px;
+  width: 10%;
+  padding: 0;
+  text-align: center;
+ }
+
+#menu .icon {
+  margin: 30px 0;
+  transition: all .5s ease-out !important;
+  -webkit-transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title, .hint {
+  display: block;
+}
+
+.title {
+  font-size: 38px;
+}
+
+.hint {
+  font-size: 13px;
+}
+
+#p4 .hint {
+  display: inherit !important;
+}
+
+.hint a {
+  color: yellow;
+  transition: all 250ms ease-out;
+  -webkit-transition: all 250ms ease-out;
+  -moz-transition: all 250ms ease-out;
+  -o-transition: all 250ms ease-out;
+}
+
+.hint a:hover {
+  color: #FFF;
+}
+
+.line-trough {
+  text-decoration: line-through;
+}
+
+.page .icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10%;
+  left: 0;
+  width: 270px;
+  height: 170px;
+  margin: auto;
+  text-align: center;
+  font-size: 80px;
+  line-height: 1.3;
+  transform: translateX(360%);
+  -webkit-transform: translateX(360%);
+  -moz-transform: translateX(360%);
+  -o-transform: translateX(360%);
+  transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
+  -webkit-transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
+  -moz-transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
+  -o-transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
+}
+
+.page#p1 .icon {
+  height: 220px;
+}
+
+.page#p1 .icon {
+  transform: translateX(10%) !important;
+}
+
+#t2:target .page#p2 .icon,
+#t3:target .page#p3 .icon,
+#t4:target .page#p4 .icon,
+#t5:target .page#p5 .icon {
+  transform: translateX(0) !important;
+  -webkit-transform: translateX(0) !important;
+  -moz-transform: translateX(0) !important;
+  -o-transform: translateX(0) !important;
+  transition-delay: 1s;
+}
+
+
+</style>
+<title>Stories</title>
+
+<div class="ct" id="t1">
+  <div class="ct" id="t2">
+    <div class="ct" id="t3">
+      <div class="ct" id="t4">
+         <div class="ct" id="t5">
+          <ul id="menu">
+            <a href="#t1"><li class="icon fa fa-bolt" id="uno"></li></a>
+            <a href="#t2"><li class="icon fa fa-keyboard-o" id="dos"></li></a>
+            <a href="#t3"><li class="icon fa fa-rocket" id="tres"></li></a>
+            <a href="#t4"><li class="icon fa fa-dribbble" id="cuatro"></li></a>
+            <a href="#t5"><li class="icon fa fa-plus-circle" id="cinco"></li></a>
+          </ul>
+          <div class="page" id="p1">
+             <section class="icon fa fa-bolt"><style>
+    body{
+@media screen and (orientation: portrait) and (prefers-color-scheme: dark)
+{
+    background-image: url("https://ik.imagekit.io/closesttopurple/bg-dark/stories-portrait.avif?updatedAt=1755425289656");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+@media screen and (orientation: landscape) and (prefers-color-scheme: dark)
+{
+    background-image: url("https://ik.imagekit.io/closesttopurple/bg-dark/stories-landscape.avif?updatedAt=175542528942");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+@media screen and (orientation: portrait) and (prefers-color-scheme: light)
+{
+    background-image: url("https://ik.imagekit.io/closesttopurple/bg-light/stories-portrait.avif?updatedAt=1755054121229");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+@media screen and (orientation: landscape) and (prefers-color-scheme: light)
+{
+    background-image: url("https://ik.imagekit.io/closesttopurple/bg-light/stories-landscape.avif?updatedAt=1755054120084");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+    }
+
+.para{
+  display: inline-block;
+  height:auto;
+  text-size-adjust: auto;
+  margin-bottom: 1%;
+    margin-top: 0.6cm;
+  margin-left: 8%;
+  margin-right: 8%;
+  letter-spacing: 0.17rem;
+  font-size: 105%;
+
+}
+div{
+  text-align: center;
+}
+@media screen and (orientation: portrait) {
+  .line{
+  margin-top: 6.5%;
+}
+.para u a{
+  margin-top: 5%;
+  margin-bottom: 30px;
+}
+.para{
+    font-size: 125%;
+}
+}
+.menu{
+  font-size: 135%;
+}
+.menu img{
+  width: 85%;
+  height: 85%;
+  margin-top: 1.5%;
+}
+#back{
+  font-size: 250%;
+}
+.art{
+  margin-top: 0.5%;
+}
+.Guide > img{
+aspect-ratio: 3 / 2;
+}
+.media-card{
+  margin: 2%;
+  margin-bottom: 2.5%;
+  aspect-ratio: 3 / 2;
+
+}
+.img-special{
+  width:  80%;
+  height: 80%;
+  margin-bottom: 2.5%;
+}
+.title{
+  margin-bottom: 2.5%;
+}
+</style>
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a href="/" class="menu-logo">
+    <img src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a href="/series-guide/ths-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a href="/credits">
+          Credits
+        </a>
+      </li>
+
+            </li>
+            <li>
+        <a href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
+          Reader
+        </a>
+      </li>
+            <li>
+        <a href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/bug-report">
+          Contact
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="over">
+<div class="Guide">
+<div class="media-card"><a href="/stories/drakengard-1"><img class="img-special" src="https://i.imgur.com/WXDVAhd.png" loading="lazy"><p class="title">Drakengard</p></a></div>
+<div class="media-card"><a href="/stories/drakengard-2"><img class="img-special" src="https://i.imgur.com/s2l7QI9.png" loading="lazy"><p class="title">Drakengard 2</p></a></div>
+<div class="media-card"><a href="/stories/drakengard-3"><img class="img-special" src="https://i.imgur.com/kPL2QV3.png" loading="lazy"><p class="title">Drakengard 3</p></a></div>
+<div class="media-card"><a href="/stories/drakengard-all"><img class="img-special" src="https://i.imgur.com/lNmYMXr.png" loading="lazy"><p class="title">Drakengard (All)</p></a></div>
+<div class="media-card"><a href="/stories/nier"><img class="img-special" src="https://i.imgur.com/4HbrMUO.png" loading="lazy"><p class="title">NieR</p></a></div>
+<div class="media-card"><a href="/stories/nier-automata"><img class="img-special" src="https://i.imgur.com/JxaaNWY.png" loading="lazy"><p class="title">NieR:Automata</p></a></div>
+<div class="media-card"><a href="/stories/reincarnation"><img class="img-special" src="https://i.imgur.com/hsB33Et.png" loading="lazy"><p class="title">NieR Re[in]carnation</p></a></div>
+<div class="media-card"><a href="/stories/nier-all"><img class="img-special" src="https://i.imgur.com/nXdXoWQ.png" loading="lazy"><p class="title">NieR (All)</p></a></div>
+<div class="media-card"><a href="/stories/sinoalice"><img class="img-special" src="https://i.imgur.com/T0r31xc.png" loading="lazy"><p class="title">SINoALICE</p></a></div>
+<div class="media-card"><a href="/stories/bakuken"><img class="img-special" src="https://i.imgur.com/GdPFyqd.png" loading="lazy"><p class="title">Bakuken</p></a></div>
+<div class="media-card"><a href="/stories/thou-shalt-not-die"><img class="img-special" src="https://i.imgur.com/zhi7JtM.png" loading="lazy"><p class="title">Thou Shalt Not Die </p></a></div>
+<div class="media-card"><a href="/stories/misc"><img class="img-special" src="https://i.imgur.com/889FJGj.png" loading="lazy"><p class="title">Misc</p></a></div>
+
+</div></div>
+<p class="line"></p>
+<p class="menu" id="backButton" style="font-size: 250%;"><a href="/">Back</a></p>
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-dark/drakengard-1-portrait.avif?updatedAt=1755425286081" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-dark/drakengard-1-landscape.avif?updatedAt=1755425286180" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-light/drakengard-1-portrait.avif?updatedAt=1755054117791" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-light/drakengard-1-landscape.avif?updatedAt=1755054117929" as="image" type="image/avif" />
+<!--Above is for drakengard preloading-->
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-dark/drakengard-2-portrait.avif?updatedAt=1755425286439" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-dark/drakengard-2-landscape.avif?updatedAt=1755425286399" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-light/drakengard-2-portrait.avif?updatedAt=1755054117902" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-light/drakengard-2-landscape.avif?updatedAt=1755054117888" as="image" type="image/avif" />
+<!--Above is for drakengard-2 preloading-->
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-dark/drakengard-3-portrait.avif?updatedAt=1755425287746" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-dark/drakengard-3-landscape.avif?updatedAt=1755425287711" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-light/drakengard-3-portrait.avif?updatedAt=1755054119757" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-light/drakengard-3-landscape.avif?updatedAt=1755054118255" as="image" type="image/avif" />
+<!--Above is for drakengard-3 preloading-->
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-dark/nier-automata-portrait.avif?updatedAt=1755425288034" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-dark/nier-automata-landscape.avif?updatedAt=1755425287952" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-light/nier-automata-portrait.avif?updatedAt=1755054120111" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-light/nier-automata-landscape.avif?updatedAt=1755054119893" as="image" type="image/avif" />
+<link rel="preload" href="https://i.imgur.com/TXyjmOt.png" as="image" type="image/png" />
+<!--Above is for nier-automata preloading-->
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-dark/nier-portrait.avif?updatedAt=1755425288262" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-dark/nier-landscape.avif?updatedAt=1755425288065" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-light/nier-portrait.avif?updatedAt=1755054119901" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-light/nier-landscape.avif?updatedAt=175505411991" as="image" type="image/avif" />
+<link rel="preload" href="https://i.imgur.com/JbPdF15.png" as="image" type="image/png" />
+<!--Above is for nier preloading-->
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-dark/nier-reincarnation-portrait.avif?updatedAt=1755425288268" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-dark/nier-reincarnation-landscape.avif?updatedAt=1755425288207" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-light/nier-reincarnatlion-landscape.avif?updatedAt=1755054120136" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-light/nier-reincarnation-landscape.avif?updatedAt=1755054120067" as="image" type="image/avif" />
+<link rel="preload" href="https://i.imgur.com/sRKehaj.png" as="image" type="image/png" />
+<!--Above is for nier-reincarnation preloading-->
+<link rel="preload" href="https://i.imgur.com/IMs49sM.png" as="image" type="image/png" />
+<link rel="preload" href="https://i.imgur.com/fbDPfhz.png" as="image" type="image/png" />
+<link rel="preload" href="https://i.imgur.com/XclHQ3e.png" as="image" type="image/png" />
+<link rel="preload" href="https://i.imgur.com/ncI30q8.png" as="image" type="image/png" />
+<link rel="preload" href="https://i.imgur.com/j4CR7SN.png" as="image" type="image/png" />
+<link rel="preload" href="https://i.imgur.com/uhraAS8.png" as="image" type="image/png" />
+<link rel="preload" href="https://i.imgur.com/sSj2tCr.png" as="image" type="image/png" />
+<!--Above is for sinoalice preloading-->
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-dark/nier-reincarnation-portrait.avif?updatedAt=1755425288268" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-dark/nier-reincarnation-landscape.avif?updatedAt=1755425288207" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-light/nier-reincarnatlion-landscape.avif?updatedAt=1755054120136" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-light/nier-reincarnation-landscape.avif?updatedAt=1755054120067" as="image" type="image/avif" />
+<link rel="preload" href="https://i.imgur.com/sRKehaj.png" as="image" type="image/png" />
+<!--Above is for sinoalice preloading-->
+<link rel="preload" href="https://i.imgur.com/DLC6ZVj.png" as="image" type="image/png" />
+<link rel="preload" href="https://i.imgur.com/cpBkszN.png" as="image" type="image/png" />
+<!--Above is for misc preloading-->
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-dark/drakengard-all-portrait.avif?updatedAt=1755425287875" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-dark/drakengard-all-landscape.avif?updatedAt=1755425288061" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-light/drakengard-all-portrait.avif?updatedAt=1755054119856" as="image" type="image/avif" />
+<link rel="preload" href="https://ik.imagekit.io/closesttopurple/bg-light/drakengard-all-landscape.avif?updatedAt=1755054120175" as="image" type="image/avif" />
+<!--Above is for drakengard-all preloading--></section>  
+          </div>
+          <div class="page" id="p2">
+            <section class="icon fa fa-keyboard-o"><span class="title">Type</span></section>
+          </div>  
+          <div class="page" id="p3">
+            <section class="icon fa fa-rocket"><span class="title">Rocket</span></section>
+          </div>
+          <div class="page" id="p4">
+            <section class="icon fa fa-dribbble">
+              <span class="title">Dribbble</span>
+              <p class="hint">
+                <a href="https://dribbble.com/hrtzt" target="_blank">Im ready to play, <span class="hint line-trough">invite me </span> find me</a>
+              </p>
+              <p class="hint">Already invited by <a href="http://www.dribbble.com/mrpeters" target="_blank">Stan Peters</a></p>
+            </section>
+          </div> 
+          <div class="page" id="p5">
+            <section class="icon fa fa-plus-circle">
+              <span class="title">More</span>
+              <p class="hint">
+                <span>You love one page & CSS only stuff? </span><br/>
+                <a href="https://codepen.io/hrtzt/details/pgXMYb/" target="_blank">check this pen "Pure CSS One page vertical navigation"</a>
+              </p>
+            </section>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

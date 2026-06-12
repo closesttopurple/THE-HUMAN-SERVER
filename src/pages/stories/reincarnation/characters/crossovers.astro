@@ -5,9 +5,69 @@ import '@/styles/text.css'
 
 <TextLayout>
 </TextLayout>
-<title>Crossover Costumes</title>
+<title>Crossover Costumes</title><style>body::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+  pointer-events: none; 
+  background-image: linear-gradient(to top, #1d1d1d, #1d1d1d, #474747, #474747);
+  background-size: 100% 3px;
+}</style><nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a href="/" class="menu-logo">
+    <img style="width: 100%; height: 100%;" src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a href="/series-guide/ths-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a href="/credits">
+          Credits
+        </a>
+      </li>
+
+            </li>
+            <li>
+        <a href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
+          Reader
+        </a>
+      </li>
+            <li>
+        <a href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/bug-report">
+          Contact
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
 <style>
-    img{
+    .img-special{
         -webkit-filter: brightness(100%);
         padding: 0%;
         max-width: 192px;
@@ -59,28 +119,28 @@ div{
 
 <div class="over">
 <div class="Guide">
-<p class="title"><a href="/stories/reincarnation/characters/crossovers/praying-battler"><img src="https://i.imgur.com/1fR83ZO.png">Praying Battler</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/crossovers/shattered-battler"><img src="https://i.imgur.com/zHbK151.png">Shattered Battler</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/crossovers/alternate-battler"><img src="https://i.imgur.com/sIU4lDB.png">Alternate Battler</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/crossovers/divergent-battler"><img src="https://i.imgur.com/Fib26xO.png">Divergent Battler</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/crossovers/mock-machine"><img src="https://i.imgur.com/eclwNmG.png">Mock Machine</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/crossovers/isolated-scanner"><img src="https://i.imgur.com/mTr7Rkk.png">Isolated Scanner</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/crossovers/divergent-scanner"><img src="https://i.imgur.com/YStYnTL.png">Divergent Scanner</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/crossovers/vengeful-attacker"><img src="https://i.imgur.com/9SEfzZH.png">Vengeful Attacker</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/crossovers/divergent-attacker"><img src="https://i.imgur.com/s8EdsPz.png">Divergent Attacker</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/crossovers/soulful-lad"><img src="https://i.imgur.com/6mHRvR5.png">Soulful Lad</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/crossovers/divergent-lad"><img src="https://i.imgur.com/egJQ4f6.png">Divergent Lad</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/crossovers/alternate-lad"><img src="https://i.imgur.com/YuhKdQU.png">Alternate Lad</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/crossovers/the-aerie-warrior"><img src="https://i.imgur.com/dBWX8sN.png">The Aerie Warrior</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/crossovers/divergent-warrior"><img src="https://i.imgur.com/qtogRaO.png">Divergent Warrior</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/crossovers/puzzling-oddity"><img src="https://i.imgur.com/sgwcpAq.png">Puzzling Oddity</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/crossovers/divergent-oddity"><img src="https://i.imgur.com/o50tbbW.png">Divergent Oddity</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/crossovers/progenitor-sister"><img src="https://i.imgur.com/3ny2G1r.png">Progenitor Sister</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/crossovers/divergent-sister"><img src="https://i.imgur.com/gkLeijz.png">Divergent Sister</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/crossovers/caged-rebel"><img src="https://i.imgur.com/oUNv6ml.png">Caged Rebel</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/crossovers/scheming-justice"><img src="https://i.imgur.com/Z1r9IRG.png">Scheming Justice</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/crossovers/insightful-emperor"><img src="https://i.imgur.com/T6sQ9U1.png">Insightful Emperor</a></p>
-<p class="title"><a href="/stories/reincarnation/characters/crossovers/virtuous-priestess"><img src="https://i.imgur.com/Fa7zL3z.png">Virtuous Priestess</a></p>
+<p class="title"><a href="/stories/reincarnation/characters/crossovers/praying-battler"><img class="img-special" src="https://i.imgur.com/1fR83ZO.png">Praying Battler</a></p>
+<p class="title"><a href="/stories/reincarnation/characters/crossovers/shattered-battler"><img class="img-special" src="https://i.imgur.com/zHbK151.png">Shattered Battler</a></p>
+<p class="title"><a href="/stories/reincarnation/characters/crossovers/alternate-battler"><img class="img-special" src="https://i.imgur.com/sIU4lDB.png">Alternate Battler</a></p>
+<p class="title"><a href="/stories/reincarnation/characters/crossovers/divergent-battler"><img class="img-special" src="https://i.imgur.com/Fib26xO.png">Divergent Battler</a></p>
+<p class="title"><a href="/stories/reincarnation/characters/crossovers/mock-machine"><img class="img-special" src="https://i.imgur.com/eclwNmG.png">Mock Machine</a></p>
+<p class="title"><a href="/stories/reincarnation/characters/crossovers/isolated-scanner"><img class="img-special" src="https://i.imgur.com/mTr7Rkk.png">Isolated Scanner</a></p>
+<p class="title"><a href="/stories/reincarnation/characters/crossovers/divergent-scanner"><img class="img-special" src="https://i.imgur.com/YStYnTL.png">Divergent Scanner</a></p>
+<p class="title"><a href="/stories/reincarnation/characters/crossovers/vengeful-attacker"><img class="img-special" src="https://i.imgur.com/9SEfzZH.png">Vengeful Attacker</a></p>
+<p class="title"><a href="/stories/reincarnation/characters/crossovers/divergent-attacker"><img class="img-special" src="https://i.imgur.com/s8EdsPz.png">Divergent Attacker</a></p>
+<p class="title"><a href="/stories/reincarnation/characters/crossovers/soulful-lad"><img class="img-special" src="https://i.imgur.com/6mHRvR5.png">Soulful Lad</a></p>
+<p class="title"><a href="/stories/reincarnation/characters/crossovers/divergent-lad"><img class="img-special" src="https://i.imgur.com/egJQ4f6.png">Divergent Lad</a></p>
+<p class="title"><a href="/stories/reincarnation/characters/crossovers/alternate-lad"><img class="img-special" src="https://i.imgur.com/YuhKdQU.png">Alternate Lad</a></p>
+<p class="title"><a href="/stories/reincarnation/characters/crossovers/the-aerie-warrior"><img class="img-special" src="https://i.imgur.com/dBWX8sN.png">The Aerie Warrior</a></p>
+<p class="title"><a href="/stories/reincarnation/characters/crossovers/divergent-warrior"><img class="img-special" src="https://i.imgur.com/qtogRaO.png">Divergent Warrior</a></p>
+<p class="title"><a href="/stories/reincarnation/characters/crossovers/puzzling-oddity"><img class="img-special" src="https://i.imgur.com/sgwcpAq.png">Puzzling Oddity</a></p>
+<p class="title"><a href="/stories/reincarnation/characters/crossovers/divergent-oddity"><img class="img-special" src="https://i.imgur.com/o50tbbW.png">Divergent Oddity</a></p>
+<p class="title"><a href="/stories/reincarnation/characters/crossovers/progenitor-sister"><img class="img-special" src="https://i.imgur.com/3ny2G1r.png">Progenitor Sister</a></p>
+<p class="title"><a href="/stories/reincarnation/characters/crossovers/divergent-sister"><img class="img-special" src="https://i.imgur.com/gkLeijz.png">Divergent Sister</a></p>
+<p class="title"><a href="/stories/reincarnation/characters/crossovers/caged-rebel"><img class="img-special" src="https://i.imgur.com/oUNv6ml.png">Caged Rebel</a></p>
+<p class="title"><a href="/stories/reincarnation/characters/crossovers/scheming-justice"><img class="img-special" src="https://i.imgur.com/Z1r9IRG.png">Scheming Justice</a></p>
+<p class="title"><a href="/stories/reincarnation/characters/crossovers/insightful-emperor"><img class="img-special" src="https://i.imgur.com/T6sQ9U1.png">Insightful Emperor</a></p>
+<p class="title"><a href="/stories/reincarnation/characters/crossovers/virtuous-priestess"><img class="img-special" src="https://i.imgur.com/Fa7zL3z.png">Virtuous Priestess</a></p>
 </div>
 </div>
 <br><br><br><br>

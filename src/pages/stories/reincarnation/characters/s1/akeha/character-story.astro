@@ -5,7 +5,16 @@ import '@/styles/text.css'
 
 <TextLayout>
 </TextLayout>
-<title>Akeha's Character Story</title>
+<title>Akeha's Character Story</title><style>body::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+  pointer-events: none; 
+  background-image: linear-gradient(to top, #1d1d1d, #1d1d1d, #474747, #474747);
+  background-size: 100% 3px;
+}</style>
 <style>
     img{
         @media screen and (orientation: portrait)
@@ -22,7 +31,58 @@ import '@/styles/text.css'
 }
     }
 </style>
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
 
+  <!-- logo -->
+  <a href="/" class="menu-logo">
+    <img style="width: 100%; height: 100%;" src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a href="/series-guide/ths-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a href="/credits">
+          Credits
+        </a>
+      </li>
+
+            </li>
+            <li>
+        <a href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
+          Reader
+        </a>
+      </li>
+            <li>
+        <a href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/bug-report">
+          Contact
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
 <p style="margin-top: 1cm; font-size: 300%;">Akeha's Character Story</p>
 <p class="title"><a href="https://www.youtube.com/watch?v=6M6mQO36V4Q"><u>Video</u></a></p>
 <p class="title">Chapter 1</p>
