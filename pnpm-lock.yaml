@@ -61,10 +61,7 @@ importers:
         version: 1.1.5
       astro-link:
         specifier: 'file:'
-        version: file:(@types/node@22.19.19)(jiti@1.21.7)(prettier-plugin-astro@0.14.1)(prettier@3.8.3)(purgecss@8.0.0)(rollup@4.61.1)(yaml@2.9.0)
-      astro-purgecss:
-        specifier: ^6.0.1
-        version: 6.0.1(astro@5.18.2(@types/node@22.19.19)(jiti@1.21.7)(rollup@4.61.1)(typescript@5.9.3)(yaml@2.9.0))(purgecss@8.0.0)
+        version: file:(@types/node@22.19.19)(jiti@1.21.7)(prettier-plugin-astro@0.14.1)(prettier@3.8.3)(rollup@4.61.1)(yaml@2.9.0)
       astro-seo:
         specifier: ^1.1.0
         version: 1.1.0(prettier-plugin-astro@0.14.1)(prettier@3.8.3)(typescript@5.9.3)
@@ -1472,12 +1469,6 @@ packages:
 
   'astro-link@file:':
     resolution: {directory: '', type: directory}
-
-  astro-purgecss@5.5.0:
-    resolution: {integrity: sha512-0NvT7lDbUO42DJ3JtrdMB55McaCswYN7LjXAf3yapyMfRRny+NJw25tnCdtH3Laf/ogw7fdScpretO4iILBTGw==}
-    peerDependencies:
-      astro: ^5.0.0
-      purgecss: ^7.0.0
 
   astro-purgecss@6.0.1:
     resolution: {integrity: sha512-R+0twl4sGaiOlreLYI0Zel/cHcCW3SUqD7PIcY0l/YSE8JsrC2r/s6x60F3jJeUskXZlUiyljG1BxtvveslVyA==}
@@ -4711,7 +4702,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  astro-link@file:(@types/node@22.19.19)(jiti@1.21.7)(prettier-plugin-astro@0.14.1)(prettier@3.8.3)(purgecss@8.0.0)(rollup@4.61.1)(yaml@2.9.0):
+  astro-link@file:(@types/node@22.19.19)(jiti@1.21.7)(prettier-plugin-astro@0.14.1)(prettier@3.8.3)(rollup@4.61.1)(yaml@2.9.0):
     dependencies:
       '@astrojs/check': 0.9.9(prettier-plugin-astro@0.14.1)(prettier@3.8.3)(typescript@5.9.3)
       '@astrojs/cloudflare': 12.6.13(@types/node@22.19.19)(astro@5.18.2(@types/node@22.19.19)(jiti@1.21.7)(rollup@4.61.1)(typescript@5.9.3)(yaml@2.9.0))(jiti@1.21.7)(yaml@2.9.0)
@@ -4730,8 +4721,9 @@ snapshots:
       astro-embed: 0.9.2(astro@5.18.2(@types/node@22.19.19)(jiti@1.21.7)(rollup@4.61.1)(typescript@5.9.3)(yaml@2.9.0))
       astro-hover-prefetch: 1.0.7
       astro-icon: 1.1.5
-      astro-purgecss: 5.5.0(astro@5.18.2(@types/node@22.19.19)(jiti@1.21.7)(rollup@4.61.1)(typescript@5.9.3)(yaml@2.9.0))(purgecss@8.0.0)
+      astro-purgecss: 6.0.1(astro@5.18.2(@types/node@22.19.19)(jiti@1.21.7)(rollup@4.61.1)(typescript@5.9.3)(yaml@2.9.0))(purgecss@8.0.0)
       astro-seo: 1.1.0(prettier-plugin-astro@0.14.1)(prettier@3.8.3)(typescript@5.9.3)
+      purgecss: 8.0.0
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
       react-is: 19.2.7
@@ -4766,7 +4758,6 @@ snapshots:
       - lightningcss
       - prettier
       - prettier-plugin-astro
-      - purgecss
       - react-native
       - rollup
       - sass
@@ -4780,11 +4771,6 @@ snapshots:
       - uploadthing
       - utf-8-validate
       - yaml
-
-  astro-purgecss@5.5.0(astro@5.18.2(@types/node@22.19.19)(jiti@1.21.7)(rollup@4.61.1)(typescript@5.9.3)(yaml@2.9.0))(purgecss@8.0.0):
-    dependencies:
-      astro: 5.18.2(@types/node@22.19.19)(jiti@1.21.7)(rollup@4.61.1)(typescript@5.9.3)(yaml@2.9.0)
-      purgecss: 8.0.0
 
   astro-purgecss@6.0.1(astro@5.18.2(@types/node@22.19.19)(jiti@1.21.7)(rollup@4.61.1)(typescript@5.9.3)(yaml@2.9.0))(purgecss@8.0.0):
     dependencies:
