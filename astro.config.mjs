@@ -10,7 +10,6 @@ import mdx from "@astrojs/mdx";
 
 import react from "@astrojs/react";
 
-import purgecss from "astro-purgecss";
 
 // https://astro.build/config
 export default defineConfig({
@@ -23,7 +22,7 @@ export default defineConfig({
     defaultStrategy: 'load'
   },
   site: "https://thehumanserver.org",
-  integrations: [tailwind(), sitemap(), icon(), mdx(), react(), purgecss()],
+  integrations: [tailwind(), sitemap(), icon(), mdx(), react()],
   vite: {
     resolve: {
       alias: import.meta.env.PROD && {
