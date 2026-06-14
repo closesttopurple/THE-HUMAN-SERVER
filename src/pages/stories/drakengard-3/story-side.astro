@@ -87,30 +87,39 @@ div{
 .para{
     font-size: 135%;
 }
-}  @media  (prefers-color-scheme: dark){
-    body::before {
-  content: "";
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: -1; 
-  pointer-events: none; 
-  background-image: linear-gradient(to top, #1d1d1d, #1d1d1d, #474747, #474747);
-  background-size: 100% 3px;
+}    body {
+  background-color: $bgColor;
+  background-size: 8px 8px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0,0,0,.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(0,0,0,.07) 4px);
+  color: $color;
+  font-weight: 300;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
-  }
-    @media  (prefers-color-scheme: light){
-    body::before {
-  content: "";
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: -1; 
-  pointer-events: none; 
-  background-image: linear-gradient(to top, #e8e8e8, #e8e8e8, #d2d2d2, #d2d2d2);
-  background-size: 100% 3px;
+@media (prefers-color-scheme: light)
+{
+    body {
+  background-color: $bgColor;
+  background-size: 8px 8px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(181, 181, 181, 0.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(228, 228, 228, 0.07) 4px);
+  color: $color;
+  font-weight: 300;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
-  }
+}
 </style>
 <div class="over">
 <div class="Guide">
