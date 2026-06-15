@@ -46,7 +46,7 @@ import TextLayout from "@/layouts/TextLayout.astro"
 
   <!-- logo -->
   <a href="/" class="menu-logo">
-    <img src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+    <img style="width: 100%; height: 100%;" src="https://i.imgur.com/2WGRL3v.png" alt=""/>
   </a>
 
   <!-- menu items -->
@@ -63,11 +63,15 @@ import TextLayout from "@/layouts/TextLayout.astro"
         </a>
       </li>
       <li>
+        <a href="/media">
+          Media
+        </a>
+      </li>
+      <li>
         <a href="/credits">
           Credits
         </a>
       </li>
-
             </li>
             <li>
         <a href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
@@ -90,22 +94,56 @@ import TextLayout from "@/layouts/TextLayout.astro"
   </div>
 </nav>
 <title>DrMint / AL Team</title>
+<style>
+  @media screen and (orientation: landscape){
+    .parent {
+display: grid;
+grid-template-columns: repeat(3, 1fr) 0.6fr 1.4fr;
+grid-template-rows: 0.2fr 0.8fr repeat(2, 0.3fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
 
+.div1 { grid-area: 3 / 1 / 5 / 6; }
+.div2 { grid-area: 1 / 1 / 2 / 3; }
+.div3 { grid-area: 2 / 1 / 3 / 3; }
+.div4 { grid-area: 1 / 4 / 3 / 6; }
+
+  }
+  @media screen and (orientation: portrait){
+.parent {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 0.2fr 0.8fr repeat(2, 0.3fr) 0.6fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 3 / 1 / 5 / 6;}
+.div2 { grid-area: 1 / 1 / 2 / 3; margin:3%;}
+.div3 { grid-area: 2 / 1 / 3 / 3; margin:3%;}
+.div4 { grid-area: 5 / 1 / 6 / 3; margin:3%;}
+
+  }
+
+
+.title{
+    font-size: 2rem;
+    
+}
+</style>
 <p class="title">DrMint</p>
-<p class="line"></p>
-<p style="font-size: 180%;">Worked on:</p>
-<p class ="menu" style="font-size: 180%;"><a href="/stories/drakengard-1/manga"><u>Drakengard Judgement Chapter 2 (random Japanese guy and AL Team, specifics unclear)</u></a></p>
-<p class ="menu" style="font-size: 180%;"><a href="/stories/drakengard-3/short-stories"><u>Drakengard 3 Short Stories</u></a></p>
-<p class ="menu" style="font-size: 180%;"><a href="/stories/drakengard-3/reading/prelude-novellas"><u>D3 Prelude Novellas</u></a></p>
-<p class ="menu" style="font-size: 180%;"><a href="/stories/drakengard-3/story-side/chapter-one"><u>D3 Story Side Chapter One</u></a></p>
-<p class ="menu" style="font-size: 180%;"><a href="/stories/nier/novellas"><u>NieR The Lost World & Appendix ver.1.22...</u></a></p>
-<p class ="menu" style="font-size: 180%;"><a href="/stories/nier-automata/novellas"><u>NieR:Automata Novellas</u></a></p>
-<p class ="menu" style="font-size: 180%;"><a href="/stories/nier-automata/memories-of-puppets"><u>The Memories of Puppets: A Repeating Prayer</u></a></p>
-<p class ="menu" style="font-size: 180%;"><a href="/stories/nier-all/concerts/12018-pamphlet"><u>NieR 12018: The Two of Us</u></a></p>
-<p class="line"></p>
-<p style="font-size: 180%;">Socials:</p>
-<p class ="menu" style="font-size: 180%;"><a href="https://github.com/DrMint"><u>GitHub</u></a></p>
-
-
-<p class="line"></p>
+ <div class="parent">
+<div class="div1"><p class="title">Socials:</p><p class ="menu" style="font-size: 180%;"><a href="https://github.com/DrMint"><u>GitHub</u></a></p></div>
+<div class="div2"><p class="title">Worked on:</p></div>
+<div class="div3"><p class ="menu" style="font-size: 180%;"><a href="/stories/drakengard-1/manga"><u>Drakengard Judgement Chapter 2 (specifics unclear)</u></a></p><br>
+<p class ="menu" style="font-size: 180%;"><a href="/stories/drakengard-3/short-stories"><u>Drakengard 3 Short Stories</u></a></p><br>
+<p class ="menu" style="font-size: 180%;"><a href="/stories/drakengard-3/reading/prelude-novellas"><u>D3 Prelude Novellas</u></a></p><br>
+<p class ="menu" style="font-size: 180%;"><a href="/stories/drakengard-3/story-side/chapter-one"><u>D3 Story Side Chapter One</u></a></p><br>
+<p class ="menu" style="font-size: 180%;"><a href="/stories/nier/novellas"><u>NieR The Lost World & Appendix ver.1.22...</u></a></p><br>
+<p class ="menu" style="font-size: 180%;"><a href="/stories/nier-automata/novellas"><u>NieR:Automata Novellas</u></a></p><br>
+<p class ="menu" style="font-size: 180%;"><a href="/stories/nier-automata/memories-of-puppets"><u>The Memories of Puppets: A Repeating Prayer</u></a></p><br>
+<p class ="menu" style="font-size: 180%;"><a href="/stories/nier-all/concerts/12018-pamphlet"><u>NieR 12018: The Two of Us</u></a></p></div>
+<div class="div4"><img style="padding: 16px;" src="https://i.imgur.com/eZIotpr.png"></div>
+</div> 
 <p class="menu" id="backButton"><a href="/credits/people">Back</a></p>

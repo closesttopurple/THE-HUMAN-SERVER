@@ -1,4 +1,4 @@
-ya---
+---
 import BaseLayout from "@/layouts/BaseLayout.astro"
 import '@/styles/text.css'
 import TextLayout from "@/layouts/TextLayout.astro"
@@ -46,7 +46,7 @@ import TextLayout from "@/layouts/TextLayout.astro"
 
   <!-- logo -->
   <a href="/" class="menu-logo">
-    <img src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+    <img style="width: 100%; height: 100%;" src="https://i.imgur.com/2WGRL3v.png" alt=""/>
   </a>
 
   <!-- menu items -->
@@ -63,11 +63,15 @@ import TextLayout from "@/layouts/TextLayout.astro"
         </a>
       </li>
       <li>
+        <a href="/media">
+          Media
+        </a>
+      </li>
+      <li>
         <a href="/credits">
           Credits
         </a>
       </li>
-
             </li>
             <li>
         <a href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
@@ -109,9 +113,9 @@ letter-spacing: 2.5px;
 }
 
 }
-.img-special{
-        width: 362.75px;
-    height: 512px;
+#img-front{
+        width: 40%;
+    height: 40%;
           border: thick solid rgb(25, 25, 25);
     background-color: rgb(70, 70, 70);
 }
@@ -133,8 +137,8 @@ letter-spacing: 2.5px;
     margin: 0%;
 }
 .over-text-media{
-width: 60%;
-height: 40%;
+width: 80%;
+height: 60%;
 margin: 0 auto;
   text-align: justify;
 padding: 1rem;}
@@ -153,10 +157,20 @@ padding: 1rem;}
 }
 
 }
-
+#img-small{
+          width: 362.75px;
+    height: 512px;
+}@media screen and (orientation: portrait){
+    #img-small{
+          width:  80%;
+    height: 80%;
+}
+}.title{
+  color:rgb(85, 153, 235);
+}
 </style>
 <title>Drakengard 1</title>
-<img class="img-special" src="https://ik.imagekit.io/closesttopurple/og/drakengard_us.avif">
+<img class="img-special" id="img-small" src="https://ik.imagekit.io/closesttopurple/og/drakengard_us.avif">
 <div class="over-text-media">
 <div class="text-bg">
 <p class="title">Drakengard</p>
@@ -168,11 +182,6 @@ padding: 1rem;}
 <div class="text-bg">
 <p class="title">Type</p>
 <p class="sub-title">Video Game</p>
-</div>
-</div>
-
-<div class="over-text-media">
-<div class="text-bg">
 <p class="title"><a href="https://wiki.thehumanserver.org/index.php/Drakengard_(Game)"><u>Wiki Link</u></a></p>
 
 </div>
@@ -184,7 +193,7 @@ padding: 1rem;}
 
 </div>
 </div>
-<img class="img-special" src="https://ik.imagekit.io/closesttopurple/og/drakengard_jp.avif">
+<img class="img-special" id="img-small" src="https://ik.imagekit.io/closesttopurple/og/drakengard_jp.avif">
 
 <p class="line"></p>
 <p class="menu" id="backButton"><a href="/media">Back</a></p>

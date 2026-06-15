@@ -46,7 +46,7 @@ import TextLayout from "@/layouts/TextLayout.astro"
 
   <!-- logo -->
   <a href="/" class="menu-logo">
-    <img src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+    <img style="width: 100%; height: 100%;" src="https://i.imgur.com/2WGRL3v.png" alt=""/>
   </a>
 
   <!-- menu items -->
@@ -63,11 +63,15 @@ import TextLayout from "@/layouts/TextLayout.astro"
         </a>
       </li>
       <li>
+        <a href="/media">
+          Media
+        </a>
+      </li>
+      <li>
         <a href="/credits">
           Credits
         </a>
       </li>
-
             </li>
             <li>
         <a href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
@@ -89,102 +93,45 @@ import TextLayout from "@/layouts/TextLayout.astro"
     </ul>
   </div>
 </nav>
+<title>DrMint / AL Team</title>
 <style>
-
-  @media screen and (orientation: landscape)
-{
-  .sub-title{
-  margin-top: 0.6cm;
-  font-size: 150%;
-  font-family: "Life-Regular";
-  margin-bottom: 0.1cm;
-  margin-left: 8%;
-  margin-right: 8%;
-  font-weight: 500;
-letter-spacing: 2.5px;
+  @media screen and (orientation: landscape){
+    .parent {
+display: grid;
+grid-template-columns: repeat(3, 1fr) 0.6fr 1.4fr;
+grid-template-rows: 0.2fr 0.8fr repeat(2, 0.3fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
 }
+
+.div1 { grid-area: 3 / 1 / 5 / 6; }
+.div2 { grid-area: 1 / 1 / 2 / 3; }
+.div3 { grid-area: 2 / 1 / 3 / 3; }
+.div4 { grid-area: 1 / 4 / 3 / 6; }
+
+  }
+  @media screen and (orientation: portrait){
+.parent {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 0.2fr 0.8fr repeat(2, 0.3fr) 0.6fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 3 / 1 / 5 / 6;}
+.div2 { grid-area: 1 / 1 / 2 / 3; margin:3%;}
+.div3 { grid-area: 2 / 1 / 3 / 3; margin:3%;}
+.div4 { grid-area: 5 / 1 / 6 / 3; margin:3%;}
+
+  }
+
+
 .title{
-  font-size: 200%;
-
+    font-size: 2rem;
+    
 }
-
-}
-.img-special{
-        width: 362.75px;
-    height: 512px;
-          border: thick solid rgb(25, 25, 25);
-    background-color: rgb(70, 70, 70);
-}
-  @media screen and (orientation: portrait)
-{
-  .sub-title{
-  margin-top: 1cm;
-  font-size: 130%;
-  font-family: "Life-Regular";
-  font-weight: 400;
-  margin-bottom: 0.1cm;
-}
-.title{
-    font-size: 180%;
-}
-
-}
-.title{
-    margin: 0%;
-}
-.over-text-media{
-width: 60%;
-height: 40%;
-margin: 0 auto;
-  text-align: justify;
-padding: 1rem;}
- @media  (prefers-color-scheme: dark){
-
-  .text-bg{
-  background-color:rgb(70, 70, 70);
-  padding: 0.7rem;
-}
-}
-  @media  (prefers-color-scheme: light){
-
-  .text-bg{
-  background-color:rgb(253, 253, 253);
-  padding: 0.7rem;
-}
-
-}
-
 </style>
-<title>ガンガンYG</title>
-<img class="img-special" src="https://ik.imagekit.io/closesttopurple/og/drakengard_us.avif">
-<div class="over-text-media">
-<div class="text-bg">
-<p class="title">ガンガンYG</p>
-<p class="sub-title">Gangan YG Issue 1</p>
-</div>
-</div>
-
-<div class="over-text-media">
-<div class="text-bg">
-<p class="title">Type</p>
-<p class="sub-title">Video Game</p>
-</div>
-</div>
-
-<div class="over-text-media">
-<div class="text-bg">
-<p class="title"><a href="https://wiki.thehumanserver.org/index.php/Drakengard_(Game)"><u></u></a></p>
-
-</div>
-</div>
-
-<div class="over-text-media">
-<div class="text-bg">
-<p class="title"><a href="/media/yangan-yg-2">Issue 2</a></p>
-
-</div>
-</div>
-<img class="img-special" src="https://ik.imagekit.io/closesttopurple/og/drakengard_jp.avif">
-
+<p class="para">I don't feel like making my own credits page lol</p>
 <p class="line"></p>
-<p class="menu" id="backButton"><a href="/media">Back</a></p>
+<p class="menu" id="backButton"><a href="/credits/people">Back</a></p>

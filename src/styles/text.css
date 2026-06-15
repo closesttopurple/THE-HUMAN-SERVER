@@ -45,7 +45,7 @@ box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2); 
   }
     .img-special:hover{
 box-shadow: 0 10px 20px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);      
-transform: scale(0.95);
+transform: scale(0.98);
   }
 .home-icon {
   display: inline-flex;     
@@ -333,7 +333,7 @@ letter-spacing: 2.5px;
   font-size: 150%;
   font-family: "Life-Regular";
   margin-bottom: 0.1cm;
-  font-weight: 575;
+  font-weight: 400;
 letter-spacing: 2.5px;
 }
 }

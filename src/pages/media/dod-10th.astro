@@ -1,0 +1,228 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro"
+import '@/styles/text.css'
+import TextLayout from "@/layouts/TextLayout.astro"
+---
+
+<TextLayout>
+</TextLayout><style>    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0,0,0,.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(0,0,0,.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}                                               
+@media (prefers-color-scheme: light)
+{
+    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+}.title{
+  color:rgb(85, 153, 235);
+}
+</style>
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a href="/" class="menu-logo">
+    <img style="width: 100%; height: 100%;" src="https://i.imgur.com/2WGRL3v.png" alt=""/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a href="/series-guide/ths-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a href="/media">
+          Media
+        </a>
+      </li>
+      <li>
+        <a href="/credits">
+          Credits
+        </a>
+      </li>
+            </li>
+            <li>
+        <a href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
+          Reader
+        </a>
+      </li>
+            <li>
+        <a href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="/bug-report">
+          Contact
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<style>
+
+  @media screen and (orientation: landscape)
+{
+  .sub-title{
+  margin-top: 0.6cm;
+  font-size: 150%;
+  font-family: "Life-Regular";
+  margin-bottom: 0.1cm;
+  margin-left: 8%;
+  margin-right: 8%;
+  font-weight: 500;
+letter-spacing: 2.5px;
+}
+.title{
+  font-size: 200%;
+
+}
+
+}
+#img-front{
+        width: 40%;
+    height: 40%;
+          border: thick solid rgb(25, 25, 25);
+    background-color: rgb(70, 70, 70);
+}
+  @media screen and (orientation: portrait)
+{
+  .sub-title{
+  margin-top: 1cm;
+  font-size: 130%;
+  font-family: "Life-Regular";
+  font-weight: 400;
+  margin-bottom: 0.1cm;
+}
+.title{
+    font-size: 180%;
+}
+
+}
+.title{
+    margin: 0%;
+}
+.over-text-media{
+width: 80%;
+height: 60%;
+margin: 0 auto;
+  text-align: justify;
+padding: 1rem;}
+ @media  (prefers-color-scheme: dark){
+
+  .text-bg{
+  background-color:rgb(70, 70, 70);
+  padding: 0.7rem;
+}
+}
+  @media  (prefers-color-scheme: light){
+
+  .text-bg{
+  background-color:rgb(253, 253, 253);
+  padding: 0.7rem;
+}
+
+}
+#img-small{
+          width: 362.75px;
+    height: 512px;
+}
+#img-small-2{
+          width: 512px;
+    height: 238.25px;
+}@media screen and (orientation: portrait){
+    #img-small{
+          width:  80%;
+    height: 80%;
+}
+}
+</style>
+<title>DOD 10th Box</title>
+<img class="img-special" id="img-small"  src="https://ik.imagekit.io/closesttopurple/og/dod_10.avif">
+<div class="over-text-media">
+<div class="text-bg">
+<p class="title">Drakengard 10th Anniversary Box</p>
+<p class="sub-title">Drag-on Dragoon</p>
+</div>
+</div>
+<img class="img-special" id="img-small-2" src="https://ik.imagekit.io/closesttopurple/og/dod_10_all.avif">
+<div class="over-text-media">
+<div class="text-bg">
+<p class="title">Type</p>
+<p class="sub-title">Collector's Edition</p>
+
+<p class="title">Description</p>
+<p class="sub-title">A collector's edition box for Drakengard 3, sold on the Square Enix e-store in Japan. It includes many additional DOD items.</p>
+</div>
+</div>
+
+
+<div class="over-text-media">
+<div class="text-bg">
+<p class="title">Items Contained</p>
+
+</div>
+</div>
+<div class="over">
+<div class="Guide">
+<div class="media-card"><img class="img-special" style="max-width: 80%; max-height: 80%;" src="https://ik.imagekit.io/closesttopurple/og/dod-scenario-script.jpg" loading="lazy"><p class="title" style="font-size: 1.4rem;">Drag-on Dragoon Scenario Script</p></div>
+<div class="media-card"><img class="img-special" style="max-width: 80%; max-height: 80%;" src="https://ik.imagekit.io/closesttopurple/og/dod-window-script.jpg" loading="lazy"><p class="title" style="font-size: 1.4rem;">Drag-on Drgoon Window Script</p></div>
+<div class="media-card"><img class="img-special" style="max-width: 80%; max-height: 80%;" src="https://ik.imagekit.io/closesttopurple/og/dod-10th-dlc-code.avif" loading="lazy"><p class="title" style="font-size: 1.4rem;">DLC Code</p></div>
+<div class="media-card"><a href="/stories/drakengard-3/prelude-novellas"><img class="img-special" style="max-width: 80%; max-height: 80%;" src="https://ik.imagekit.io/closesttopurple/og/dod-10th-novellas.avif" loading="lazy"><p class="title" style="font-size: 1.4rem;"></a>Novel Prelude</p></div>
+<div class="media-card"><img class="img-special" style="max-width: 80%; max-height: 80%;" src="https://ik.imagekit.io/closesttopurple/og/dod-10th-chiptune-history.avif" loading="lazy"><p class="title" style="font-size: 1.4rem;">Chiptune & DOD History</p></div>
+<div class="media-card"><img class="img-special" style="max-width: 80%; max-height: 80%;" src="https://ik.imagekit.io/closesttopurple/og/dod-10th-artbook.avif" loading="lazy"><p class="title" style="font-size: 1.4rem;">Visual Artbook</p></div>
+<div class="media-card"><a href="https://reader.thehumanserver.org/read.html?title=dod-world-inside&volume=1&page=1"><img class="img-special" style="max-width: 80%; max-height: 80%;" src="https://ik.imagekit.io/closesttopurple/og/dod-10th-world-inside.avif" loading="lazy"><p class="title" style="font-size: 1.4rem;"></a>World Inside</p></div>
+<div class="media-card"><a href="/media/drakengard-3"><img class="img-special" style="max-width: 80%; max-height: 80%;" src="https://wiki.thehumanserver.org/images/8/81/Drakengard-3-jp-box-art-01.png   " loading="lazy"><p class="title" style="font-size: 1.4rem;"></a>Drag-on Dragoon 3</p></div>
+
+</div>
+</div>
+<div class="over-text-media">
+<div class="text-bg">
+<p class="title">Where to find on THE HUMAN SERVER?</p>
+<p class="sub-title">You can read the 'Scenario Script' and 'Window Script' <a href="https://reader.thehumanserver.org/read.html?title=dod-scenario-script&volume=1&page=1"><u>here</u></a>, and <a href="https://reader.thehumanserver.org/read.html?title=dod-window-script&volume=1&page=1"><u>here.</u></a></p>
+<p class="sub-title">You can read the entries from 'Novel Prelude' <a href="/stories/drakengard-3/prelude-novellas"><u>here.</u></a></p>
+<p class="sub-title">You can watch a small video from DOD Chiptune, and the blu-ray for DOD History <a href="/stories/drag-on-dragoon-history/dod-history"><u>here.</u></a></p>
+<p class="sub-title">World inside contains the following short stories:<br><br><a href="/stories/misc"><u>Breaking News: Super Space-Time Character Exchange Roundtable in Shinjuku</u></a><br><br><a href="/stories/drakengard-1/novellas/the-song-of-fourteen-years"><u>The Song of Fourteen Years</u></a><br><br><a href="/stories/drakengard-2/novellas/the-garden-of-light"><u>The Garden of Light</u></a><br><br><a href="/stories/nier/novellas/the-fire-of-prometheus"><u>The Fire of Prometheus</u></a></p>
+<p class="sub-title">And the following creator commentaries:<br><br><a href="/stories/drakengard-1/creator-commentary/looking-back-1"><u>Looking Back 1: Drakengard</u></a><br><br><a href="/stories/drakengard-1/creator-commentary/questions-and-answers-1"><u>Questions and Answers 1: Drakengard</u></a><br><br><a href="/stories/drakengard-2/creator-commentary/looking-back-2"><u>Looking Back 2: Drakengard 2</u></a><br><br><a href="/stories/drakengard-2/creator-commentary/questions-and-answers-2"><u>Questions and Answers 2: Drakengard 2</u></a><br><br><a href="/stories/nier/creator-commentary/"><u>Looking Back 3: NieR (Untranslated)</u></a><br><br><a href="/stories/nier/creator-commentary/"><u>Questions and Answers 3: NieR (Untranslated)</u></a><br><br>View the actual book <a href="https://reader.thehumanserver.org/read.html?title=dod-world-inside&volume=1&page=1"><u>here.</u></a></p>
+
+
+</div>
+</div>
+<p class="line"></p>
+<p class="menu" id="backButton"><a href="/media">Back</a></p>
