@@ -1,11 +1,27 @@
 ---
-import BaseLayout from "@/layouts/BaseLayout.astro"
-import '@/styles/text.css'
 import TextLayout from "@/layouts/TextLayout.astro"
+import '@/styles/text.css'
 ---
 
 <TextLayout>
-</TextLayout><style>    body {
+</TextLayout>
+<title>Kainé's Model</title>
+<style>
+    img{
+        @media screen and (orientation: portrait)
+{
+    width: 80%;
+    height: 80%;
+}
+    }
+    img{
+        @media screen and (orientation: landscape)
+{
+    width: 35%;
+    height: 35%;
+}
+    }
+    body {
   background-color: $bgColor;
   background-size: 6px 6px;
   background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0,0,0,.07) 4px),
@@ -36,6 +52,7 @@ import TextLayout from "@/layouts/TextLayout.astro"
   flex-direction: column;
 }
 }
+
 </style>
 <nav class="menu-container">
   <!-- burger menu -->
@@ -93,13 +110,6 @@ import TextLayout from "@/layouts/TextLayout.astro"
     </ul>
   </div>
 </nav>
-<title>Misc</title>
-<p class="title"><a href="/stories/misc/super-space-time-character-exchange-round-table-in-shinjuku">
-Roundtable<img class="art" src="https://i.imgur.com/DLC6ZVj.png"></a></p>
-    <p class="line"></p>
-<p class="title"><a href="https://reader.thehumanserver.org/read.html?title=weekly-onore&volume=1&page=1">
-The Weekly Onore! (Fan Work)<img class="art" src="https://i.imgur.com/cpBkszN.png"></a></p>
-<p class="menu"><a href="/stories/misc/lord-of-vermillion">Lord of Vermillion</a></p>
+<div class="sketchfab-embed-wrapper"> <iframe style="width: 60vw; height: 60vh;" title="Lord of Vermillion Drakengard Caim" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/4873bd04d8ff4ffe800a230c3e018bb4/embed"> </iframe></div>
 <p class="line"></p>
-<p class="menu" id="backButton"><a href="/stories">Back</a></p>
-<p class="titlesmall">Completely human translated :)</p>
+<p class="menu" id="backButton"><a href="/stories/misc/lord-of-vermillion/">Back</a></p>
