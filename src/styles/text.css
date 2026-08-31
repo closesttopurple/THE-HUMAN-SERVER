@@ -322,7 +322,6 @@ p{
   margin-left: 8%;
   margin-right: 8%;
   font-weight: 500;
-letter-spacing: 2.5px;
 
 }
   p.title-special{
@@ -730,11 +729,10 @@ body {
 .Guide {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
+  gap: 6px;
 }
 .Guide > .title { 
   font-size: 0.94rem;
-  letter-spacing: 2px;
 }
 @media (min-width: 320px)  { .Guide { grid-template-columns: repeat(2, 1fr); } .Guide > .title { font-size: 0.7rem;} }
 @media (min-width: 769px) { .Guide { grid-template-columns: repeat(3, 1fr); } }
