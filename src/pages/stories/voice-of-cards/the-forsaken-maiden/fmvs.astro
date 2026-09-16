@@ -1,0 +1,138 @@
+.---
+
+import TextLayout from '@layouts/TextLayout.astro';
+---
+
+<TextLayout>
+</TextLayout><style>    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0,0,0,.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(0,0,0,.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}                                               
+@media (prefers-color-scheme: light)
+{
+    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+}
+</style>
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a data-astro-prefetch="load" href="/" class="menu-logo">
+    <img style="width: 100%; height: 100%;" src="https://ik.imagekit.io/closesttopurple/thecagemoon.avif" alt=""/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a data-astro-prefetch="load" href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a data-astro-prefetch="load" href="/series-guide/ths-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a data-astro-prefetch="load" href="/media">
+          Media
+        </a>
+      </li>
+      <li>
+        <a data-astro-prefetch="load" href="/credits">
+          Credits
+        </a>
+      </li>
+            <li>
+        <a data-astro-prefetch="load" href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
+          Reader
+        </a>
+      </li>
+            <li>
+        <a data-astro-prefetch="load" href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a data-astro-prefetch="load" href="/bug-report">
+          Bug Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<style>
+  .para{
+  display: inline-block;
+  height:auto;
+  text-size-adjust: auto;
+  margin-bottom: 1%;
+    margin-top: 0.6cm;
+  margin-left: 8%;
+  margin-right: 8%;
+  letter-spacing: 0.17rem;
+  font-size: 115%;
+
+}
+div{
+  text-align: center;
+}
+@media screen and (orientation: portrait) {
+  .line{
+  margin-top: 6.5%;
+}
+.para u a{
+  margin-top: 5%;
+  margin-bottom: 30px;
+}
+.para{
+    font-size: 135%;
+}
+}
+</style>
+<title>FMVs</title>   
+    <div class="over" style="max-width: 318px;">
+<p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a data-astro-prefetch="load" href="https://youtu.be/pBO5um6kxVI"class="menu-c">ALL FMVS</a></p>
+<p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a data-astro-prefetch="load" href="https://www.youtube.com/playlist?list=PLIP72xh7cJkE"class="menu-c">PLAYLIST</a></p>
+<p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a data-astro-prefetch="load" href="https://www.youtube.com/watch?v=LIF7kBlm5HM"class="menu-c">THE TALE OF DEPARTURE FIN</a></p>
+<p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a data-astro-prefetch="load" href="https://www.youtube.com/watch?v=ShZlZKwKUXM"class="menu-c">THE TALE OF THE AZURE MAIDEN FIN</a></p>
+<p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a data-astro-prefetch="load" href="https://www.youtube.com/watch?v=rokgifjZYIs"class="menu-c">THE TALE OF THE AZURE MAIDEN FIN</a></p>
+<p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a data-astro-prefetch="load" href="https://www.youtube.com/watch?v=6_PvZ4LkicA"class="menu-c">THE TALE OF THE AZURE MAIDEN FIN</a></p>
+<p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a data-astro-prefetch="load" href="https://www.youtube.com/watch?v=-Lr0DagvN3M"class="menu-c">THE TALE OF THE AZURE MAIDEN FIN</a></p>
+<p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a data-astro-prefetch="load" href="https://www.youtube.com/watch?v=Wy_U6Y2VMuc"class="menu-c">THE TALE OF OMEGA VILLAGE FIN</a></p>
+<p class="menu" style=" padding: 2px; text-shadow: 2px 2px 5px black;"><a data-astro-prefetch="load" href="https://www.youtube.com/watch?v=WxGlMiXudZ0"class="menu-c">THE TALE OF THE HEART'S DOMAIN FIN</a></p>
+
+
+</div>
+<p class="title">Download the <u><a href="https://drive.google.com/drive/folders/1TIXwdwEtvS8onjmp9sQvp8Y5Q5H2-BwO">google drive</a></u> here.</p>
+<p class="menu" id="backButton"><a data-astro-prefetch="load" href="/stories/voice-of-cards/the-forsaken-maiden">Back</a></p>

@@ -1,0 +1,125 @@
+---
+
+import TextLayout from '@layouts/TextLayout.astro';
+---
+
+<TextLayout>
+</TextLayout><style>    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0,0,0,.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(0,0,0,.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}                                               
+@media (prefers-color-scheme: light)
+{
+    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+}
+</style>
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a data-astro-prefetch="load" href="/" class="menu-logo">
+    <img style="width: 100%; height: 100%;" src="https://ik.imagekit.io/closesttopurple/thecagemoon.avif" alt=""/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a data-astro-prefetch="load" href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a data-astro-prefetch="load" href="/series-guide/ths-guide">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a data-astro-prefetch="load" href="/media">
+          Media
+        </a>
+      </li>
+      <li>
+        <a data-astro-prefetch="load" href="/credits">
+          Credits
+        </a>
+      </li>
+            <li>
+        <a data-astro-prefetch="load" href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
+          Reader
+        </a>
+      </li>
+            <li>
+        <a data-astro-prefetch="load" href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a data-astro-prefetch="load" href="/bug-report">
+          Bug Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<title>Rayzo</title>
+<style>
+  @media screen and (orientation: landscape){
+    .parent {
+display: grid;
+grid-template-columns: repeat(3, 1fr) 0.6fr 1.4fr;
+grid-template-rows: 0.2fr 0.8fr repeat(2, 0.3fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 3 / 1 / 5 / 6; }
+.div2 { grid-area: 1 / 1 / 2 / 3; }
+.div3 { grid-area: 2 / 1 / 3 / 3; }
+.div4 { grid-area: 1 / 4 / 3 / 6; max-width: 80vw;}
+
+  }
+
+
+.title{
+    font-size: 2rem;
+    
+}
+</style>
+<p class="title" style="font-size: 3rem;">Rayzo</p>
+ <div class="parent">
+<div class="div1"><p class="title">Socials:</p><p class ="menu" style="font-size: 180%;"><a data-astro-prefetch="load" href="https://x.com/rayzojams"><u>Twitter</u></a></p></div>
+<div class="div2"><p class="title">Worked on:</p></div>
+<div class="div3"><p class="menu" style="font-size: 140%;">Opened <u><a href="https://x.com/rayzojams/status/2099998556417384942">Voice of Cards</a></u>.</p></div>
+<div class="div4 over"><img style="padding: 16px; max-width: 60vw;" src="https://pbs.twimg.com/profile_images/2027371482028888065/92Yn7JSE_400x400.jpg"></div>
+</div> 
+<p class="menu" id="backButton"><a data-astro-prefetch="load" href="/credits/people">Back</a></p>
