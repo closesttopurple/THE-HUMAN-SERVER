@@ -1,0 +1,207 @@
+---
+import TextLayout from '@layouts/TextLayout.astro';
+---
+
+<TextLayout>
+</TextLayout><style>    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0,0,0,.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(0,0,0,.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}                                               
+@media (prefers-color-scheme: light)
+{
+    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+}.title{
+    letter-spacing: 1px;
+}
+</style>
+<style>
+
+div{
+  text-align: center;
+}
+@media screen and (orientation: portrait) {
+  .line{
+  margin-top: 6.5%;
+}
+.para u a{
+  margin-top: 5%;
+  margin-bottom: 30px;
+}
+}.Guide {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 0 16px;
+}
+
+@media screen and (min-width: 320px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .img-special {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .Guide {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1919px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .Guide {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+</style>
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a data-astro-prefetch="load" href="/" class="menu-logo">
+    <img style="width: 100%; height: 100%;" src="https://ik.imagekit.io/closesttopurple/thecagemoon.avif" alt=""/>
+  </a>
+
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a data-astro-prefetch="load" href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a data-astro-prefetch="load" href="/series-guide/ths-guide-selection">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a data-astro-prefetch="load" href="/media">
+          Media
+        </a>
+      </li>
+      <li>
+        <a data-astro-prefetch="load" href="/credits">
+          Credits
+        </a>
+      </li>
+            <li>
+        <a data-astro-prefetch="load" href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
+          Reader
+        </a>
+      </li>
+            <li>
+        <a data-astro-prefetch="load" href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a data-astro-prefetch="load" href="/bug-report">
+          Bug Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<title>THS's Guide</title>
+<style>
+  .para{
+        text-indent: 0em;
+  }
+</style>
+<p style="margin-top: 1cm; font-size: 250%;" class="title-box title-special">Karis's Guide to DrakeNieR</p>
+<p id="title1">Updated on the 15th of October, 2026.</p>
+<p id="title2">Read from left to right, and resume as so on the next line when you get to the far right.</p>
+<p id="title3">Read from left to right, and resume as so on the next line when you get to the far right.</p>
+<p style="margin-top: 1cm; font-size: 190%;">Disclaimer:</p>
+<p class="para">I do not support machine translations, often using AI. It's unethical, and human nuance is very often lost. It's garbage.</p>
+
+<p style="margin-top: 1cm; font-size: 210%; margin-bottom: 0.8%;" class="title-box title-special">Start here:</p>
+<div class="over">
+<div class="Guide">
+
+<div class="media-card"><a data-astro-prefetch="load" href="/series-guide/ths-guide"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/guide-avifs/full-guide.avif" loading="lazy"><p class="title">Full Guide</p></a></div>
+<div class="media-card"><a data-astro-prefetch="load" href="/series-guide/ths-guide-brief"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/guide-avifs/brief-guide.avif" loading="lazy"><p class="title">Brief Guide</p></a></div>
+<div class="media-card"><a data-astro-prefetch="load" href="/series-guide/ths-guide-starter"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/guide-avifs/starter-guide.avif" loading="lazy"><p class="title">Starter Guide</p></a></div>
+
+</div>
+</div>
+<p style="margin-top: 1cm; font-size: 190%;">Explanation:</p>
+
+<p class="title-box title-special">Full Guide</p>
+<p class="para">As comprehensive as I can get. Includes the recommended list of everything in the series. Contains: "Main Series Guide", "Misc Guide", "Other Works", "Guidebooks", and "Timeline".</p>
+
+<p class="title-box title-special">Brief Guide</p>
+<p class="para">Includes only the most interesting content. Just a few side materials per game, with all games included. Mostly release order. This should give you a good grasp of the series.</p>
+
+<p class="title-box title-special">Starter Guide</p>
+<p class="para">Use this guide if you want to see if you'll even enjoy the series. Has only the most necessary games, to understand the general overarching plot alongside the specifically necessary short stories.</p>
+
+<div class="over">
+<div class="Guide">
+
+<div class="media-card"><a data-astro-prefetch="load" href="/series-guide/ths-guide-larps"><img class="" src="https://ik.imagekit.io/closesttopurple/guide-avifs/blank.avif" loading="lazy"><p class="title"></p></a></div>
+
+<div class="media-card"><a data-astro-prefetch="load" href="/series-guide/ths-guide-ball"><img class="" src="https://ik.imagekit.io/closesttopurple/guide-avifs/blank.avif" loading="lazy"><p class="title"></p></a></div>
+
+<div class="media-card"><a data-astro-prefetch="load" href="/series-guide/ths-guide-larps"><img class=" " src="https://ik.imagekit.io/closesttopurple/guide-avifs/blank.avif" loading="lazy"><p class="title"></p></a></div>
+
+</div>
+</div>

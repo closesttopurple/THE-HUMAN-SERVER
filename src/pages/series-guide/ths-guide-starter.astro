@@ -1,0 +1,159 @@
+---
+import TextLayout from '@layouts/TextLayout.astro';
+---
+
+<TextLayout>
+</TextLayout><style>    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0,0,0,.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(0,0,0,.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}                                               
+@media (prefers-color-scheme: light)
+{
+    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+}
+img{
+  max-width: 30vw;
+}
+</style>
+<style>
+
+div{
+  text-align: center;
+}
+@media screen and (orientation: portrait) {
+  .line{
+  margin-top: 6.5%;
+}
+.para u a{
+  margin-top: 5%;
+  margin-bottom: 30px;
+}
+.para{
+    font-size: 135%;
+        text-indent: 0em;
+}
+}
+.img-special{
+max-width: 35vw;
+} 
+@media (min-width: 1601px)  { .Guide { grid-template-columns: repeat(4, 1fr);} }
+@media (max-width: 1200px)  { .img-special{ max-width: 40vw;} .Guide { grid-template-columns: repeat(2, 1fr);} }
+@media (min-width: 1201px) and (max-width: 1600px)  { .Guide { grid-template-columns: repeat(3, 1fr);} }
+.title{
+    letter-spacing: 1px;
+}
+</style>
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a data-astro-prefetch="load" href="/" class="menu-logo">
+    <img style="width: 100%; height: 100%;" src="https://ik.imagekit.io/closesttopurple/thecagemoon.avif" alt=""/>
+  </a>
+ 
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a data-astro-prefetch="load" href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a data-astro-prefetch="load" href="/series-guide/ths-guide-selection">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a data-astro-prefetch="load" href="/media">
+          Media
+        </a>
+      </li>
+      <li>
+        <a data-astro-prefetch="load" href="/credits">
+          Credits
+        </a>
+      </li>
+            <li>
+        <a data-astro-prefetch="load" href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
+          Reader
+        </a>
+      </li>
+            <li>
+        <a data-astro-prefetch="load" href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a data-astro-prefetch="load" href="/bug-report">
+          Bug Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<title>Karis's Guide</title>
+<p style="margin-top: 1cm; font-size: 250%;" class="title-box title-special">Starter Guide</p>
+<br>
+
+<div class="over">
+<div class="Guide">
+<div class="media-card"><a data-astro-prefetch="load" href="/series-guide/ths-guide/nier-122"><img class="img-special img-game" src="https://ik.imagekit.io/closesttopurple/avif/nier-replicant-122-full.avif?updatedAt=1781783693333" loading="lazy"><p class="title">NieR Replicant ver.1.22...</p></a></div>
+<div class="media-card"><a data-astro-prefetch="load" href="/series-guide/ths-guide/nier-drama-cd"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/nierreplicant-drama-cd-full.avif?updatedAt=1781783693492" loading="lazy"><p class="title">NieR Replicant Drama CD</p></a></div>
+<div class="media-card"><a data-astro-prefetch="load" href="/series-guide/ths-guide/grimoire-nier/timeline"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/grimoire-nier-timeline.avif?updatedAt=1781783693006" loading="lazy"><p class="title">Grimoire NieR Timeline Chart</p></a></div>
+
+<div class="media-card"><a data-astro-prefetch="load" href="/series-guide/ths-guide/nier-automata"><img class="img-special img-game" src="https://ik.imagekit.io/closesttopurple/avif/nier-automata-full.avif?updatedAt=1781783693242" loading="lazy"><p class="title">NieR:Automata</p></a></div>
+
+  <div class="media-card"><a data-astro-prefetch="load" href="/stories/nier-automata/novellas/"><img class="img-special img-game" src="https://ik.imagekit.io/closesttopurple/guide-avifs/memcagememthorn.avif" loading="lazy"><p class="title">Memory Cage / Memory Thorn</p></a></div>
+
+<div class="media-card"><a data-astro-prefetch="load" href="/stories/nier-automata/memory-of-puppets/farewell/"><img class="img-special img-game" src="https://ik.imagekit.io/closesttopurple/guide-avifs/farewell.avif" loading="lazy"><p class="title">Farewell</p></a></div>
+<div class="media-card"><a data-astro-prefetch="load" href="/series-guide/ths-guide/drakengard"><img class="img-special img-game" src="https://ik.imagekit.io/closesttopurple/avif/drakengard-full.avif" loading="lazy"><p class="title">Drakengard</p></a></div>
+
+<div class="media-card"><a data-astro-prefetch="load" href="/series-guide/ths-guide/nier-reincarnation"><img class="img-special img-game" src="https://ik.imagekit.io/closesttopurple/avif/nier-rein.avif?updatedAt=1781783693143" loading="lazy"><p class="title">NieR Re[in]carnation</p></a></div>
+
+  
+  
+<div class="media-card"><a data-astro-prefetch="load" href="/series-guide/ths-guide/nier-web-novel"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/nier-web-novel.avif?updatedAt=1781783693040" loading="lazy"><p class="title">[U]ndecided Option</p></a></div>
+
+  
+</div></div>
+<p style="margin-top: 1cm; font-size: 190%;">Explanation:</p>
+
+<p class="para">I'll annotate explain each entry here:</p>
+<p class="para">NieR Replicant ver.1.22...:<br>This is a remaster of NieR Replicant, but with additional content from the short stories of the original. However, the extra ending is more for people who have played NieR:Automata, so just endings A-D then progress to ending E for this after any point of NieR:Automata's completion.</p>
+<p class="para">NieR Drama CD:<br>Fairly long. This gives a lot of background on the main characters, and is very interesting.</p>
+<p class="para">Grimoire NieR Timeline Chart:<br>Pretty short read. You won't know much of the things here, but that's the fun part. When it was released, that was intended.</p>
+<p class="para">NieR:Automata:<br>The most popular game. You probably heard of this one first, or have already played it. The easiest game to get the endings in. You won't have any trouble.</p>
+<p class="para">Drakengard:<br>The first game in the series. It's not that long, and it's perfectly okay to use cheats to get through it. It's old, and understandable to not want to get through as "legit" as you can. The first four endings (A,B,C, and D) are pretty easy to get. But, the last ending (E) is a bit annoying. For this, I'll recommend that just getting A-D and using a save file to complete ending E. Otherwise, you'll have to collect every weapon. For PC, You'll need an ISO of the game, <u><a href="https://pcsx2.net/">PCSX2</a></u>, a <u><a href="https://gamefaqs.gamespot.com/ps2/914769-drakengard/saves">100% save file</a></u>, and <u><a href="https://bad-al.github.io/mymc_web/">mymc</a></u> to convert the file to a PCSX2 usable file.</p>
+
+<p class="para">NieR Re[in]carnation:<br>The third NieR game. It was a shutdown mobile game, but you can play it on a private server <u><a href="https://lunar-tear.com/">here</a></u>. Additionally, All of the story content has been archived on YouTube or various fan-sites.</p>
+<p class="para">[U]ndecided Option:<br>A relatively short web novel. There aren't any full text translations, but Cabbage Channnel has a series reading out his translations.</p>

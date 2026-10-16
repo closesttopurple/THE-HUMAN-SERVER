@@ -1,0 +1,145 @@
+---
+import TextLayout from '@layouts/TextLayout.astro';
+---
+
+<TextLayout>
+</TextLayout><style>    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0,0,0,.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(0,0,0,.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}                                               
+@media (prefers-color-scheme: light)
+{
+    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+}
+img{
+  max-width: 30vw;
+}
+</style>
+<style>
+
+div{
+  text-align: center;
+}
+@media screen and (orientation: portrait) {
+  .line{
+  margin-top: 6.5%;
+}
+.para u a{
+  margin-top: 5%;
+  margin-bottom: 30px;
+}
+.para{
+    font-size: 135%;
+        text-indent: 0em;
+}
+}
+.img-special{
+max-width: 35vw;
+} 
+@media (min-width: 1601px)  { .Guide { grid-template-columns: repeat(2, 1fr);} }
+@media (max-width: 1200px)  { .img-special{ max-width: 40vw;} .Guide { grid-template-columns: repeat(2, 1fr);} }
+@media (min-width: 1201px) and (max-width: 1600px)  { .Guide { grid-template-columns: repeat(2, 1fr);} }
+.title{
+    letter-spacing: 1px;
+}
+</style>
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a data-astro-prefetch="load" href="/" class="menu-logo">
+    <img style="width: 100%; height: 100%;" src="https://ik.imagekit.io/closesttopurple/thecagemoon.avif" alt=""/>
+  </a>
+ 
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a data-astro-prefetch="load" href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a data-astro-prefetch="load" href="/series-guide/ths-guide-selection">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a data-astro-prefetch="load" href="/media">
+          Media
+        </a>
+      </li>
+      <li>
+        <a data-astro-prefetch="load" href="/credits">
+          Credits
+        </a>
+      </li>
+            <li>
+        <a data-astro-prefetch="load" href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
+          Reader
+        </a>
+      </li>
+            <li>
+        <a data-astro-prefetch="load" href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a data-astro-prefetch="load" href="/bug-report">
+          Bug Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<title>THS's Guide</title>
+<p style="margin-top: 1cm; font-size: 250%;" class="title-box title-special">Larp Guide</p>
+<br>
+
+
+<div class="over">
+<div class="Guide">
+  
+<div class="media-card"><a data-astro-prefetch="load" href="https://store.steampowered.com/app/2157560/Granblue_Fantasy_Versus_Rising/"><img class="img-special img-game" src="https://ik.imagekit.io/closesttopurple/avif/nier-automata-full.avif?updatedAt=1781783693242" loading="lazy"><p class="title">NieR:Automata</p></a></div>
+
+
+  
+
+  
+<div class="media-card"><a data-astro-prefetch="load" href="https://store.steampowered.com/app/381210/Dead_by_Daylight/"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/nier-automata-ver.1.1a.avif?updatedAt=1781783693474" loading="lazy"><p class="title">NieR:Automata Ver1.1a</p></a></div>
+
+  
+
+  
+
+  
+</div></div>

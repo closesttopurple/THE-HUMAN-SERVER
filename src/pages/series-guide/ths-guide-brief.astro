@@ -1,0 +1,220 @@
+---
+import TextLayout from '@layouts/TextLayout.astro';
+---
+
+<TextLayout>
+</TextLayout><style>    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0,0,0,.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(0,0,0,.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}                                               
+@media (prefers-color-scheme: light)
+{
+    body {
+  background-color: $bgColor;
+  background-size: 6px 6px;
+  background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(213, 213, 213, 0.07) 4px);
+  color: $color;
+  margin: 0;
+  min-height: 100vh;
+  box-shadow: inset 0 0 150px rgba($color, .4), inset 0 0 150px rgba($color, .3);
+  
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+}
+img{
+  max-width: 30vw;
+}
+</style>
+<style>
+
+div{
+  text-align: center;
+}
+@media screen and (orientation: portrait) {
+  .line{
+  margin-top: 6.5%;
+}
+.para u a{
+  margin-top: 5%;
+  margin-bottom: 30px;
+}
+.para{
+    font-size: 135%;
+        text-indent: 0em;
+}
+}
+.img-special{
+max-width: 35vw;
+} 
+@media (min-width: 1601px)  { .Guide { grid-template-columns: repeat(4, 1fr);} }
+@media (max-width: 1200px)  { .img-special{ max-width: 40vw;} .Guide { grid-template-columns: repeat(2, 1fr);} }
+@media (min-width: 1201px) and (max-width: 1600px)  { .Guide { grid-template-columns: repeat(3, 1fr);} }
+.title{
+    letter-spacing: 1px;
+}
+</style>
+<nav class="menu-container">
+  <!-- burger menu -->
+  <input type="checkbox" aria-label="Toggle menu" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- logo -->
+  <a data-astro-prefetch="load" href="/" class="menu-logo">
+    <img style="width: 100%; height: 100%;" src="https://ik.imagekit.io/closesttopurple/thecagemoon.avif" alt=""/>
+  </a>
+ 
+  <!-- menu items -->
+  <div class="menubar">
+    <ul>
+      <li>
+        <a data-astro-prefetch="load" href="/stories">
+          Stories
+        </a>
+      </li>
+      <li>
+        <a data-astro-prefetch="load" href="/series-guide/ths-guide-selection">
+          Series Guide
+        </a>
+      </li>
+      <li>
+        <a data-astro-prefetch="load" href="/media">
+          Media
+        </a>
+      </li>
+      <li>
+        <a data-astro-prefetch="load" href="/credits">
+          Credits
+        </a>
+      </li>
+            <li>
+        <a data-astro-prefetch="load" href="https://reader.thehumanserver.org/" target="_blank" rel="noopener noreferrer">
+          Reader
+        </a>
+      </li>
+            <li>
+        <a data-astro-prefetch="load" href="https://github.com/closesttopurple/THE-HUMAN-SERVER" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a data-astro-prefetch="load" href="/bug-report">
+          Bug Report
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<title>THS's Guide</title>
+<p style="margin-top: 1cm; font-size: 250%;" class="title-box title-special">Brief Guide</p>
+<br>
+
+
+<div class="over">
+<div class="Guide">
+
+<div class="media-card"><a data-astro-prefetch="load" href="/series-guide/ths-guide/drakengard"><img class="img-special img-game" src="https://ik.imagekit.io/closesttopurple/avif/drakengard-full.avif" loading="lazy"><p class="title">Drakengard</p></a></div>
+
+  
+<div class="media-card"><a data-astro-prefetch="load" href="/series-guide/ths-guide/character-profiles"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/character-profiles-full.avif" loading="lazy"><p class="title">Character Profiles</p></a></div>
+
+  
+<div class="media-card"><a data-astro-prefetch="load" href="/series-guide/ths-guide/the-song-of-fourteen-years"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/the-song-of-fourteen-years.avif" loading="lazy"><p class="title">The Song of Fourteen Years</p></a></div>
+
+  
+  
+<div class="media-card"><a data-astro-prefetch="load" href="/series-guide/ths-guide/drakengard-2"><img class="img-special img-game" src="https://ik.imagekit.io/closesttopurple/avif/drakengard-2-full.avif?updatedAt=1781783692682" loading="lazy"><p class="title">Drakengard 2</p></a></div>
+
+  
+<div class="media-card"><a data-astro-prefetch="load" href="/series-guide/ths-guide/the-garden-of-light"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/the-garden-of-light-full.avif?updatedAt=1781783693277" loading="lazy"><p class="title">The Garden of Light</p></a></div>
+
+  
+  
+<div class="media-card"><a data-astro-prefetch="load" href="/series-guide/ths-guide/nier-122"><img class="img-special img-game" src="https://ik.imagekit.io/closesttopurple/avif/nier-replicant-122-full.avif?updatedAt=1781783693333" loading="lazy"><p class="title">NieR Replicant ver.1.22...</p></a></div>
+
+  
+
+  
+<div class="media-card"><a data-astro-prefetch="load" href="/series-guide/ths-guide/nier-replicant-novellas"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/nier-replicant-novellas.avif?updatedAt=1781783693447" loading="lazy"><p class="title">NieR Replicant Novellas</p></a></div>
+
+  
+<div class="media-card"><a data-astro-prefetch="load" href="/series-guide/ths-guide/nier-drama-cd"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/nierreplicant-drama-cd-full.avif?updatedAt=1781783693492" loading="lazy"><p class="title">NieR Replicant Drama CD</p></a></div>
+
+
+<div class="media-card"><a data-astro-prefetch="load" href="/series-guide/ths-guide/grimoire-nier/timeline"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/grimoire-nier-timeline.avif?updatedAt=1781783693006" loading="lazy"><p class="title">Grimoire NieR Timeline Chart</p></a></div>
+
+
+<div class="media-card"><a data-astro-prefetch="load" href="/series-guide/ths-guide/drakengard-3"><img class="img-special img-game" src="https://ik.imagekit.io/closesttopurple/avif/drakengard-3-full.avif?updatedAt=1781783692996" loading="lazy"><p class="title">Drakengard 3</p></a></div>
+  
+<div class="media-card"><a data-astro-prefetch="load" href="/series-guide/ths-guide/drakengard-3-prelude-novellas"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/drakengard-3-prelude-novellas.avif?updatedAt=1781783692919" loading="lazy"><p class="title">Drakengard 3 Prelude Novellas</p></a></div>
+
+  
+<div class="media-card"><a data-astro-prefetch="load" href="/series-guide/ths-guide/drakengard-3-story-side"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/drakengard-3-story-side-full.avif?updatedAt=1781783692768" loading="lazy"><p class="title">Drakengard 3 Story Side</p></a></div>
+
+  
+  
+<div class="media-card"><a data-astro-prefetch="load" href="/series-guide/ths-guide/nier-automata"><img class="img-special img-game" src="https://ik.imagekit.io/closesttopurple/avif/nier-automata-full.avif?updatedAt=1781783693242" loading="lazy"><p class="title">NieR:Automata</p></a></div>
+
+  
+<div class="media-card"><a data-astro-prefetch="load" href="/series-guide/ths-guide/nier-automata-novellas"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/nier-automata-novellas-full.avif?updatedAt=1781783692882" loading="lazy"><p class="title">NieR:Automata Novellas</p></a></div>
+
+  
+<div class="media-card"><a data-astro-prefetch="load" href="/series-guide/ths-guide/the-memories-of-puppets"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/nier-automata-memories-of-puppets-full.avif?updatedAt=1781783692821" loading="lazy"><p class="title">The Memories of Puppets</p></a></div>
+
+<div class="media-card"><a data-astro-prefetch="load" href="/series-guide/ths-guide/pearl-harbor-descent-record"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/guide-avifs/yorhapearlharbor.avif" loading="lazy"><p class="title">Pearl Harbor Descent Record</p></a></div>
+
+<div class="media-card"><a data-astro-prefetch="load" href="/series-guide/ths-guide/yorha-1.3aa"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/yorha-1.3aa-2.avif?updatedAt=1781783693095" loading="lazy"><p class="title">YoRHa Ver1.3aa Stage Play</p></a></div>
+
+<div class="media-card"><a data-astro-prefetch="load" href="/series-guide/ths-guide/nier-reincarnation"><img class="img-special img-game" src="https://ik.imagekit.io/closesttopurple/avif/nier-rein.avif?updatedAt=1781783693143" loading="lazy"><p class="title">NieR Re[in]carnation</p></a></div>
+
+  
+
+  
+<div class="media-card"><a data-astro-prefetch="load" href="/series-guide/ths-guide/nier-automata-ver1.1a"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/nier-automata-ver.1.1a.avif?updatedAt=1781783693474" loading="lazy"><p class="title">NieR:Automata Ver1.1a</p></a></div>
+
+  
+
+  
+<div class="media-card"><a data-astro-prefetch="load" href="/series-guide/ths-guide/nier-web-novel"><img class="img-special" src="https://ik.imagekit.io/closesttopurple/avif/nier-web-novel.avif?updatedAt=1781783693040" loading="lazy"><p class="title">[U]ndecided Option</p></a></div>
+
+  
+</div></div>
+<p style="margin-top: 1cm; font-size: 190%;">Explanation:</p>
+
+<p class="para">I'll annotate explain each entry here:</p>
+<p class="para">Drakengard:<br>The first game in the series. It's not that long, and it's perfectly okay to use cheats to get through it. It's old, and understandable to not want to get through as "legit" as you can. The first four endings (A,B,C, and D) are pretty easy to get. But, the last ending (E) is a bit annoying. For this, I'll recommend that just getting A-D and using a save file to complete ending E. Otherwise, you'll have to collect every weapon. For PC, You'll need an ISO of the game, <u><a href="https://pcsx2.net/">PCSX2</a></u>, a <u><a href="https://gamefaqs.gamespot.com/ps2/914769-drakengard/saves">100% save file</a></u>, and <u><a href="https://bad-al.github.io/mymc_web/">mymc</a></u> to convert the file to a PCSX2 usable file.</p>
+<p class="para">Character Profiles:<br>These are pretty short character descriptions with some light background lore for the main characters. It includes a short story with each one, giving you a bit more insight into them.</p>
+<p class="para">The Song of Fourteen Years:<br>This is the first longer piece of side material. It's not <i>especially</i> long, but definitely requires you to sit down for just a little bit. It's a prologue to Drakengard, mostly with more information on Inuart.</p>
+<p class="para">Drakengard 2:<br>The second game in the series. Yes, it's canon. Yes, it's good. No, it wasn't directed by Yoko Taro and that doesn't really matter. For PC, you'll still need PCSX2 and the other bits. Although, there are only 3 endings for this game. The general recommendation is to just play through the game normally until ending A, then watch <u><a href="https://www.youtube.com/watch?v=3Lya9kvv584">the</a></u> <a href="https://www.youtube.com/watch?v=6FT8vOXDviw">"<u>movies</u></a>" for endings B and C. This is due to Drakengard 2's unique requirement to beat all 12 chapters each time in order to get the next ending. It's <i>fine</i> if you don't want to do that. But, be aware that there are slight differences between the routes. It's mostly within the first few chapters. Also: Go to villages periodically when playing through the story for missable cutscenes.</p>
+<p class="para">The Garden of Light:<br>About the same length of The Song of Fourteen Years. It's one of my personal favourite novellas, it characterises certain characters a lot.</p>
+<p class="para">NieR Replicant ver.1.22...:<br>This is a remaster of NieR Replicant, but with additional content from the short stories of the original. However, the extra ending is more for people who have played NieR:Automata, so just endings A-D then progress to ending E for this after any point of NieR:Automata's completion.</p>
+<p class="para">NieR Replicant Novellas:<br>About the same length of The Song of Fourteen Years. It's one of my personal favourite novellas, it characterises certain characters a lot.</p>
+<p class="para">NieR Drama CD:<br>Fairly long. This gives a lot of background on the main characters, and is very interesting.</p>
+<p class="para">Grimoire NieR Timeline Chart:<br>Pretty short read. You won't know much of the things here, but that's the fun part. When it was released, that was intended.</p>
+<p class="para">Drakengard 3:<br>Rather than PCSX2, you'll need <u><a href="https://rpcs3.net/">RPCS3</a></u>. There are only four endings for this one, A-D. The grind to get the final ending for this one isn't <i>that</i> bad, if you feel like doing it. But... <u><a href="https://gamefaqs.gamespot.com/ps3/707565-drakengard-3/saves">Here's a save file</a></u>, if you just want to get A-C then complete route D.</p>
+<p class="para">Drakengard 3 Prelude Novellas:<br>Relatively short reads. They're each fairly interesting, with Zero's being my favourite.</p>
+<p class="para">Drakengard 3 Story Side:<br>This is the longest read here. This is the ending E of Drakengard 3, and is what actually connects to Drakengard 1 in the timeline. It's akin to an alternate walkthrough of the game.</p>
+<p class="para">NieR:Automata:<br>The most popular game. You probably heard of this one first, or have already played it. The easiest game to get the endings in. You won't have any trouble.</p>
+<p class="para">NieR:Automata Novellas:<br>Gives some much needed information on Automata characters. Medium length.</p>
+<p class="para">The Memories of Puppets:<br>Short-medium length stories. Has some interesting character interactions and general lore.</p>
+<p class="para">YoRHa Pearl Harbor Descent Record:<br>The only manga on this list. Gives more info on some Automata characters.</p>
+<p class="para">YoRHa Ver1.3aa:<br>The only stage play on this list. There are quite a few, but this is my favourite one. It's just a few hours long, not that much of a commitment. I urge anyone to watch at least one stage play, so I put this one down. The cast is genderbent.</p>
+<p class="para">NieR Re[in]carnation:<br>The third NieR game. It was a shutdown mobile game, but you can play it on a private server <u><a href="https://lunar-tear.com/">here</a></u>. Additionally, All of the story content has been archived on YouTube or various fan-sites.</p>
+<p class="para">NieR:Automata Ver1.1a:<br>The anime. It's not <i>especially</i> lore-necessary, but it's pretty cool... So, why not?</p>
+<p class="para">[U]ndecided Option:<br>A relatively short web novel. There aren't any full text translations, but Cabbage Channnel has a series reading out his translations.</p>
