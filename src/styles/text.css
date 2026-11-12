@@ -843,6 +843,13 @@ text-decoration:none; }
       -webkit-filter: brightness(95%);
     transform: scale(0.98);
 }
+  summary{
+    font-size: 160%;
+}
+details{
+    font-size: 110%;
+    letter-spacing: 1.8px;
+}
   .centre {
   display: block;
   margin-left: auto;
