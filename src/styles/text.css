@@ -261,12 +261,12 @@ transform: scale(0.98);
     @media screen and (orientation: landscape)
 {
   .para{
-    font-weight: 400;
+    font-weight: 460;
     letter-spacing: 2px;
     margin-right: 22%;
     margin-left: 22%;
     text-align:left;
-    font-size: 120%;
+    font-size: 130%;
     margin-top: 0.6cm;
     text-indent: 1.4em;
 
@@ -312,7 +312,7 @@ p{
 {
   p.title{
   margin-top: 0.6cm;
-  font-size: 150%;
+  font-size: 180%;
   font-family: "Life-Regular";
   margin-bottom: 0.1cm;
   margin-left: 8%;
@@ -730,12 +730,12 @@ body {
 .Guide > .title { 
   font-size: 0.94rem;
 }
-@media (min-width: 320px)  { .Guide { grid-template-columns: repeat(2, 1fr); } .Guide > .title { font-size: 0.7rem;} }
-@media (min-width: 769px) { .Guide { grid-template-columns: repeat(3, 1fr); } }
-@media (min-width: 1025px) { .Guide { grid-template-columns: repeat(3, 1fr); } }
-@media (min-width: 1201px)  { .Guide { grid-template-columns: repeat(4, 1fr);} }
-@media (min-width: 1919px) { .Guide { grid-template-columns: repeat(4, 1fr); } }
-@media (min-width: 1921px) { .Guide { grid-template-columns: repeat(5, 1fr); } }
+@media (min-width: 320px)  { .Guide { grid-template-columns: repeat(2, 1fr); } .Guide > .title { font-size: 0.94rem;} }
+@media (min-width: 769px) { .Guide { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1025px) { .Guide { grid-template-columns: repeat(2, 1fr); } .Guide > .title { font-size: 1.1rem;} }
+@media (min-width: 1201px)  { .Guide { grid-template-columns: repeat(4, 1fr);} .Guide > .title { font-size: 1.2rem;} }
+@media (min-width: 1919px) { .Guide { grid-template-columns: repeat(4, 1fr); } .Guide > .title { font-size: 1.3rem;} }
+@media (min-width: 1921px) { .Guide { grid-template-columns: repeat(5, 1fr); } .Guide > .title { font-size: 1.2rem;} }
 
 .summary{
   margin: 0 auto;
@@ -881,4 +881,9 @@ img{
   to {
     background-position: var(--bg-size) 0;
   }
+  .border[data-astro-cid-4gfsnxnu] {
+  border:2px solid;
+  border-image:conic-gradient(from var(--angle), #01efac, #01cbae, #2082a6, #524094, #562a83, #01efac) 1;
+  animation:8s linear infinite rotate
+}
 }
